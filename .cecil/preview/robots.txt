@@ -1,0 +1,10 @@
+# all user agents
+User-agent: *
+# allow all pages
+Allow: /
+# disallow redirects pages
+# disallow 404 page
+Disallow: /404.html
+
+# sitemap
+Sitemap: http://localhost:8000/sitemap.xml
