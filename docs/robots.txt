@@ -1,0 +1,10 @@
+# all user agents
+User-agent: *
+# allow all pages
+Allow: /
+# disallow redirects pages
+# disallow 404 page
+Disallow: /kaleemclarkson-v3/404.html
+
+# sitemap
+Sitemap: /kaleemclarkson-v3/sitemap.xml

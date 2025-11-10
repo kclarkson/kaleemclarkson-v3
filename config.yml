@@ -1,0 +1,23 @@
+title: "Kaleem Clarkson"
+baseline: "Coming Soon"
+description: "Personal website - launching soon!"
+baseurl: /kaleemclarkson-v3/
+destination: docs
+theme:
+  - comingsoon
+comingsoon:
+  subscribe:
+    placeholder: "Enter your email..."
+    button: "Notify Me!"
+assets:
+  remote:
+    enabled: false
+  compile:
+    variables:
+      primary: '#69B7FF'
+      secondary: '#69C748'
+social:
+  twitter:
+    site: YourTwitter
+  github:
+    username: kaleemclarkson

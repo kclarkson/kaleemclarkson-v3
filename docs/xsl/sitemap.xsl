@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:sitemap="http://www.sitemaps.org/schemas/sitemap/0.9" version="3.0">
+  <xsl:output method="html" version="1.0" encoding="utf-8" indent="yes" />
+  <xsl:template match="/">
+    <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+      <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Sitemap - Kaleem Clarkson</title>
+        <style type="text/css">
+          html {
+            margin: 0;
+            padding: 0;
+          }
+          body {
+            margin: 1rem auto;
+            padding: 1rem;
+            max-width: 64rem;
+            background-color: #EFF0F4;
+            color: #586069;
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 1rem;
+            line-height: 1.5rem;
+          }
+          h1 {
+            line-height: normal;
+          }
+          input {
+            min-width: 100%;
+            margin-left: .2rem;
+            padding-left: .2rem;
+            padding-right: .2rem;
+          }
+          ol {
+            margin-left: -1.5rem;
+          }
+          li {
+            margin: 0;
+          }
+          a {
+            color: #0366d6;
+            text-decoration: none;
+          }
+          @media (min-width: 768px) {
+            input {
+              min-width: 20rem;
+            }
+          }
+        </style>
+      </head>
+      <body>
+        <h1>List of URLs for <a href="/kaleemclarkson-v3/">Kaleem Clarkson</a>:</h1>
+        <form>
+          <label for="feed-url">Sitemap URL:</label>
+          <input id="feed-url" onClick="this.select();">
+            <xsl:attribute name="type">url</xsl:attribute>
+            <xsl:attribute name="url">URL</xsl:attribute>
+            <xsl:attribute name="spellcheck">false</xsl:attribute>
+            <xsl:attribute name="value">/kaleemclarkson-v3/sitemap.xml</xsl:attribute>
+          </input>
+        </form>
+        <ol>
+          <xsl:for-each select="sitemap:urlset/sitemap:url">
+            <li><a><xsl:attribute name="href"><xsl:value-of select="sitemap:loc" /></xsl:attribute><xsl:value-of select="sitemap:loc" /></a> (<xsl:value-of select="sitemap:lastmod" />)</li>
+          </xsl:for-each>
+        </ol>
+      </body>
+    </html>
+  </xsl:template>
+</xsl:stylesheet>

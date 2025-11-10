@@ -1,0 +1,14 @@
+{
+    "name": "kaleemclarkson/website",
+    "description": "Personal website built with Cecil",
+    "type": "project",
+    "require": {
+        "cecil/cecil": "^8.70",
+        "cecil/theme-comingsoon": "^1.7"
+    },
+    "config": {
+        "allow-plugins": {
+            "cecil/theme-installer": true
+        }
+    }
+}
