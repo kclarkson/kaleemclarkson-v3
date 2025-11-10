@@ -65,6 +65,9 @@ git pull origin main
 # Install PHP dependencies (Cecil, themes)
 composer install
 
+# Install Bootstrap dependencies for the theme
+cd themes/comingsoon/static && npm install && cd ../../..
+
 # Install Node.js dependencies (editor)
 npm install
 ```
@@ -370,6 +373,21 @@ kaleemclarkson-v3/
 ---
 
 ## 🛠️ Troubleshooting
+
+### Issue: "Can't find stylesheet to import" or Bootstrap errors
+
+**Error:**
+```
+Can't find stylesheet to import.
+@import "bootstrap/scss/bootstrap.scss";
+```
+
+**Solution:** Install Bootstrap in the theme directory
+```bash
+cd themes/comingsoon/static && npm install && cd ../../..
+```
+
+This is required because the Coming Soon theme uses Bootstrap, which must be installed separately.
 
 ### Issue: "composer: command not found"
 
