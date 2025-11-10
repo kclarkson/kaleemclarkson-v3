@@ -49,14 +49,14 @@
         </style>
       </head>
       <body>
-        <h1>List of URLs for <a href="/kaleemclarkson-v3/">Kaleem Clarkson</a>:</h1>
+        <h1>List of URLs for <a href="/">Kaleem Clarkson</a>:</h1>
         <form>
           <label for="feed-url">Sitemap URL:</label>
           <input id="feed-url" onClick="this.select();">
             <xsl:attribute name="type">url</xsl:attribute>
             <xsl:attribute name="url">URL</xsl:attribute>
             <xsl:attribute name="spellcheck">false</xsl:attribute>
-            <xsl:attribute name="value">/kaleemclarkson-v3/sitemap.xml</xsl:attribute>
+            <xsl:attribute name="value">/sitemap.xml</xsl:attribute>
           </input>
         </form>
         <ol>

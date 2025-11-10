@@ -1,7 +1,8 @@
 title: "Kaleem Clarkson"
 baseline: "Coming Soon"
 description: "Personal website - launching soon!"
-baseurl: /kaleemclarkson-v3/
+baseurl: /
+url: https://www.kaleemclarkson.com
 destination: docs
 theme:
   - comingsoon
