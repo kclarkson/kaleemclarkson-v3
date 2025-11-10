@@ -1,0 +1,17 @@
+{
+  "name": "kaleemclarkson-editor",
+  "version": "1.0.0",
+  "description": "Markdown page editor for Cecil static site",
+  "main": "editor/server.js",
+  "scripts": {
+    "editor": "node editor/server.js",
+    "start": "node editor/server.js"
+  },
+  "keywords": ["cecil", "markdown", "editor", "cms"],
+  "author": "Kaleem Clarkson",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5"
+  }
+}
