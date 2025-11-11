@@ -5,17 +5,22 @@ baseurl: https://www.kaleemclarkson.com
 url: https://www.kaleemclarkson.com
 output:
   dir: docs
+
+# Theme configuration
 theme:
   - comingsoon
-comingsoon:
-  subscribe:
-    placeholder: "Enter your email..."
-    button: "Notify Me!"
+
+# Asset compilation settings
 assets:
   remote:
     enabled: false
   compile:
     enabled: false
+    variables:
+      primary: '#69B7FF'
+      secondary: '#69C748'
+
+# Social media links
 social:
   twitter:
     site: YourTwitter
