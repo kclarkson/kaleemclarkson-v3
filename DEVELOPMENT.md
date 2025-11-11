@@ -443,6 +443,167 @@ PORT=3001 npm run editor
 
 ---
 
+## 🎨 Front-End Development (Sass/CSS)
+
+### Working with Sass Files
+
+The site uses Sass (SCSS) for styling with Bootstrap 5 as the foundation.
+
+#### File Structure
+```
+themes/comingsoon/assets/scss/
+├── styles.scss                      # Main entry point (imports everything)
+├── _variables_kaleemclarkson.scss  # Your custom color variables
+├── _variables_bootstrap.scss        # Bootstrap variable overrides
+├── _global.scss                     # Global styles
+│
+├── base/
+│   ├── _mixins.scss                # Reusable mixins
+│   └── _elements.scss              # Base element styles
+│
+├── layout/
+│   ├── _header.scss                # Header styles
+│   ├── _main.scss                  # Main content area
+│   └── _footer.scss                # Footer styles
+│
+├── modules/
+│   ├── _buttons.scss               # Button styles
+│   ├── _navigation.scss            # Navigation components
+│   └── _forms.scss                 # Form elements
+│
+└── components/
+    ├── _hero.scss                  # Hero section
+    ├── _social.scss                # Social media links
+    ├── _breadcrumb.scss            # Breadcrumb navigation
+    ├── _cards.scss                 # Card components
+    └── _page-nav.scss              # Page navigation
+```
+
+#### Development Workflow
+
+**1. Start the dev environment:**
+```bash
+npm run dev
+```
+
+This runs:
+- **Sass watcher**: Watches all `.scss` files and auto-compiles
+- **Cecil server**: Serves the site with live reload at http://localhost:8000
+
+**2. Edit your Sass files:**
+```bash
+# Edit any component
+code themes/comingsoon/assets/scss/components/_hero.scss
+
+# Edit colors
+code themes/comingsoon/assets/scss/_variables_kaleemclarkson.scss
+
+# Edit Bootstrap overrides
+code themes/comingsoon/assets/scss/_variables_bootstrap.scss
+```
+
+**3. See changes instantly:**
+- Save your `.scss` file
+- Sass automatically compiles to `themes/comingsoon/static/css/styles.css`
+- Cecil detects the CSS change and triggers browser reload
+- Your changes appear in the browser immediately!
+
+#### Available npm Scripts
+
+```bash
+# Development (recommended)
+npm run dev
+# Runs both Sass watcher + Cecil server
+
+# Watch Sass only
+npm run watch:sass
+# Compiles Sass in expanded format for debugging
+
+# Build Sass for production
+npm run build:sass
+# Compiles Sass in compressed format
+
+# Full production build
+npm run build
+# Compiles Sass + builds Cecil site
+```
+
+#### Customizing Colors
+
+Edit `themes/comingsoon/assets/scss/_variables_kaleemclarkson.scss`:
+
+```scss
+// Brand Colors
+$primary-color: #69B7FF;
+$secondary-color: #69C748;
+
+// You can also override Bootstrap variables here
+$body-bg: #ffffff;
+$body-color: #333333;
+```
+
+These variables are available throughout your Sass files.
+
+#### Adding New Styles
+
+**Option 1: Edit existing component files**
+```scss
+// themes/comingsoon/assets/scss/components/_hero.scss
+.hero {
+  background: $primary-color;
+  padding: 4rem 0;
+
+  h1 {
+    font-size: 3rem;
+  }
+}
+```
+
+**Option 2: Create a new component file**
+```bash
+# Create new file
+code themes/comingsoon/assets/scss/components/_testimonials.scss
+
+# Add your styles
+.testimonials {
+  // your styles
+}
+```
+
+Then import it in `styles.scss`:
+```scss
+// Add to the Components section
+@import "./components/testimonials";
+```
+
+#### Troubleshooting Sass
+
+**Styles not updating?**
+1. Check terminal - is the Sass watcher running?
+2. Look for compilation errors in terminal output
+3. Hard refresh browser: `Cmd+Shift+R` (Mac) or `Ctrl+Shift+R` (Windows)
+4. Restart dev server: `Ctrl+C` then `npm run dev`
+
+**Compilation errors?**
+```bash
+# Check for syntax errors in your .scss files
+# The terminal will show the file and line number
+
+# Common issues:
+# - Missing semicolon
+# - Unclosed brackets
+# - Invalid variable name
+# - Typo in @import statement
+```
+
+**Want to see the compiled CSS?**
+```bash
+# View the compiled output
+cat themes/comingsoon/static/css/styles.css
+```
+
+---
+
 ## 🎨 Customization
 
 ### Change Site Colors
@@ -483,37 +644,56 @@ Edit `layouts/_default/page.html.twig` to customize the HTML structure.
 ```bash
 cd ~/Projects/kaleemclarkson-v3
 git pull
-composer exec cecil serve  # Terminal 1
-npm run editor             # Terminal 2
+npm run dev                # Terminal 1 (Cecil + Sass watcher)
+npm run editor             # Terminal 2 (Markdown editor - optional)
 ```
 
 ### Build Commands
 
-#### Development Server
+#### Development Server with Sass Watching (Recommended)
+```bash
+npm run dev
+```
+- Runs both Sass watcher and Cecil server concurrently
+- Sass compiles automatically when you edit `.scss` files
+- Cecil rebuilds and live-reloads when content changes
+- Outputs to: `.cecil/preview/`
+- URL: http://localhost:8000
+- Features: Live reload, expanded CSS for debugging
+
+**What's happening:**
+- Watches: `themes/comingsoon/assets/scss/**/*.scss`
+- Compiles to: `themes/comingsoon/static/css/styles.css`
+- Cecil picks up the CSS changes automatically
+
+#### Development Server (Cecil Only)
 ```bash
 composer exec cecil serve
 # or
 php cecil.phar serve
-# or
-npm run dev
 ```
 - Outputs to: `.cecil/preview/`
 - URL: http://localhost:8000
-- Features: Live reload, non-minified CSS
-- Auto-rebuilds when files change
+- Features: Live reload for content changes
+- **Note**: Does NOT watch Sass files - you'll need to manually restart with `--clear-cache=css` if editing styles
 
 #### Production Build
 ```bash
-composer exec cecil build
-# or
-php cecil.phar build
-# or
 npm run build
 ```
+- **First**: Compiles Sass with compression (`build:sass`)
+- **Then**: Builds the Cecil site
 - Outputs to: `docs/` (per config.yml)
 - Minifies CSS
 - Generates production URLs
 - Creates fingerprinted assets (e.g., `styles.[hash].css`)
+
+**Alternative (Cecil only, no Sass compilation):**
+```bash
+composer exec cecil build
+# or
+php cecil.phar build
+```
 
 #### Clean Build (Recommended after major changes)
 ```bash

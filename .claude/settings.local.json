@@ -14,7 +14,16 @@
       "Bash(xargs:*)",
       "Bash(./vendor/bin/cecil build:*)",
       "Bash(kill:*)",
-      "Bash(timeout 10 composer exec:*)"
+      "Bash(timeout 10 composer exec:*)",
+      "Bash(git rm:*)",
+      "Bash(touch:*)",
+      "Bash(mkdir:*)",
+      "Bash(npm install:*)",
+      "Bash(npm run dev)",
+      "Bash(curl:*)",
+      "Bash(npm run build:*)",
+      "Bash(npm run build:sass:*)",
+      "Bash(git checkout:*)"
     ],
     "deny": [],
     "ask": []

@@ -15,9 +15,7 @@ assets:
   remote:
     enabled: false
   compile:
-    variables:
-      primary: '#69B7FF'
-      secondary: '#69C748'
+    enabled: false
 social:
   twitter:
     site: YourTwitter

@@ -1,5 +1,6 @@
 # Cecil cache
 .cache/
+.cecil/
 
 # Composer
 vendor/
