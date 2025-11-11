@@ -2,21 +2,195 @@
 // Layout/ Main
 // ============================================================================
 
-.about-section {
-  padding: 100px 0;
-  background-color: #ffffff;
+
+
+// ============================================
+// GRID LAYOUTS - Direct Application
+// ============================================
+// These work directly on the container element without needing .row
+
+// Auto-responsive grid (no media queries needed)
+.grid-auto {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+  gap: 1.5rem;
 }
 
-.services-section {
-  padding: 80px 0;
-  background-color: #f6f6f6;
+.grid-auto-sm {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr));
+  gap: 1rem;
 }
 
-.main-content {
-  padding: 80px 0;
-  background-color: #ffffff;
+.grid-auto-lg {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 400px), 1fr));
+  gap: 2rem;
 }
 
-.content-wrapper {
-  max-width: 800px;
+// Fixed column grids with automatic responsive behavior
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  
+  @include media-breakpoint-down(sm) {
+    grid-template-columns: 1fr;
+  }
 }
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  
+  @include media-breakpoint-down(md) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  @include media-breakpoint-down(sm) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  
+  @include media-breakpoint-down(lg) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  @include media-breakpoint-down(sm) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.grid-5 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.5rem;
+  
+  @include media-breakpoint-down(xl) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  @include media-breakpoint-down(md) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  @include media-breakpoint-down(sm) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.grid-6 {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1.5rem;
+  
+  @include media-breakpoint-down(xl) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  @include media-breakpoint-down(md) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  @include media-breakpoint-down(sm) {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+// Horizontal scrolling carousel
+.carousel-scroll {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  gap: 1.5rem;
+  padding: 1rem 0;
+  
+  > * {
+    flex: 0 0 auto;
+    width: 300px;
+    scroll-snap-align: start;
+    
+    @include media-breakpoint-down(sm) {
+      width: 85%;
+    }
+  }
+  
+  // Custom scrollbar
+  &::-webkit-scrollbar {
+    height: 10px;
+  }
+  
+  &::-webkit-scrollbar-track {
+    background: rgba($gray-300, 0.5);
+    border-radius: 5px;
+  }
+  
+  &::-webkit-scrollbar-thumb {
+    background: $gray-600;
+    border-radius: 5px;
+    
+    &:hover {
+      background: $gray-700;
+    }
+  }
+}
+
+// ============================================
+// GAP UTILITIES (More options than Bootstrap)
+// ============================================
+
+.gap-xs { gap: 0.25rem !important; }
+.gap-sm { gap: 0.5rem !important; }
+.gap-md { gap: 1rem !important; }
+.gap-lg { gap: 2rem !important; }
+.gap-xl { gap: 3rem !important; }
+.gap-xxl { gap: 4rem !important; }
+
+
+
+// ============================================
+// ADVANCED GRID MODIFIERS
+// ============================================
+
+// Make all children equal height
+.match-height {
+  > * {
+    height: 100%;
+  }
+}
+
+// Center single child
+.center-single {
+  display: grid;
+  place-items: center;
+  min-height: 300px;
+}
+
+// Zigzag layout for alternating content
+.zigzag {
+  > *:nth-child(even) {
+    @include media-breakpoint-up(md) {
+      flex-direction: row-reverse;
+    }
+  }
+}
+
+// Sticky sidebar behavior
+.sticky-sidebar {
+  > *:last-child {
+    @include media-breakpoint-up(lg) {
+      position: sticky;
+      top: 2rem;
+      align-self: start;
+    }
+  }
+}
+

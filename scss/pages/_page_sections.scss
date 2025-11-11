@@ -1,0 +1,51 @@
+// ============================================================================
+// Page Section Styels
+// ============================================================================
+// Styles for page sections. Mostly background colors and headers. 
+
+
+
+// ============================================
+// SECTION HEADERS - COLORED BANNERS
+// ============================================
+// Applied to text paragraphs to create colored section headers
+// Inspired by "Discover & Plan" / "Begin & Update" banners from Project-Based Consulting page
+// Features:
+// - Colored background with light opacity
+// - Colored left border (4px solid)
+// - Centered bold text
+// - Rounded corners
+// - Color variants for different sections
+
+// Orange section header (primary brand color)
+.section-header-orange {
+  background: rgba($orange, 0.1);
+  border-left: 4px solid $orange;
+  padding: 1rem;
+
+  h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+  }
+}
+
+// Green section header
+.section-header-green {
+  background: rgba($green, 0.1);
+  border-left: 4px solid $green;
+  padding: 1rem;
+
+  h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+  }
+}
+
+// Brown section header
+.section-header-brown {
+  background: rgba($brown, 0.1);
+  border-left: 4px solid $brown;
+  padding: 1rem;
+
+  h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+  }
+}

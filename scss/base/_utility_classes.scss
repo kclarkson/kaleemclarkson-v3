@@ -1,0 +1,150 @@
+// ============================================
+// Entity Classes - Grid Layouts & Utilities
+// ============================================
+// These classes complement Bootstrap 5's grid system
+// Designed to work directly on container paragraphs without wrapper divs
+// All classes can be added via the entity_classes taxonomy field
+
+
+// Text Color Classes
+.text-color-brown {
+  color: $brown;
+}
+
+.text-color-green {
+  color: $green;
+}
+
+.text-color-gray {
+  color: $gray-600;
+}
+
+.text-color-orange {
+  color: $orange;
+}
+
+.text-color-white {
+  color: $white;
+}
+
+// Padding Classes
+.ph-5 {
+  @include media-breakpoint-up(md) {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+
+.p-all-4 {
+  @include media-breakpoint-up(md) {
+    padding: 2rem;
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding: 4rem;
+  }
+}
+
+.padding-top-4 {
+  padding-top: 3rem;
+
+  @include media-breakpoint-up(lg) {
+    padding-top: 4rem;
+  }
+}
+
+.padding-bottom-4 {
+  padding-bottom: 3rem;
+
+  @include media-breakpoint-up(lg) {
+    padding-bottom: 4rem;
+  }
+}
+
+.pv-2 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+  @include media-breakpoint-up(lg) {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+.pv-3 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+  @include media-breakpoint-up(lg) {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+
+.pv-4 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+
+  @include media-breakpoint-up(lg) {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+
+.pv-5 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+
+  @include media-breakpoint-up(lg) {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+
+// List styles
+.li-circle-checkmark {
+  ul {
+    padding-left: 0;
+  } 
+  
+  li {
+    display: flex;
+    list-style: none;
+    margin-bottom: 1rem;
+
+    &::before {
+      @include blend-icon($circle-checkmark);
+      margin-right: 5px;
+      margin-top: 5px;
+    }
+  }
+}
+
+.li-circle-checkmark-orange {
+  ul {
+    padding-left: 0;
+  }
+
+  li {
+    position: relative;
+    padding-left: 2rem;
+    list-style: none;
+    margin-bottom: 1rem;
+
+    &::before {
+      @include blend-icon($circle-checkmark);
+      color: $orange;
+      font-size: 1.25rem;
+      line-height: 1.5;
+      position: absolute;
+      left: 0;
+      top: 0.125rem;
+    }
+  }
+}
+
