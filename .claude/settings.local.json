@@ -23,7 +23,12 @@
       "Bash(curl:*)",
       "Bash(npm run build:*)",
       "Bash(npm run build:sass:*)",
-      "Bash(git checkout:*)"
+      "Bash(git checkout:*)",
+      "Bash(python3:*)",
+      "Bash(git log:*)",
+      "Bash(node:*)",
+      "Bash(/tmp/styles-working.css.map)",
+      "Bash(/tmp/custom-extract.css)"
     ],
     "deny": [],
     "ask": []

@@ -1,0 +1,28 @@
+// ============================================================================
+// Components/ Social
+// ============================================================================
+
+.footer-social-icons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.footer-social-icons .footer-social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  background-color: transparent;
+  border: 2px solid #fefefe;
+  color: #fefefe;
+  font-size: 1.25rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+.footer-social-icons .footer-social-icon:hover {
+  background-color: #43b449;
+  border-color: #43b449;
+  color: #343a40;
+  transform: translateY(-3px);
+}

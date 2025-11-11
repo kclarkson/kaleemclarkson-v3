@@ -1,0 +1,17 @@
+// ============================================================================
+// Base: Mixins
+// ============================================================================
+// Custom mixins for the kaleemclarkson.com project
+// TODO: Add custom mixins as needed
+
+// Example: Responsive font sizing
+@mixin responsive-font($min-size, $max-size) {
+  font-size: clamp(#{$min-size}, 2.5vw, #{$max-size});
+}
+
+// Example: Flex center
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
