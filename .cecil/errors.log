@@ -1,1000 +1,512 @@
-[Mon Nov 10 14:56:04 2025] PHP 8.3.1 Development Server (http://localhost:8000) started
-[Mon Nov 10 14:56:05 2025] [::1]:57052 Accepted
-[Mon Nov 10 14:56:05 2025] [::1]:57052 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:56:05 2025] [::1]:57052 Closing
-[Mon Nov 10 14:56:06 2025] [::1]:57053 Accepted
-[Mon Nov 10 14:56:06 2025] [::1]:57053 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:56:06 2025] [::1]:57053 Closing
-[Mon Nov 10 14:56:08 2025] [::1]:57054 Accepted
-[Mon Nov 10 14:56:08 2025] [::1]:57054 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:56:08 2025] [::1]:57054 Closing
-[Mon Nov 10 14:56:09 2025] [::1]:57055 Accepted
-[Mon Nov 10 14:56:09 2025] [::1]:57055 Closing
-[Mon Nov 10 14:56:09 2025] [::1]:57056 Accepted
-[Mon Nov 10 14:56:09 2025] [::1]:57056 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:56:09 2025] [::1]:57056 Closing
-[Mon Nov 10 14:56:09 2025] [::1]:57057 Accepted
-[Mon Nov 10 14:56:09 2025] [::1]:57058 Accepted
-[Mon Nov 10 14:56:09 2025] [::1]:57057 Closing
-[Mon Nov 10 14:56:09 2025] [::1]:57058 [200]: GET /mp4/bg.6e3daaaa1b97bc16e6280e80b26d923f.mp4
-[Mon Nov 10 14:56:09 2025] [::1]:57062 Accepted
-[Mon Nov 10 14:56:09 2025] [::1]:57062 Closing
-[Mon Nov 10 14:56:09 2025] [::1]:57064 Accepted
-[Mon Nov 10 14:56:09 2025] [::1]:57064 Closing
-[Mon Nov 10 14:56:09 2025] [::1]:57058 Closing
-[Mon Nov 10 14:56:09 2025] [::1]:57065 Accepted
-[Mon Nov 10 14:56:09 2025] [::1]:57065 Closing
-[Mon Nov 10 14:56:09 2025] [::1]:57066 Accepted
-[Mon Nov 10 14:56:09 2025] [::1]:57066 [200]: GET /mp4/bg.6e3daaaa1b97bc16e6280e80b26d923f.mp4
-[Mon Nov 10 14:56:09 2025] [::1]:57067 Accepted
-[Mon Nov 10 14:56:09 2025] [::1]:57067 Closing
-[Mon Nov 10 14:56:09 2025] [::1]:57066 Closing
-[Mon Nov 10 14:56:09 2025] [::1]:57068 Accepted
-[Mon Nov 10 14:56:09 2025] [::1]:57068 Closing
-[Mon Nov 10 14:56:09 2025] [::1]:57069 Accepted
-[Mon Nov 10 14:56:09 2025] [::1]:57069 Closing
-[Mon Nov 10 14:56:09 2025] [::1]:57070 Accepted
-[Mon Nov 10 14:56:09 2025] [::1]:57070 Closing
-[Mon Nov 10 14:56:10 2025] [::1]:57071 Accepted
-[Mon Nov 10 14:56:10 2025] [::1]:57071 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:56:10 2025] [::1]:57071 Closing
-[Mon Nov 10 14:56:11 2025] [::1]:57072 Accepted
-[Mon Nov 10 14:56:11 2025] [::1]:57072 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:56:11 2025] [::1]:57072 Closing
-[Mon Nov 10 14:56:12 2025] [::1]:57073 Accepted
-[Mon Nov 10 14:56:12 2025] [::1]:57073 Closing
-[Mon Nov 10 14:56:12 2025] [::1]:57074 Accepted
-[Mon Nov 10 14:56:12 2025] [::1]:57074 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:56:12 2025] [::1]:57074 Closing
-[Mon Nov 10 14:56:13 2025] [::1]:57075 Accepted
-[Mon Nov 10 14:56:13 2025] [::1]:57075 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:56:13 2025] [::1]:57075 Closing
-[Mon Nov 10 14:56:14 2025] [::1]:57076 Accepted
-[Mon Nov 10 14:56:14 2025] [::1]:57076 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:56:14 2025] [::1]:57076 Closing
-[Mon Nov 10 14:56:15 2025] [::1]:57077 Accepted
-[Mon Nov 10 14:56:15 2025] [::1]:57077 Closing
-[Mon Nov 10 14:56:16 2025] [::1]:57078 Accepted
-[Mon Nov 10 14:56:16 2025] [::1]:57078 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:56:16 2025] [::1]:57078 Closing
-[Mon Nov 10 14:56:17 2025] [::1]:57080 Accepted
-[Mon Nov 10 14:56:17 2025] [::1]:57080 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:56:17 2025] [::1]:57080 Closing
-[Mon Nov 10 14:56:18 2025] [::1]:57081 Accepted
-[Mon Nov 10 14:56:18 2025] [::1]:57081 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:56:18 2025] [::1]:57081 Closing
-[Mon Nov 10 14:56:18 2025] [::1]:57082 Accepted
-[Mon Nov 10 14:56:18 2025] [::1]:57082 Closing
-[Mon Nov 10 14:56:19 2025] [::1]:57083 Accepted
-[Mon Nov 10 14:56:19 2025] [::1]:57083 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:56:19 2025] [::1]:57083 Closing
-[Mon Nov 10 14:56:20 2025] [::1]:57084 Accepted
-[Mon Nov 10 14:56:20 2025] [::1]:57084 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:56:20 2025] [::1]:57084 Closing
-[Mon Nov 10 14:56:21 2025] [::1]:57085 Accepted
-[Mon Nov 10 14:56:21 2025] [::1]:57085 Closing
-[Mon Nov 10 14:56:21 2025] [::1]:57086 Accepted
-[Mon Nov 10 14:56:21 2025] [::1]:57086 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:56:21 2025] [::1]:57086 Closing
-[Mon Nov 10 14:56:22 2025] [::1]:57098 Accepted
-[Mon Nov 10 14:56:22 2025] [::1]:57098 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:56:22 2025] [::1]:57098 Closing
-[Mon Nov 10 14:56:24 2025] [::1]:57124 Accepted
-[Mon Nov 10 14:56:24 2025] [::1]:57124 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:56:24 2025] [::1]:57124 Closing
-[Mon Nov 10 14:56:24 2025] [::1]:57126 Accepted
-[Mon Nov 10 14:56:24 2025] [::1]:57126 Closing
-[Mon Nov 10 14:56:24 2025] [::1]:57127 Accepted
-[Mon Nov 10 14:56:24 2025] [::1]:57127 Closing
-[Mon Nov 10 14:56:24 2025] [::1]:57128 Accepted
-[Mon Nov 10 14:56:24 2025] [::1]:57128 Closing
-[Mon Nov 10 14:56:25 2025] [::1]:57132 Accepted
-[Mon Nov 10 14:56:25 2025] [::1]:57132 Closing
-[Mon Nov 10 14:56:25 2025] [::1]:57133 Accepted
-[Mon Nov 10 14:56:25 2025] [::1]:57133 [200]: GET /mp4/bg.6e3daaaa1b97bc16e6280e80b26d923f.mp4
-[Mon Nov 10 14:56:25 2025] [::1]:57133 Closing
-[Mon Nov 10 14:56:25 2025] [::1]:57134 Accepted
-[Mon Nov 10 14:56:25 2025] [::1]:57134 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:56:25 2025] [::1]:57134 Closing
-[Mon Nov 10 14:56:25 2025] [::1]:57135 Accepted
-[Mon Nov 10 14:56:25 2025] [::1]:57135 Closing
-[Mon Nov 10 14:56:26 2025] [::1]:57137 Accepted
-[Mon Nov 10 14:56:26 2025] [::1]:57137 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:56:26 2025] [::1]:57137 Closing
-[Mon Nov 10 14:56:27 2025] [::1]:57138 Accepted
-[Mon Nov 10 14:56:27 2025] [::1]:57138 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:56:27 2025] [::1]:57138 Closing
-[Mon Nov 10 14:56:27 2025] [::1]:57139 Accepted
-[Mon Nov 10 14:56:27 2025] [::1]:57139 Closing
-[Mon Nov 10 14:56:28 2025] [::1]:57140 Accepted
-[Mon Nov 10 14:56:28 2025] [::1]:57140 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:56:28 2025] [::1]:57140 Closing
-[Mon Nov 10 14:56:29 2025] [::1]:57141 Accepted
-[Mon Nov 10 14:56:29 2025] [::1]:57141 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:56:29 2025] [::1]:57141 Closing
-[Mon Nov 10 14:56:30 2025] [::1]:57142 Accepted
-[Mon Nov 10 14:56:30 2025] [::1]:57142 Closing
-[Mon Nov 10 14:56:30 2025] [::1]:57143 Accepted
-[Mon Nov 10 14:56:30 2025] [::1]:57143 Closing
-[Mon Nov 10 14:56:30 2025] [::1]:57144 Accepted
-[Mon Nov 10 14:56:30 2025] [::1]:57144 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:56:30 2025] [::1]:57144 Closing
-[Mon Nov 10 14:56:31 2025] [::1]:57145 Accepted
-[Mon Nov 10 14:56:31 2025] [::1]:57145 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:56:31 2025] [::1]:57145 Closing
-[Mon Nov 10 14:56:33 2025] [::1]:57146 Accepted
-[Mon Nov 10 14:56:33 2025] [::1]:57146 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:56:33 2025] [::1]:57146 Closing
-[Mon Nov 10 14:56:33 2025] [::1]:57147 Accepted
-[Mon Nov 10 14:56:33 2025] [::1]:57147 Closing
-[Mon Nov 10 14:56:34 2025] [::1]:57148 Accepted
-[Mon Nov 10 14:56:34 2025] [::1]:57148 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:56:34 2025] [::1]:57148 Closing
-[Mon Nov 10 14:56:35 2025] [::1]:57149 Accepted
-[Mon Nov 10 14:56:35 2025] [::1]:57149 Closing
-[Mon Nov 10 14:56:35 2025] [::1]:57150 Accepted
-[Mon Nov 10 14:56:35 2025] [::1]:57150 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:56:35 2025] [::1]:57150 Closing
-[Mon Nov 10 14:56:36 2025] [::1]:57151 Accepted
-[Mon Nov 10 14:56:36 2025] [::1]:57151 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:56:36 2025] [::1]:57151 Closing
-[Mon Nov 10 14:56:36 2025] [::1]:57152 Accepted
-[Mon Nov 10 14:56:36 2025] [::1]:57152 Closing
-[Mon Nov 10 14:56:37 2025] [::1]:57153 Accepted
-[Mon Nov 10 14:56:37 2025] [::1]:57153 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:56:37 2025] [::1]:57153 Closing
-[Mon Nov 10 14:56:38 2025] [::1]:57154 Accepted
-[Mon Nov 10 14:56:38 2025] [::1]:57154 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:56:38 2025] [::1]:57154 Closing
-[Mon Nov 10 14:56:39 2025] [::1]:57155 Accepted
-[Mon Nov 10 14:56:39 2025] [::1]:57155 Closing
-[Mon Nov 10 14:56:39 2025] [::1]:57156 Accepted
-[Mon Nov 10 14:56:39 2025] [::1]:57156 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:56:39 2025] [::1]:57156 Closing
-[Mon Nov 10 14:56:40 2025] [::1]:57157 Accepted
-[Mon Nov 10 14:56:40 2025] [::1]:57157 Closing
-[Mon Nov 10 14:56:41 2025] [::1]:57158 Accepted
-[Mon Nov 10 14:56:41 2025] [::1]:57158 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:56:41 2025] [::1]:57158 Closing
-[Mon Nov 10 14:56:42 2025] [::1]:57159 Accepted
-[Mon Nov 10 14:56:42 2025] [::1]:57159 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:56:42 2025] [::1]:57159 Closing
-[Mon Nov 10 14:56:42 2025] [::1]:57160 Accepted
-[Mon Nov 10 14:56:42 2025] [::1]:57160 Closing
-[Mon Nov 10 14:56:43 2025] [::1]:57161 Accepted
-[Mon Nov 10 14:56:43 2025] [::1]:57161 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:56:43 2025] [::1]:57161 Closing
-[Mon Nov 10 14:56:44 2025] [::1]:57162 Accepted
-[Mon Nov 10 14:56:44 2025] [::1]:57162 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:56:44 2025] [::1]:57162 Closing
-[Mon Nov 10 14:56:45 2025] [::1]:57163 Accepted
-[Mon Nov 10 14:56:45 2025] [::1]:57163 Closing
-[Mon Nov 10 14:56:45 2025] [::1]:57164 Accepted
-[Mon Nov 10 14:56:45 2025] [::1]:57164 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:56:45 2025] [::1]:57164 Closing
-[Mon Nov 10 14:56:45 2025] [::1]:57165 Accepted
-[Mon Nov 10 14:56:45 2025] [::1]:57165 Closing
-[Mon Nov 10 14:56:46 2025] [::1]:57166 Accepted
-[Mon Nov 10 14:56:46 2025] [::1]:57166 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:56:46 2025] [::1]:57166 Closing
-[Mon Nov 10 14:56:47 2025] [::1]:57168 Accepted
-[Mon Nov 10 14:56:47 2025] [::1]:57168 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:56:47 2025] [::1]:57168 Closing
-[Mon Nov 10 14:56:48 2025] [::1]:57170 Accepted
-[Mon Nov 10 14:56:48 2025] [::1]:57170 Closing
-[Mon Nov 10 14:56:48 2025] [::1]:57171 Accepted
-[Mon Nov 10 14:56:48 2025] [::1]:57171 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:56:48 2025] [::1]:57171 Closing
-[Mon Nov 10 14:56:50 2025] [::1]:57172 Accepted
-[Mon Nov 10 14:56:50 2025] [::1]:57172 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:56:50 2025] [::1]:57172 Closing
-[Mon Nov 10 14:56:50 2025] [::1]:57173 Accepted
-[Mon Nov 10 14:56:50 2025] [::1]:57173 Closing
-[Mon Nov 10 14:56:51 2025] [::1]:57174 Accepted
-[Mon Nov 10 14:56:51 2025] [::1]:57174 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:56:51 2025] [::1]:57174 Closing
-[Mon Nov 10 14:56:51 2025] [::1]:57175 Accepted
-[Mon Nov 10 14:56:51 2025] [::1]:57175 Closing
-[Mon Nov 10 14:56:52 2025] [::1]:57176 Accepted
-[Mon Nov 10 14:56:52 2025] [::1]:57176 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:56:52 2025] [::1]:57176 Closing
-[Mon Nov 10 14:56:53 2025] [::1]:57177 Accepted
-[Mon Nov 10 14:56:53 2025] [::1]:57177 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:56:53 2025] [::1]:57177 Closing
-[Mon Nov 10 14:56:54 2025] [::1]:57178 Accepted
-[Mon Nov 10 14:56:54 2025] [::1]:57178 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:56:54 2025] [::1]:57178 Closing
-[Mon Nov 10 14:56:54 2025] [::1]:57179 Accepted
-[Mon Nov 10 14:56:54 2025] [::1]:57179 Closing
-[Mon Nov 10 14:56:55 2025] [::1]:57180 Accepted
-[Mon Nov 10 14:56:55 2025] [::1]:57180 Closing
-[Mon Nov 10 14:56:55 2025] [::1]:57181 Accepted
-[Mon Nov 10 14:56:55 2025] [::1]:57181 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:56:55 2025] [::1]:57181 Closing
-[Mon Nov 10 14:56:56 2025] [::1]:57182 Accepted
-[Mon Nov 10 14:56:56 2025] [::1]:57182 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:56:56 2025] [::1]:57182 Closing
-[Mon Nov 10 14:56:57 2025] [::1]:57183 Accepted
-[Mon Nov 10 14:56:57 2025] [::1]:57183 Closing
-[Mon Nov 10 14:56:58 2025] [::1]:57184 Accepted
-[Mon Nov 10 14:56:58 2025] [::1]:57184 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:56:58 2025] [::1]:57184 Closing
-[Mon Nov 10 14:56:59 2025] [::1]:57185 Accepted
-[Mon Nov 10 14:56:59 2025] [::1]:57185 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:56:59 2025] [::1]:57185 Closing
-[Mon Nov 10 14:57:00 2025] [::1]:57186 Accepted
-[Mon Nov 10 14:57:00 2025] [::1]:57186 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:57:00 2025] [::1]:57186 Closing
-[Mon Nov 10 14:57:00 2025] [::1]:57187 Accepted
-[Mon Nov 10 14:57:00 2025] [::1]:57187 Closing
-[Mon Nov 10 14:57:00 2025] [::1]:57188 Accepted
-[Mon Nov 10 14:57:00 2025] [::1]:57188 Closing
-[Mon Nov 10 14:57:01 2025] [::1]:57189 Accepted
-[Mon Nov 10 14:57:01 2025] [::1]:57189 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:57:01 2025] [::1]:57189 Closing
-[Mon Nov 10 14:57:02 2025] [::1]:57190 Accepted
-[Mon Nov 10 14:57:02 2025] [::1]:57190 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:57:02 2025] [::1]:57190 Closing
-[Mon Nov 10 14:57:03 2025] [::1]:57191 Accepted
-[Mon Nov 10 14:57:03 2025] [::1]:57191 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:57:03 2025] [::1]:57191 Closing
-[Mon Nov 10 14:57:03 2025] [::1]:57192 Accepted
-[Mon Nov 10 14:57:03 2025] [::1]:57192 Closing
-[Mon Nov 10 14:57:04 2025] [::1]:57193 Accepted
-[Mon Nov 10 14:57:04 2025] [::1]:57193 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:57:04 2025] [::1]:57193 Closing
-[Mon Nov 10 14:57:05 2025] [::1]:57194 Accepted
-[Mon Nov 10 14:57:05 2025] [::1]:57194 Closing
-[Mon Nov 10 14:57:05 2025] [::1]:57195 Accepted
-[Mon Nov 10 14:57:05 2025] [::1]:57195 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:57:05 2025] [::1]:57195 Closing
-[Mon Nov 10 14:57:06 2025] [::1]:57196 Accepted
-[Mon Nov 10 14:57:06 2025] [::1]:57196 Closing
-[Mon Nov 10 14:57:07 2025] [::1]:57197 Accepted
-[Mon Nov 10 14:57:07 2025] [::1]:57197 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:57:07 2025] [::1]:57197 Closing
-[Mon Nov 10 14:57:08 2025] [::1]:57198 Accepted
-[Mon Nov 10 14:57:08 2025] [::1]:57198 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:57:08 2025] [::1]:57198 Closing
-[Mon Nov 10 14:57:09 2025] [::1]:57199 Accepted
-[Mon Nov 10 14:57:09 2025] [::1]:57199 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:57:09 2025] [::1]:57199 Closing
-[Mon Nov 10 14:57:09 2025] [::1]:57200 Accepted
-[Mon Nov 10 14:57:09 2025] [::1]:57200 Closing
-[Mon Nov 10 14:57:10 2025] [::1]:57201 Accepted
-[Mon Nov 10 14:57:10 2025] [::1]:57201 Closing
-[Mon Nov 10 14:57:10 2025] [::1]:57202 Accepted
-[Mon Nov 10 14:57:10 2025] [::1]:57202 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:57:10 2025] [::1]:57202 Closing
-[Mon Nov 10 14:57:11 2025] [::1]:57203 Accepted
-[Mon Nov 10 14:57:11 2025] [::1]:57203 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:57:11 2025] [::1]:57203 Closing
-[Mon Nov 10 14:57:12 2025] [::1]:57204 Accepted
-[Mon Nov 10 14:57:12 2025] [::1]:57204 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:57:12 2025] [::1]:57204 Closing
-[Mon Nov 10 14:57:12 2025] [::1]:57205 Accepted
-[Mon Nov 10 14:57:12 2025] [::1]:57205 Closing
-[Mon Nov 10 14:57:13 2025] [::1]:57206 Accepted
-[Mon Nov 10 14:57:13 2025] [::1]:57206 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:57:13 2025] [::1]:57206 Closing
-[Mon Nov 10 14:57:14 2025] [::1]:57207 Accepted
-[Mon Nov 10 14:57:14 2025] [::1]:57207 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:57:14 2025] [::1]:57207 Closing
-[Mon Nov 10 14:57:15 2025] [::1]:57208 Accepted
-[Mon Nov 10 14:57:15 2025] [::1]:57208 Closing
-[Mon Nov 10 14:57:15 2025] [::1]:57209 Accepted
-[Mon Nov 10 14:57:15 2025] [::1]:57209 Closing
-[Mon Nov 10 14:57:16 2025] [::1]:57210 Accepted
-[Mon Nov 10 14:57:16 2025] [::1]:57210 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:57:16 2025] [::1]:57210 Closing
-[Mon Nov 10 14:57:17 2025] [::1]:57211 Accepted
-[Mon Nov 10 14:57:17 2025] [::1]:57211 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:57:17 2025] [::1]:57211 Closing
-[Mon Nov 10 14:57:18 2025] [::1]:57212 Accepted
-[Mon Nov 10 14:57:18 2025] [::1]:57212 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:57:18 2025] [::1]:57212 Closing
-[Mon Nov 10 14:57:18 2025] [::1]:57213 Accepted
-[Mon Nov 10 14:57:18 2025] [::1]:57213 Closing
-[Mon Nov 10 14:57:19 2025] [::1]:57214 Accepted
-[Mon Nov 10 14:57:19 2025] [::1]:57214 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:57:19 2025] [::1]:57214 Closing
-[Mon Nov 10 14:57:20 2025] [::1]:57215 Accepted
-[Mon Nov 10 14:57:20 2025] [::1]:57215 Closing
-[Mon Nov 10 14:57:20 2025] [::1]:57216 Accepted
-[Mon Nov 10 14:57:20 2025] [::1]:57216 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:57:20 2025] [::1]:57216 Closing
-[Mon Nov 10 14:57:21 2025] [::1]:57219 Accepted
-[Mon Nov 10 14:57:21 2025] [::1]:57219 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:57:21 2025] [::1]:57219 Closing
-[Mon Nov 10 14:57:22 2025] [::1]:57220 Accepted
-[Mon Nov 10 14:57:22 2025] [::1]:57220 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:57:22 2025] [::1]:57220 Closing
-[Mon Nov 10 14:57:24 2025] [::1]:57221 Accepted
-[Mon Nov 10 14:57:24 2025] [::1]:57221 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:57:24 2025] [::1]:57221 Closing
-[Mon Nov 10 14:57:25 2025] [::1]:57222 Accepted
-[Mon Nov 10 14:57:25 2025] [::1]:57222 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:57:25 2025] [::1]:57222 Closing
-[Mon Nov 10 14:57:25 2025] [::1]:57223 Accepted
-[Mon Nov 10 14:57:25 2025] [::1]:57223 Closing
-[Mon Nov 10 14:57:26 2025] [::1]:57224 Accepted
-[Mon Nov 10 14:57:26 2025] [::1]:57224 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:57:26 2025] [::1]:57224 Closing
-[Mon Nov 10 14:57:27 2025] [::1]:57225 Accepted
-[Mon Nov 10 14:57:27 2025] [::1]:57225 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:57:27 2025] [::1]:57225 Closing
-[Mon Nov 10 14:57:28 2025] [::1]:57227 Accepted
-[Mon Nov 10 14:57:28 2025] [::1]:57227 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:57:28 2025] [::1]:57227 Closing
-[Mon Nov 10 14:57:29 2025] [::1]:57228 Accepted
-[Mon Nov 10 14:57:29 2025] [::1]:57228 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:57:29 2025] [::1]:57228 Closing
-[Mon Nov 10 14:57:30 2025] [::1]:57229 Accepted
-[Mon Nov 10 14:57:30 2025] [::1]:57229 Closing
-[Mon Nov 10 14:57:30 2025] [::1]:57230 Accepted
-[Mon Nov 10 14:57:30 2025] [::1]:57230 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:57:30 2025] [::1]:57230 Closing
-[Mon Nov 10 14:57:31 2025] [::1]:57231 Accepted
-[Mon Nov 10 14:57:31 2025] [::1]:57231 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:57:31 2025] [::1]:57231 Closing
-[Mon Nov 10 14:57:33 2025] [::1]:57232 Accepted
-[Mon Nov 10 14:57:33 2025] [::1]:57232 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:57:33 2025] [::1]:57232 Closing
-[Mon Nov 10 14:57:34 2025] [::1]:57233 Accepted
-[Mon Nov 10 14:57:34 2025] [::1]:57233 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:57:34 2025] [::1]:57233 Closing
-[Mon Nov 10 14:57:35 2025] [::1]:57234 Accepted
-[Mon Nov 10 14:57:35 2025] [::1]:57234 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:57:35 2025] [::1]:57234 Closing
-[Mon Nov 10 14:57:35 2025] [::1]:57235 Accepted
-[Mon Nov 10 14:57:35 2025] [::1]:57235 Closing
-[Mon Nov 10 14:57:36 2025] [::1]:57236 Accepted
-[Mon Nov 10 14:57:36 2025] [::1]:57236 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:57:36 2025] [::1]:57236 Closing
-[Mon Nov 10 14:57:37 2025] [::1]:57237 Accepted
-[Mon Nov 10 14:57:37 2025] [::1]:57237 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:57:37 2025] [::1]:57237 Closing
-[Mon Nov 10 14:57:38 2025] [::1]:57238 Accepted
-[Mon Nov 10 14:57:38 2025] [::1]:57238 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:57:38 2025] [::1]:57238 Closing
-[Mon Nov 10 14:57:39 2025] [::1]:57239 Accepted
-[Mon Nov 10 14:57:39 2025] [::1]:57239 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:57:39 2025] [::1]:57239 Closing
-[Mon Nov 10 14:57:40 2025] [::1]:57240 Accepted
-[Mon Nov 10 14:57:40 2025] [::1]:57240 Closing
-[Mon Nov 10 14:57:40 2025] [::1]:57241 Accepted
-[Mon Nov 10 14:57:40 2025] [::1]:57241 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:57:40 2025] [::1]:57241 Closing
-[Mon Nov 10 14:57:42 2025] [::1]:57242 Accepted
-[Mon Nov 10 14:57:42 2025] [::1]:57242 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:57:42 2025] [::1]:57242 Closing
-[Mon Nov 10 14:57:43 2025] [::1]:57243 Accepted
-[Mon Nov 10 14:57:43 2025] [::1]:57243 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:57:43 2025] [::1]:57243 Closing
-[Mon Nov 10 14:57:44 2025] [::1]:57244 Accepted
-[Mon Nov 10 14:57:44 2025] [::1]:57244 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:57:44 2025] [::1]:57244 Closing
-[Mon Nov 10 14:57:45 2025] [::1]:57245 Accepted
-[Mon Nov 10 14:57:45 2025] [::1]:57245 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:57:45 2025] [::1]:57245 Closing
-[Mon Nov 10 14:57:45 2025] [::1]:57246 Accepted
-[Mon Nov 10 14:57:45 2025] [::1]:57246 Closing
-[Mon Nov 10 14:57:46 2025] [::1]:57247 Accepted
-[Mon Nov 10 14:57:46 2025] [::1]:57247 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:57:46 2025] [::1]:57247 Closing
-[Mon Nov 10 14:57:47 2025] [::1]:57250 Accepted
-[Mon Nov 10 14:57:47 2025] [::1]:57250 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:57:47 2025] [::1]:57250 Closing
-[Mon Nov 10 14:57:48 2025] [::1]:57251 Accepted
-[Mon Nov 10 14:57:48 2025] [::1]:57251 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:57:48 2025] [::1]:57251 Closing
-[Mon Nov 10 14:57:49 2025] [::1]:57252 Accepted
-[Mon Nov 10 14:57:49 2025] [::1]:57252 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:57:49 2025] [::1]:57252 Closing
-[Mon Nov 10 14:57:50 2025] [::1]:57253 Accepted
-[Mon Nov 10 14:57:50 2025] [::1]:57253 Closing
-[Mon Nov 10 14:57:51 2025] [::1]:57254 Accepted
-[Mon Nov 10 14:57:51 2025] [::1]:57254 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:57:51 2025] [::1]:57254 Closing
-[Mon Nov 10 14:57:52 2025] [::1]:57263 Accepted
-[Mon Nov 10 14:57:52 2025] [::1]:57263 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:57:52 2025] [::1]:57263 Closing
-[Mon Nov 10 14:57:53 2025] [::1]:57265 Accepted
-[Mon Nov 10 14:57:53 2025] [::1]:57265 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:57:53 2025] [::1]:57265 Closing
-[Mon Nov 10 14:57:54 2025] [::1]:57266 Accepted
-[Mon Nov 10 14:57:54 2025] [::1]:57266 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:57:54 2025] [::1]:57266 Closing
-[Mon Nov 10 14:57:55 2025] [::1]:57267 Accepted
-[Mon Nov 10 14:57:55 2025] [::1]:57267 Closing
-[Mon Nov 10 14:57:55 2025] [::1]:57268 Accepted
-[Mon Nov 10 14:57:55 2025] [::1]:57268 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:57:55 2025] [::1]:57268 Closing
-[Mon Nov 10 14:57:56 2025] [::1]:57269 Accepted
-[Mon Nov 10 14:57:56 2025] [::1]:57269 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:57:56 2025] [::1]:57269 Closing
-[Mon Nov 10 14:57:57 2025] [::1]:57270 Accepted
-[Mon Nov 10 14:57:57 2025] [::1]:57270 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:57:57 2025] [::1]:57270 Closing
-[Mon Nov 10 14:57:59 2025] [::1]:57271 Accepted
-[Mon Nov 10 14:57:59 2025] [::1]:57271 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:57:59 2025] [::1]:57271 Closing
-[Mon Nov 10 14:58:00 2025] [::1]:57272 Accepted
-[Mon Nov 10 14:58:00 2025] [::1]:57272 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:58:00 2025] [::1]:57272 Closing
-[Mon Nov 10 14:58:00 2025] [::1]:57273 Accepted
-[Mon Nov 10 14:58:00 2025] [::1]:57273 Closing
-[Mon Nov 10 14:58:01 2025] [::1]:57274 Accepted
-[Mon Nov 10 14:58:01 2025] [::1]:57274 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:58:01 2025] [::1]:57274 Closing
-[Mon Nov 10 14:58:02 2025] [::1]:57275 Accepted
-[Mon Nov 10 14:58:02 2025] [::1]:57275 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:58:02 2025] [::1]:57275 Closing
-[Mon Nov 10 14:58:03 2025] [::1]:57278 Accepted
-[Mon Nov 10 14:58:03 2025] [::1]:57278 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:58:03 2025] [::1]:57278 Closing
-[Mon Nov 10 14:58:04 2025] [::1]:57279 Accepted
-[Mon Nov 10 14:58:04 2025] [::1]:57279 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:58:04 2025] [::1]:57279 Closing
-[Mon Nov 10 14:58:05 2025] [::1]:57280 Accepted
-[Mon Nov 10 14:58:05 2025] [::1]:57280 Closing
-[Mon Nov 10 14:58:05 2025] [::1]:57281 Accepted
-[Mon Nov 10 14:58:05 2025] [::1]:57281 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:58:05 2025] [::1]:57281 Closing
-[Mon Nov 10 14:58:07 2025] [::1]:57282 Accepted
-[Mon Nov 10 14:58:07 2025] [::1]:57282 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:58:07 2025] [::1]:57282 Closing
-[Mon Nov 10 14:58:08 2025] [::1]:57283 Accepted
-[Mon Nov 10 14:58:08 2025] [::1]:57283 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:58:08 2025] [::1]:57283 Closing
-[Mon Nov 10 14:58:09 2025] [::1]:57284 Accepted
-[Mon Nov 10 14:58:09 2025] [::1]:57284 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:58:09 2025] [::1]:57284 Closing
-[Mon Nov 10 14:58:10 2025] [::1]:57285 Accepted
-[Mon Nov 10 14:58:10 2025] [::1]:57285 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:58:10 2025] [::1]:57285 Closing
-[Mon Nov 10 14:58:10 2025] [::1]:57286 Accepted
-[Mon Nov 10 14:58:10 2025] [::1]:57286 Closing
-[Mon Nov 10 14:58:11 2025] [::1]:57287 Accepted
-[Mon Nov 10 14:58:11 2025] [::1]:57287 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:58:11 2025] [::1]:57287 Closing
-[Mon Nov 10 14:58:12 2025] [::1]:57288 Accepted
-[Mon Nov 10 14:58:12 2025] [::1]:57288 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:58:12 2025] [::1]:57288 Closing
-[Mon Nov 10 14:58:13 2025] [::1]:57289 Accepted
-[Mon Nov 10 14:58:13 2025] [::1]:57289 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:58:13 2025] [::1]:57289 Closing
-[Mon Nov 10 14:58:14 2025] [::1]:57290 Accepted
-[Mon Nov 10 14:58:14 2025] [::1]:57290 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:58:14 2025] [::1]:57290 Closing
-[Mon Nov 10 14:58:15 2025] [::1]:57291 Accepted
-[Mon Nov 10 14:58:15 2025] [::1]:57291 Closing
-[Mon Nov 10 14:58:16 2025] [::1]:57292 Accepted
-[Mon Nov 10 14:58:16 2025] [::1]:57292 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:58:16 2025] [::1]:57292 Closing
-[Mon Nov 10 14:58:17 2025] [::1]:57293 Accepted
-[Mon Nov 10 14:58:17 2025] [::1]:57293 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:58:17 2025] [::1]:57293 Closing
-[Mon Nov 10 14:58:18 2025] [::1]:57295 Accepted
-[Mon Nov 10 14:58:18 2025] [::1]:57295 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:58:18 2025] [::1]:57295 Closing
-[Mon Nov 10 14:58:19 2025] [::1]:57296 Accepted
-[Mon Nov 10 14:58:19 2025] [::1]:57296 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:58:19 2025] [::1]:57296 Closing
-[Mon Nov 10 14:58:20 2025] [::1]:57297 Accepted
-[Mon Nov 10 14:58:20 2025] [::1]:57297 Closing
-[Mon Nov 10 14:58:20 2025] [::1]:57298 Accepted
-[Mon Nov 10 14:58:20 2025] [::1]:57298 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:58:20 2025] [::1]:57298 Closing
-[Mon Nov 10 14:58:21 2025] [::1]:57299 Accepted
-[Mon Nov 10 14:58:21 2025] [::1]:57299 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:58:21 2025] [::1]:57299 Closing
-[Mon Nov 10 14:58:22 2025] [::1]:57300 Accepted
-[Mon Nov 10 14:58:22 2025] [::1]:57300 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:58:22 2025] [::1]:57300 Closing
-[Mon Nov 10 14:58:24 2025] [::1]:57301 Accepted
-[Mon Nov 10 14:58:24 2025] [::1]:57301 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:58:24 2025] [::1]:57301 Closing
-[Mon Nov 10 14:58:25 2025] [::1]:57302 Accepted
-[Mon Nov 10 14:58:25 2025] [::1]:57302 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:58:25 2025] [::1]:57302 Closing
-[Mon Nov 10 14:58:25 2025] [::1]:57303 Accepted
-[Mon Nov 10 14:58:25 2025] [::1]:57303 Closing
-[Mon Nov 10 14:58:26 2025] [::1]:57304 Accepted
-[Mon Nov 10 14:58:26 2025] [::1]:57304 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:58:26 2025] [::1]:57304 Closing
-[Mon Nov 10 14:58:27 2025] [::1]:57305 Accepted
-[Mon Nov 10 14:58:27 2025] [::1]:57305 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:58:27 2025] [::1]:57305 Closing
-[Mon Nov 10 14:58:28 2025] [::1]:57307 Accepted
-[Mon Nov 10 14:58:28 2025] [::1]:57307 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:58:28 2025] [::1]:57307 Closing
-[Mon Nov 10 14:58:29 2025] [::1]:57312 Accepted
-[Mon Nov 10 14:58:29 2025] [::1]:57312 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:58:29 2025] [::1]:57312 Closing
-[Mon Nov 10 14:58:30 2025] [::1]:57317 Accepted
-[Mon Nov 10 14:58:30 2025] [::1]:57317 Closing
-[Mon Nov 10 14:58:30 2025] [::1]:57318 Accepted
-[Mon Nov 10 14:58:30 2025] [::1]:57318 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:58:30 2025] [::1]:57318 Closing
-[Mon Nov 10 14:58:31 2025] [::1]:57319 Accepted
-[Mon Nov 10 14:58:31 2025] [::1]:57319 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:58:31 2025] [::1]:57319 Closing
-[Mon Nov 10 14:58:33 2025] [::1]:57331 Accepted
-[Mon Nov 10 14:58:33 2025] [::1]:57331 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:58:33 2025] [::1]:57331 Closing
-[Mon Nov 10 14:58:34 2025] [::1]:57336 Accepted
-[Mon Nov 10 14:58:34 2025] [::1]:57336 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:58:34 2025] [::1]:57336 Closing
-[Mon Nov 10 14:58:35 2025] [::1]:57339 Accepted
-[Mon Nov 10 14:58:35 2025] [::1]:57339 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:58:35 2025] [::1]:57339 Closing
-[Mon Nov 10 14:58:35 2025] [::1]:57340 Accepted
-[Mon Nov 10 14:58:35 2025] [::1]:57340 Closing
-[Mon Nov 10 14:58:36 2025] [::1]:57341 Accepted
-[Mon Nov 10 14:58:36 2025] [::1]:57341 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:58:36 2025] [::1]:57341 Closing
-[Mon Nov 10 14:58:37 2025] [::1]:57342 Accepted
-[Mon Nov 10 14:58:37 2025] [::1]:57342 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:58:37 2025] [::1]:57342 Closing
-[Mon Nov 10 14:58:38 2025] [::1]:57343 Accepted
-[Mon Nov 10 14:58:38 2025] [::1]:57343 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:58:38 2025] [::1]:57343 Closing
-[Mon Nov 10 14:58:39 2025] [::1]:57345 Accepted
-[Mon Nov 10 14:58:39 2025] [::1]:57345 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:58:39 2025] [::1]:57345 Closing
-[Mon Nov 10 14:58:40 2025] [::1]:57346 Accepted
-[Mon Nov 10 14:58:40 2025] [::1]:57346 Closing
-[Mon Nov 10 14:58:40 2025] [::1]:57348 Accepted
-[Mon Nov 10 14:58:40 2025] [::1]:57348 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:58:40 2025] [::1]:57348 Closing
-[Mon Nov 10 14:58:42 2025] [::1]:57378 Accepted
-[Mon Nov 10 14:58:42 2025] [::1]:57378 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:58:42 2025] [::1]:57378 Closing
-[Mon Nov 10 14:58:43 2025] [::1]:57387 Accepted
-[Mon Nov 10 14:58:43 2025] [::1]:57387 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:58:43 2025] [::1]:57387 Closing
-[Mon Nov 10 14:58:44 2025] [::1]:57388 Accepted
-[Mon Nov 10 14:58:44 2025] [::1]:57388 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:58:44 2025] [::1]:57388 Closing
-[Mon Nov 10 14:58:45 2025] [::1]:57389 Accepted
-[Mon Nov 10 14:58:45 2025] [::1]:57389 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:58:45 2025] [::1]:57389 Closing
-[Mon Nov 10 14:58:45 2025] [::1]:57390 Accepted
-[Mon Nov 10 14:58:45 2025] [::1]:57390 Closing
-[Mon Nov 10 14:58:46 2025] [::1]:57391 Accepted
-[Mon Nov 10 14:58:46 2025] [::1]:57391 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:58:46 2025] [::1]:57391 Closing
-[Mon Nov 10 14:58:47 2025] [::1]:57392 Accepted
-[Mon Nov 10 14:58:47 2025] [::1]:57392 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:58:47 2025] [::1]:57392 Closing
-[Mon Nov 10 14:58:48 2025] [::1]:57393 Accepted
-[Mon Nov 10 14:58:48 2025] [::1]:57393 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:58:48 2025] [::1]:57393 Closing
-[Mon Nov 10 14:58:50 2025] [::1]:57394 Accepted
-[Mon Nov 10 14:58:50 2025] [::1]:57394 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:58:50 2025] [::1]:57394 Closing
-[Mon Nov 10 14:58:50 2025] [::1]:57395 Accepted
-[Mon Nov 10 14:58:50 2025] [::1]:57395 Closing
-[Mon Nov 10 14:58:51 2025] [::1]:57396 Accepted
-[Mon Nov 10 14:58:51 2025] [::1]:57396 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:58:51 2025] [::1]:57396 Closing
-[Mon Nov 10 14:58:52 2025] [::1]:57398 Accepted
-[Mon Nov 10 14:58:52 2025] [::1]:57398 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:58:52 2025] [::1]:57398 Closing
-[Mon Nov 10 14:58:53 2025] [::1]:57399 Accepted
-[Mon Nov 10 14:58:53 2025] [::1]:57399 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:58:53 2025] [::1]:57399 Closing
-[Mon Nov 10 14:58:54 2025] [::1]:57400 Accepted
-[Mon Nov 10 14:58:54 2025] [::1]:57400 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:58:54 2025] [::1]:57400 Closing
-[Mon Nov 10 14:58:55 2025] [::1]:57401 Accepted
-[Mon Nov 10 14:58:55 2025] [::1]:57401 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:58:55 2025] [::1]:57401 Closing
-[Mon Nov 10 14:58:55 2025] [::1]:57402 Accepted
-[Mon Nov 10 14:58:55 2025] [::1]:57402 Closing
-[Mon Nov 10 14:58:56 2025] [::1]:57403 Accepted
-[Mon Nov 10 14:58:56 2025] [::1]:57403 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:58:56 2025] [::1]:57403 Closing
-[Mon Nov 10 14:58:57 2025] [::1]:57404 Accepted
-[Mon Nov 10 14:58:57 2025] [::1]:57404 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:58:57 2025] [::1]:57404 Closing
-[Mon Nov 10 14:58:59 2025] [::1]:57405 Accepted
-[Mon Nov 10 14:58:59 2025] [::1]:57405 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:58:59 2025] [::1]:57405 Closing
-[Mon Nov 10 14:59:00 2025] [::1]:57406 Accepted
-[Mon Nov 10 14:59:00 2025] [::1]:57406 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:59:00 2025] [::1]:57406 Closing
-[Mon Nov 10 14:59:00 2025] [::1]:57407 Accepted
-[Mon Nov 10 14:59:00 2025] [::1]:57407 Closing
-[Mon Nov 10 14:59:01 2025] [::1]:57408 Accepted
-[Mon Nov 10 14:59:01 2025] [::1]:57408 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:59:01 2025] [::1]:57408 Closing
-[Mon Nov 10 14:59:02 2025] [::1]:57409 Accepted
-[Mon Nov 10 14:59:02 2025] [::1]:57409 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:59:02 2025] [::1]:57409 Closing
-[Mon Nov 10 14:59:03 2025] [::1]:57410 Accepted
-[Mon Nov 10 14:59:03 2025] [::1]:57410 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:59:03 2025] [::1]:57410 Closing
-[Mon Nov 10 14:59:04 2025] [::1]:57411 Accepted
-[Mon Nov 10 14:59:04 2025] [::1]:57411 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:59:04 2025] [::1]:57411 Closing
-[Mon Nov 10 14:59:05 2025] [::1]:57412 Accepted
-[Mon Nov 10 14:59:05 2025] [::1]:57412 Closing
-[Mon Nov 10 14:59:05 2025] [::1]:57413 Accepted
-[Mon Nov 10 14:59:05 2025] [::1]:57413 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:59:05 2025] [::1]:57413 Closing
-[Mon Nov 10 14:59:07 2025] [::1]:57414 Accepted
-[Mon Nov 10 14:59:07 2025] [::1]:57414 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:59:07 2025] [::1]:57414 Closing
-[Mon Nov 10 14:59:08 2025] [::1]:57415 Accepted
-[Mon Nov 10 14:59:08 2025] [::1]:57415 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:59:08 2025] [::1]:57415 Closing
-[Mon Nov 10 14:59:09 2025] [::1]:57416 Accepted
-[Mon Nov 10 14:59:09 2025] [::1]:57416 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:59:09 2025] [::1]:57416 Closing
-[Mon Nov 10 14:59:10 2025] [::1]:57417 Accepted
-[Mon Nov 10 14:59:10 2025] [::1]:57417 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:59:10 2025] [::1]:57417 Closing
-[Mon Nov 10 14:59:10 2025] [::1]:57418 Accepted
-[Mon Nov 10 14:59:10 2025] [::1]:57418 Closing
-[Mon Nov 10 14:59:11 2025] [::1]:57419 Accepted
-[Mon Nov 10 14:59:11 2025] [::1]:57419 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:59:11 2025] [::1]:57419 Closing
-[Mon Nov 10 14:59:12 2025] [::1]:57420 Accepted
-[Mon Nov 10 14:59:12 2025] [::1]:57420 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:59:12 2025] [::1]:57420 Closing
-[Mon Nov 10 14:59:13 2025] [::1]:57421 Accepted
-[Mon Nov 10 14:59:13 2025] [::1]:57421 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:59:13 2025] [::1]:57421 Closing
-[Mon Nov 10 14:59:14 2025] [::1]:57422 Accepted
-[Mon Nov 10 14:59:14 2025] [::1]:57422 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:59:14 2025] [::1]:57422 Closing
-[Mon Nov 10 14:59:15 2025] [::1]:57423 Accepted
-[Mon Nov 10 14:59:15 2025] [::1]:57423 Closing
-[Mon Nov 10 14:59:16 2025] [::1]:57424 Accepted
-[Mon Nov 10 14:59:16 2025] [::1]:57424 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:59:16 2025] [::1]:57424 Closing
-[Mon Nov 10 14:59:17 2025] [::1]:57425 Accepted
-[Mon Nov 10 14:59:17 2025] [::1]:57425 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:59:17 2025] [::1]:57425 Closing
-[Mon Nov 10 14:59:18 2025] [::1]:57426 Accepted
-[Mon Nov 10 14:59:18 2025] [::1]:57426 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:59:18 2025] [::1]:57426 Closing
-[Mon Nov 10 14:59:19 2025] [::1]:57427 Accepted
-[Mon Nov 10 14:59:19 2025] [::1]:57427 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:59:19 2025] [::1]:57427 Closing
-[Mon Nov 10 14:59:20 2025] [::1]:57428 Accepted
-[Mon Nov 10 14:59:20 2025] [::1]:57428 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:59:20 2025] [::1]:57428 Closing
-[Mon Nov 10 14:59:20 2025] [::1]:57429 Accepted
-[Mon Nov 10 14:59:20 2025] [::1]:57429 Closing
-[Mon Nov 10 14:59:21 2025] [::1]:57430 Accepted
-[Mon Nov 10 14:59:21 2025] [::1]:57430 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:59:21 2025] [::1]:57430 Closing
-[Mon Nov 10 14:59:22 2025] [::1]:57431 Accepted
-[Mon Nov 10 14:59:22 2025] [::1]:57431 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:59:22 2025] [::1]:57431 Closing
-[Mon Nov 10 14:59:24 2025] [::1]:57432 Accepted
-[Mon Nov 10 14:59:24 2025] [::1]:57432 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:59:24 2025] [::1]:57432 Closing
-[Mon Nov 10 14:59:25 2025] [::1]:57433 Accepted
-[Mon Nov 10 14:59:25 2025] [::1]:57433 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:59:25 2025] [::1]:57433 Closing
-[Mon Nov 10 14:59:25 2025] [::1]:57434 Accepted
-[Mon Nov 10 14:59:25 2025] [::1]:57434 Closing
-[Mon Nov 10 14:59:26 2025] [::1]:57435 Accepted
-[Mon Nov 10 14:59:26 2025] [::1]:57435 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:59:26 2025] [::1]:57435 Closing
-[Mon Nov 10 14:59:27 2025] [::1]:57436 Accepted
-[Mon Nov 10 14:59:27 2025] [::1]:57436 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:59:27 2025] [::1]:57436 Closing
-[Mon Nov 10 14:59:28 2025] [::1]:57437 Accepted
-[Mon Nov 10 14:59:28 2025] [::1]:57437 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:59:28 2025] [::1]:57437 Closing
-[Mon Nov 10 14:59:29 2025] [::1]:57438 Accepted
-[Mon Nov 10 14:59:29 2025] [::1]:57438 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:59:29 2025] [::1]:57438 Closing
-[Mon Nov 10 14:59:30 2025] [::1]:57439 Accepted
-[Mon Nov 10 14:59:30 2025] [::1]:57439 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:59:30 2025] [::1]:57439 Closing
-[Mon Nov 10 14:59:30 2025] [::1]:57440 Accepted
-[Mon Nov 10 14:59:30 2025] [::1]:57440 Closing
-[Mon Nov 10 14:59:31 2025] [::1]:57441 Accepted
-[Mon Nov 10 14:59:31 2025] [::1]:57441 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:59:31 2025] [::1]:57441 Closing
-[Mon Nov 10 14:59:33 2025] [::1]:57442 Accepted
-[Mon Nov 10 14:59:33 2025] [::1]:57442 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:59:33 2025] [::1]:57442 Closing
-[Mon Nov 10 14:59:34 2025] [::1]:57443 Accepted
-[Mon Nov 10 14:59:34 2025] [::1]:57443 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:59:34 2025] [::1]:57443 Closing
-[Mon Nov 10 14:59:35 2025] [::1]:57444 Accepted
-[Mon Nov 10 14:59:35 2025] [::1]:57444 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:59:35 2025] [::1]:57444 Closing
-[Mon Nov 10 14:59:35 2025] [::1]:57445 Accepted
-[Mon Nov 10 14:59:35 2025] [::1]:57445 Closing
-[Mon Nov 10 14:59:36 2025] [::1]:57446 Accepted
-[Mon Nov 10 14:59:36 2025] [::1]:57446 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:59:36 2025] [::1]:57446 Closing
-[Mon Nov 10 14:59:37 2025] [::1]:57447 Accepted
-[Mon Nov 10 14:59:37 2025] [::1]:57447 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:59:37 2025] [::1]:57447 Closing
-[Mon Nov 10 14:59:38 2025] [::1]:57448 Accepted
-[Mon Nov 10 14:59:38 2025] [::1]:57448 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:59:38 2025] [::1]:57448 Closing
-[Mon Nov 10 14:59:39 2025] [::1]:57449 Accepted
-[Mon Nov 10 14:59:39 2025] [::1]:57449 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:59:39 2025] [::1]:57449 Closing
-[Mon Nov 10 14:59:40 2025] [::1]:57450 Accepted
-[Mon Nov 10 14:59:40 2025] [::1]:57450 Closing
-[Mon Nov 10 14:59:40 2025] [::1]:57451 Accepted
-[Mon Nov 10 14:59:40 2025] [::1]:57451 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:59:40 2025] [::1]:57451 Closing
-[Mon Nov 10 14:59:42 2025] [::1]:57452 Accepted
-[Mon Nov 10 14:59:42 2025] [::1]:57452 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:59:42 2025] [::1]:57452 Closing
-[Mon Nov 10 14:59:43 2025] [::1]:57453 Accepted
-[Mon Nov 10 14:59:43 2025] [::1]:57453 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:59:43 2025] [::1]:57453 Closing
-[Mon Nov 10 14:59:44 2025] [::1]:57454 Accepted
-[Mon Nov 10 14:59:44 2025] [::1]:57454 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:59:44 2025] [::1]:57454 Closing
-[Mon Nov 10 14:59:45 2025] [::1]:57455 Accepted
-[Mon Nov 10 14:59:45 2025] [::1]:57455 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:59:45 2025] [::1]:57455 Closing
-[Mon Nov 10 14:59:45 2025] [::1]:57456 Accepted
-[Mon Nov 10 14:59:45 2025] [::1]:57456 Closing
-[Mon Nov 10 14:59:46 2025] [::1]:57457 Accepted
-[Mon Nov 10 14:59:46 2025] [::1]:57457 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:59:46 2025] [::1]:57457 Closing
-[Mon Nov 10 14:59:47 2025] [::1]:57460 Accepted
-[Mon Nov 10 14:59:47 2025] [::1]:57460 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:59:47 2025] [::1]:57460 Closing
-[Mon Nov 10 14:59:48 2025] [::1]:57461 Accepted
-[Mon Nov 10 14:59:48 2025] [::1]:57461 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:59:48 2025] [::1]:57461 Closing
-[Mon Nov 10 14:59:50 2025] [::1]:57462 Accepted
-[Mon Nov 10 14:59:50 2025] [::1]:57462 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:59:50 2025] [::1]:57462 Closing
-[Mon Nov 10 14:59:50 2025] [::1]:57463 Accepted
-[Mon Nov 10 14:59:50 2025] [::1]:57463 Closing
-[Mon Nov 10 14:59:51 2025] [::1]:57464 Accepted
-[Mon Nov 10 14:59:51 2025] [::1]:57464 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:59:51 2025] [::1]:57464 Closing
-[Mon Nov 10 14:59:52 2025] [::1]:57466 Accepted
-[Mon Nov 10 14:59:52 2025] [::1]:57466 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:59:52 2025] [::1]:57466 Closing
-[Mon Nov 10 14:59:53 2025] [::1]:57467 Accepted
-[Mon Nov 10 14:59:53 2025] [::1]:57467 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:59:53 2025] [::1]:57467 Closing
-[Mon Nov 10 14:59:54 2025] [::1]:57468 Accepted
-[Mon Nov 10 14:59:54 2025] [::1]:57468 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:59:54 2025] [::1]:57468 Closing
-[Mon Nov 10 14:59:55 2025] [::1]:57469 Accepted
-[Mon Nov 10 14:59:55 2025] [::1]:57469 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:59:55 2025] [::1]:57469 Closing
-[Mon Nov 10 14:59:55 2025] [::1]:57470 Accepted
-[Mon Nov 10 14:59:55 2025] [::1]:57470 Closing
-[Mon Nov 10 14:59:56 2025] [::1]:57471 Accepted
-[Mon Nov 10 14:59:56 2025] [::1]:57471 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:59:56 2025] [::1]:57471 Closing
-[Mon Nov 10 14:59:57 2025] [::1]:57472 Accepted
-[Mon Nov 10 14:59:57 2025] [::1]:57472 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:59:57 2025] [::1]:57472 Closing
-[Mon Nov 10 14:59:59 2025] [::1]:57473 Accepted
-[Mon Nov 10 14:59:59 2025] [::1]:57473 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 14:59:59 2025] [::1]:57473 Closing
-[Mon Nov 10 15:00:00 2025] [::1]:57474 Accepted
-[Mon Nov 10 15:00:00 2025] [::1]:57474 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 15:00:00 2025] [::1]:57474 Closing
-[Mon Nov 10 15:00:00 2025] [::1]:57475 Accepted
-[Mon Nov 10 15:00:00 2025] [::1]:57475 Closing
-[Mon Nov 10 15:00:01 2025] [::1]:57476 Accepted
-[Mon Nov 10 15:00:01 2025] [::1]:57476 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 15:00:01 2025] [::1]:57476 Closing
-[Mon Nov 10 15:00:02 2025] [::1]:57477 Accepted
-[Mon Nov 10 15:00:02 2025] [::1]:57477 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 15:00:02 2025] [::1]:57477 Closing
-[Mon Nov 10 15:00:03 2025] [::1]:57478 Accepted
-[Mon Nov 10 15:00:03 2025] [::1]:57478 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 15:00:03 2025] [::1]:57478 Closing
-[Mon Nov 10 15:00:04 2025] [::1]:57479 Accepted
-[Mon Nov 10 15:00:04 2025] [::1]:57479 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 15:00:04 2025] [::1]:57479 Closing
-[Mon Nov 10 15:00:05 2025] [::1]:57481 Accepted
-[Mon Nov 10 15:00:05 2025] [::1]:57481 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 15:00:05 2025] [::1]:57481 Closing
-[Mon Nov 10 15:00:05 2025] [::1]:57482 Accepted
-[Mon Nov 10 15:00:05 2025] [::1]:57482 Closing
-[Mon Nov 10 15:00:06 2025] [::1]:57483 Accepted
-[Mon Nov 10 15:00:06 2025] [::1]:57483 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 15:00:06 2025] [::1]:57483 Closing
-[Mon Nov 10 15:00:08 2025] [::1]:57485 Accepted
-[Mon Nov 10 15:00:08 2025] [::1]:57485 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 15:00:08 2025] [::1]:57485 Closing
-[Mon Nov 10 15:00:09 2025] [::1]:57486 Accepted
-[Mon Nov 10 15:00:09 2025] [::1]:57486 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 15:00:09 2025] [::1]:57486 Closing
-[Mon Nov 10 15:00:10 2025] [::1]:57488 Accepted
-[Mon Nov 10 15:00:10 2025] [::1]:57488 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 15:00:10 2025] [::1]:57488 Closing
-[Mon Nov 10 15:00:10 2025] [::1]:57489 Accepted
-[Mon Nov 10 15:00:10 2025] [::1]:57489 Closing
-[Mon Nov 10 15:00:11 2025] [::1]:57490 Accepted
-[Mon Nov 10 15:00:11 2025] [::1]:57490 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 15:00:11 2025] [::1]:57490 Closing
-[Mon Nov 10 15:00:12 2025] [::1]:57491 Accepted
-[Mon Nov 10 15:00:12 2025] [::1]:57491 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 15:00:12 2025] [::1]:57491 Closing
-[Mon Nov 10 15:00:13 2025] [::1]:57492 Accepted
-[Mon Nov 10 15:00:13 2025] [::1]:57492 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 15:00:13 2025] [::1]:57492 Closing
-[Mon Nov 10 15:00:14 2025] [::1]:57493 Accepted
-[Mon Nov 10 15:00:14 2025] [::1]:57493 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 15:00:14 2025] [::1]:57493 Closing
-[Mon Nov 10 15:00:16 2025] [::1]:57494 Accepted
-[Mon Nov 10 15:00:16 2025] [::1]:57494 Closing
-[Mon Nov 10 15:00:16 2025] [::1]:57495 Accepted
-[Mon Nov 10 15:00:16 2025] [::1]:57495 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 15:00:16 2025] [::1]:57495 Closing
-[Mon Nov 10 15:00:17 2025] [::1]:57496 Accepted
-[Mon Nov 10 15:00:17 2025] [::1]:57496 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 15:00:17 2025] [::1]:57496 Closing
-[Mon Nov 10 15:00:18 2025] [::1]:57497 Accepted
-[Mon Nov 10 15:00:18 2025] [::1]:57497 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 15:00:18 2025] [::1]:57497 Closing
-[Mon Nov 10 15:00:19 2025] [::1]:57498 Accepted
-[Mon Nov 10 15:00:19 2025] [::1]:57498 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 15:00:19 2025] [::1]:57498 Closing
-[Mon Nov 10 15:00:20 2025] [::1]:57499 Accepted
-[Mon Nov 10 15:00:20 2025] [::1]:57499 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 15:00:20 2025] [::1]:57499 Closing
-[Mon Nov 10 15:00:21 2025] [::1]:57500 Accepted
-[Mon Nov 10 15:00:21 2025] [::1]:57500 Closing
-[Mon Nov 10 15:00:21 2025] [::1]:57501 Accepted
-[Mon Nov 10 15:00:21 2025] [::1]:57501 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 15:00:21 2025] [::1]:57501 Closing
-[Mon Nov 10 15:00:22 2025] [::1]:57502 Accepted
-[Mon Nov 10 15:00:22 2025] [::1]:57502 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 15:00:22 2025] [::1]:57502 Closing
-[Mon Nov 10 15:00:23 2025] [::1]:57503 Accepted
-[Mon Nov 10 15:00:23 2025] [::1]:57503 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 15:00:23 2025] [::1]:57503 Closing
-[Mon Nov 10 15:00:25 2025] [::1]:57504 Accepted
-[Mon Nov 10 15:00:25 2025] [::1]:57504 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 15:00:25 2025] [::1]:57504 Closing
-[Mon Nov 10 15:00:26 2025] [::1]:57505 Accepted
-[Mon Nov 10 15:00:26 2025] [::1]:57505 Closing
-[Mon Nov 10 15:00:26 2025] [::1]:57506 Accepted
-[Mon Nov 10 15:00:26 2025] [::1]:57506 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 15:00:26 2025] [::1]:57506 Closing
-[Mon Nov 10 15:00:27 2025] [::1]:57507 Accepted
-[Mon Nov 10 15:00:27 2025] [::1]:57507 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 15:00:27 2025] [::1]:57507 Closing
-[Mon Nov 10 15:00:28 2025] [::1]:57508 Accepted
-[Mon Nov 10 15:00:28 2025] [::1]:57508 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 15:00:28 2025] [::1]:57508 Closing
-[Mon Nov 10 15:00:29 2025] [::1]:57509 Accepted
-[Mon Nov 10 15:00:29 2025] [::1]:57509 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 15:00:29 2025] [::1]:57509 Closing
-[Mon Nov 10 15:00:30 2025] [::1]:57510 Accepted
-[Mon Nov 10 15:00:30 2025] [::1]:57510 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 15:00:30 2025] [::1]:57510 Closing
-[Mon Nov 10 15:00:31 2025] [::1]:57511 Accepted
-[Mon Nov 10 15:00:31 2025] [::1]:57511 Closing
-[Mon Nov 10 15:00:31 2025] [::1]:57512 Accepted
-[Mon Nov 10 15:00:31 2025] [::1]:57512 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 15:00:31 2025] [::1]:57512 Closing
-[Mon Nov 10 15:00:33 2025] [::1]:57513 Accepted
-[Mon Nov 10 15:00:33 2025] [::1]:57513 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 15:00:33 2025] [::1]:57513 Closing
-[Mon Nov 10 15:00:34 2025] [::1]:57514 Accepted
-[Mon Nov 10 15:00:34 2025] [::1]:57514 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 15:00:34 2025] [::1]:57514 Closing
-[Mon Nov 10 15:00:35 2025] [::1]:57515 Accepted
-[Mon Nov 10 15:00:35 2025] [::1]:57515 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 15:00:35 2025] [::1]:57515 Closing
-[Mon Nov 10 15:00:36 2025] [::1]:57516 Accepted
-[Mon Nov 10 15:00:36 2025] [::1]:57516 Closing
-[Mon Nov 10 15:00:36 2025] [::1]:57517 Accepted
-[Mon Nov 10 15:00:36 2025] [::1]:57517 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 15:00:36 2025] [::1]:57517 Closing
-[Mon Nov 10 15:00:37 2025] [::1]:57518 Accepted
-[Mon Nov 10 15:00:37 2025] [::1]:57518 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 15:00:37 2025] [::1]:57518 Closing
-[Mon Nov 10 15:00:38 2025] [::1]:57520 Accepted
-[Mon Nov 10 15:00:38 2025] [::1]:57520 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 15:00:38 2025] [::1]:57520 Closing
-[Mon Nov 10 15:00:39 2025] [::1]:57521 Accepted
-[Mon Nov 10 15:00:39 2025] [::1]:57521 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 15:00:39 2025] [::1]:57521 Closing
-[Mon Nov 10 15:00:41 2025] [::1]:57522 Accepted
-[Mon Nov 10 15:00:41 2025] [::1]:57522 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 15:00:41 2025] [::1]:57522 Closing
-[Mon Nov 10 15:00:41 2025] [::1]:57523 Accepted
-[Mon Nov 10 15:00:41 2025] [::1]:57523 Closing
-[Mon Nov 10 15:00:41 2025] [::1]:57525 Accepted
-[Mon Nov 10 15:00:41 2025] [::1]:57525 Closing
-[Mon Nov 10 15:00:41 2025] [::1]:57528 Accepted
-[Mon Nov 10 15:00:41 2025] [::1]:57528 Closing
-[Mon Nov 10 15:00:41 2025] [::1]:57530 Accepted
-[Mon Nov 10 15:00:41 2025] [::1]:57530 Closing
-[Mon Nov 10 15:00:41 2025] [::1]:57531 Accepted
-[Mon Nov 10 15:00:41 2025] [::1]:57531 Closing
-[Mon Nov 10 15:00:42 2025] [::1]:57532 Accepted
-[Mon Nov 10 15:00:42 2025] [::1]:57532 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 15:00:42 2025] [::1]:57532 Closing
-[Mon Nov 10 15:00:43 2025] [::1]:57533 Accepted
-[Mon Nov 10 15:00:43 2025] [::1]:57533 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 15:00:43 2025] [::1]:57533 Closing
-[Mon Nov 10 15:00:44 2025] [::1]:57534 Accepted
-[Mon Nov 10 15:00:44 2025] [::1]:57534 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 15:00:44 2025] [::1]:57534 Closing
-[Mon Nov 10 15:00:45 2025] [::1]:57535 Accepted
-[Mon Nov 10 15:00:45 2025] [::1]:57535 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 15:00:45 2025] [::1]:57535 Closing
-[Mon Nov 10 15:00:46 2025] [::1]:57536 Accepted
-[Mon Nov 10 15:00:46 2025] [::1]:57536 Closing
-[Mon Nov 10 15:00:46 2025] [::1]:57537 Accepted
-[Mon Nov 10 15:00:46 2025] [::1]:57537 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 15:00:46 2025] [::1]:57537 Closing
-[Mon Nov 10 15:00:47 2025] [::1]:57538 Accepted
-[Mon Nov 10 15:00:47 2025] [::1]:57538 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 15:00:47 2025] [::1]:57538 Closing
-[Mon Nov 10 15:00:48 2025] [::1]:57539 Accepted
-[Mon Nov 10 15:00:48 2025] [::1]:57539 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 15:00:48 2025] [::1]:57539 Closing
-[Mon Nov 10 15:00:50 2025] [::1]:57540 Accepted
-[Mon Nov 10 15:00:50 2025] [::1]:57540 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 15:00:50 2025] [::1]:57540 Closing
-[Mon Nov 10 15:00:51 2025] [::1]:57541 Accepted
-[Mon Nov 10 15:00:51 2025] [::1]:57541 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 15:00:51 2025] [::1]:57541 Closing
-[Mon Nov 10 15:00:51 2025] [::1]:57542 Accepted
-[Mon Nov 10 15:00:51 2025] [::1]:57542 Closing
-[Mon Nov 10 15:00:52 2025] [::1]:57543 Accepted
-[Mon Nov 10 15:00:52 2025] [::1]:57543 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 15:00:52 2025] [::1]:57543 Closing
-[Mon Nov 10 15:00:53 2025] [::1]:57545 Accepted
-[Mon Nov 10 15:00:53 2025] [::1]:57545 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 15:00:53 2025] [::1]:57545 Closing
-[Mon Nov 10 15:00:54 2025] [::1]:57546 Accepted
-[Mon Nov 10 15:00:54 2025] [::1]:57546 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 15:00:54 2025] [::1]:57546 Closing
-[Mon Nov 10 15:00:55 2025] [::1]:57548 Accepted
-[Mon Nov 10 15:00:55 2025] [::1]:57548 Closing
-[Mon Nov 10 15:00:55 2025] [::1]:57551 Accepted
-[Mon Nov 10 15:00:55 2025] [::1]:57551 Closing
-[Mon Nov 10 15:00:55 2025] [::1]:57553 Accepted
-[Mon Nov 10 15:00:55 2025] [::1]:57553 Closing
-[Mon Nov 10 15:00:55 2025] [::1]:57554 Accepted
-[Mon Nov 10 15:00:55 2025] [::1]:57554 Closing
-[Mon Nov 10 15:00:55 2025] [::1]:57555 Accepted
-[Mon Nov 10 15:00:55 2025] [::1]:57555 [200]: GET /mp4/bg.6e3daaaa1b97bc16e6280e80b26d923f.mp4
-[Mon Nov 10 15:00:55 2025] [::1]:57555 Closing
-[Mon Nov 10 15:00:55 2025] [::1]:57556 Accepted
-[Mon Nov 10 15:00:55 2025] [::1]:57556 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 15:00:55 2025] [::1]:57556 Closing
-[Mon Nov 10 15:00:56 2025] [::1]:57557 Accepted
-[Mon Nov 10 15:00:56 2025] [::1]:57557 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 15:00:56 2025] [::1]:57557 Closing
-[Mon Nov 10 15:00:58 2025] [::1]:57558 Accepted
-[Mon Nov 10 15:00:58 2025] [::1]:57558 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 15:00:58 2025] [::1]:57558 Closing
-[Mon Nov 10 15:00:59 2025] [::1]:57560 Accepted
-[Mon Nov 10 15:00:59 2025] [::1]:57560 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 15:00:59 2025] [::1]:57560 Closing
-[Mon Nov 10 15:01:00 2025] [::1]:57561 Accepted
-[Mon Nov 10 15:01:00 2025] [::1]:57561 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 15:01:00 2025] [::1]:57561 Closing
-[Mon Nov 10 15:01:00 2025] [::1]:57562 Accepted
-[Mon Nov 10 15:01:00 2025] [::1]:57562 Closing
-[Mon Nov 10 15:01:00 2025] [::1]:57563 Accepted
-[Mon Nov 10 15:01:01 2025] [::1]:57564 Accepted
-[Mon Nov 10 15:01:01 2025] [::1]:57564 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 15:01:01 2025] [::1]:57564 Closing
-[Mon Nov 10 15:01:02 2025] [::1]:57565 Accepted
-[Mon Nov 10 15:01:02 2025] [::1]:57565 Closed without sending a request; it was probably just an unused speculative preconnection
-[Mon Nov 10 15:01:02 2025] [::1]:57565 Closing
-[Mon Nov 10 15:01:02 2025] [::1]:57563 Closing
+[Mon Nov 10 19:26:55 2025] [::1]:60448 Accepted
+[Mon Nov 10 19:26:55 2025] [::1]:60448 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:26:55 2025] [::1]:60448 Closing
+[Mon Nov 10 19:26:55 2025] Failed to listen on localhost:8000 (reason: Address already in use)
+[Mon Nov 10 19:26:56 2025] [::1]:60449 Accepted
+[Mon Nov 10 19:26:56 2025] [::1]:60449 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:26:56 2025] [::1]:60449 Closing
+[Mon Nov 10 19:26:56 2025] [::1]:60468 Accepted
+[Mon Nov 10 19:26:56 2025] [::1]:60468 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:26:56 2025] [::1]:60468 Closing
+[Mon Nov 10 19:26:57 2025] [::1]:60471 Accepted
+[Mon Nov 10 19:26:57 2025] [::1]:60471 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:26:57 2025] [::1]:60471 Closing
+[Mon Nov 10 19:26:59 2025] [::1]:60472 Accepted
+[Mon Nov 10 19:26:59 2025] [::1]:60472 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:26:59 2025] [::1]:60472 Closing
+[Mon Nov 10 19:27:00 2025] [::1]:60473 Accepted
+[Mon Nov 10 19:27:00 2025] [::1]:60473 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:27:00 2025] [::1]:60473 Closing
+[Mon Nov 10 19:27:04 2025] PHP 8.3.1 Development Server (http://localhost:8000) started
+[Mon Nov 10 19:27:05 2025] [::1]:60499 Accepted
+[Mon Nov 10 19:27:05 2025] [::1]:60499 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:27:05 2025] [::1]:60499 Closing
+[Mon Nov 10 19:27:06 2025] [::1]:60500 Accepted
+[Mon Nov 10 19:27:06 2025] [::1]:60500 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:27:06 2025] [::1]:60500 Closing
+[Mon Nov 10 19:27:07 2025] [::1]:60503 Accepted
+[Mon Nov 10 19:27:07 2025] [::1]:60503 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:27:07 2025] [::1]:60503 Closing
+[Mon Nov 10 19:27:08 2025] [::1]:60505 Accepted
+[Mon Nov 10 19:27:08 2025] [::1]:60505 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:27:08 2025] [::1]:60505 Closing
+[Mon Nov 10 19:27:09 2025] [::1]:60525 Accepted
+[Mon Nov 10 19:27:09 2025] [::1]:60525 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:27:09 2025] [::1]:60525 Closing
+[Mon Nov 10 19:27:10 2025] [::1]:60528 Accepted
+[Mon Nov 10 19:27:10 2025] [::1]:60528 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:27:10 2025] [::1]:60528 Closing
+[Mon Nov 10 19:27:11 2025] [::1]:60529 Accepted
+[Mon Nov 10 19:27:11 2025] [::1]:60529 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:27:11 2025] [::1]:60529 Closing
+[Mon Nov 10 19:27:13 2025] [::1]:60546 Accepted
+[Mon Nov 10 19:27:13 2025] [::1]:60546 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:27:13 2025] [::1]:60546 Closing
+[Mon Nov 10 19:27:14 2025] [::1]:60547 Accepted
+[Mon Nov 10 19:27:14 2025] [::1]:60547 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:27:14 2025] [::1]:60547 Closing
+[Mon Nov 10 19:27:15 2025] [::1]:60548 Accepted
+[Mon Nov 10 19:27:15 2025] [::1]:60548 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:27:15 2025] [::1]:60548 Closing
+[Mon Nov 10 19:27:16 2025] [::1]:60551 Accepted
+[Mon Nov 10 19:27:16 2025] [::1]:60551 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:27:16 2025] [::1]:60551 Closing
+[Mon Nov 10 19:27:17 2025] [::1]:60552 Accepted
+[Mon Nov 10 19:27:17 2025] [::1]:60552 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:27:17 2025] [::1]:60552 Closing
+[Mon Nov 10 19:27:18 2025] [::1]:60554 Accepted
+[Mon Nov 10 19:27:18 2025] [::1]:60554 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:27:18 2025] [::1]:60554 Closing
+[Mon Nov 10 19:27:19 2025] [::1]:60555 Accepted
+[Mon Nov 10 19:27:19 2025] [::1]:60555 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:27:19 2025] [::1]:60555 Closing
+[Mon Nov 10 19:27:20 2025] [::1]:60556 Accepted
+[Mon Nov 10 19:27:20 2025] [::1]:60556 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:27:20 2025] [::1]:60556 Closing
+[Mon Nov 10 19:27:22 2025] [::1]:60557 Accepted
+[Mon Nov 10 19:27:22 2025] [::1]:60557 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:27:22 2025] [::1]:60557 Closing
+[Mon Nov 10 19:27:23 2025] [::1]:60558 Accepted
+[Mon Nov 10 19:27:23 2025] [::1]:60558 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:27:23 2025] [::1]:60558 Closing
+[Mon Nov 10 19:27:24 2025] [::1]:60559 Accepted
+[Mon Nov 10 19:27:24 2025] [::1]:60559 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:27:24 2025] [::1]:60559 Closing
+[Mon Nov 10 19:27:25 2025] [::1]:60560 Accepted
+[Mon Nov 10 19:27:25 2025] [::1]:60560 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:27:25 2025] [::1]:60560 Closing
+[Mon Nov 10 19:27:26 2025] [::1]:60561 Accepted
+[Mon Nov 10 19:27:26 2025] [::1]:60561 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:27:26 2025] [::1]:60561 Closing
+[Mon Nov 10 19:27:27 2025] [::1]:60562 Accepted
+[Mon Nov 10 19:27:27 2025] [::1]:60562 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:27:27 2025] [::1]:60562 Closing
+[Mon Nov 10 19:27:28 2025] [::1]:60563 Accepted
+[Mon Nov 10 19:27:28 2025] [::1]:60563 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:27:28 2025] [::1]:60563 Closing
+[Mon Nov 10 19:27:30 2025] [::1]:60564 Accepted
+[Mon Nov 10 19:27:30 2025] [::1]:60564 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:27:30 2025] [::1]:60564 Closing
+[Mon Nov 10 19:27:31 2025] [::1]:60565 Accepted
+[Mon Nov 10 19:27:31 2025] [::1]:60565 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:27:31 2025] [::1]:60565 Closing
+[Mon Nov 10 19:27:32 2025] [::1]:60566 Accepted
+[Mon Nov 10 19:27:32 2025] [::1]:60566 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:27:32 2025] [::1]:60566 Closing
+[Mon Nov 10 19:27:32 2025] [::1]:60568 Accepted
+[Mon Nov 10 19:27:32 2025] [::1]:60568 Closing
+[Mon Nov 10 19:27:32 2025] [::1]:60573 Accepted
+[Mon Nov 10 19:27:32 2025] [::1]:60573 Closing
+[Mon Nov 10 19:27:32 2025] [::1]:60574 Accepted
+[Mon Nov 10 19:27:32 2025] [::1]:60574 Closing
+[Mon Nov 10 19:27:32 2025] [::1]:60577 Accepted
+[Mon Nov 10 19:27:32 2025] [::1]:60577 Closing
+[Mon Nov 10 19:27:32 2025] [::1]:60581 Accepted
+[Mon Nov 10 19:27:32 2025] [::1]:60581 Closing
+[Mon Nov 10 19:27:32 2025] [::1]:60582 Accepted
+[Mon Nov 10 19:27:32 2025] [::1]:60582 Closing
+[Mon Nov 10 19:27:32 2025] [::1]:60583 Accepted
+[Mon Nov 10 19:27:32 2025] [::1]:60583 Closing
+[Mon Nov 10 19:27:33 2025] [::1]:60584 Accepted
+[Mon Nov 10 19:27:33 2025] [::1]:60584 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:27:33 2025] [::1]:60584 Closing
+[Mon Nov 10 19:27:34 2025] [::1]:60586 Accepted
+[Mon Nov 10 19:27:34 2025] [::1]:60586 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:27:34 2025] [::1]:60586 Closing
+[Mon Nov 10 19:27:35 2025] [::1]:60587 Accepted
+[Mon Nov 10 19:27:35 2025] [::1]:60587 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:27:35 2025] [::1]:60587 Closing
+[Mon Nov 10 19:27:36 2025] [::1]:60588 Accepted
+[Mon Nov 10 19:27:36 2025] [::1]:60588 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:27:36 2025] [::1]:60588 Closing
+[Mon Nov 10 19:27:37 2025] [::1]:60589 Accepted
+[Mon Nov 10 19:27:37 2025] [::1]:60589 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:27:37 2025] [::1]:60589 Closing
+[Mon Nov 10 19:27:38 2025] [::1]:60590 Accepted
+[Mon Nov 10 19:27:38 2025] [::1]:60590 Closing
+[Mon Nov 10 19:27:39 2025] [::1]:60591 Accepted
+[Mon Nov 10 19:27:39 2025] [::1]:60591 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:27:39 2025] [::1]:60591 Closing
+[Mon Nov 10 19:27:40 2025] [::1]:60592 Accepted
+[Mon Nov 10 19:27:40 2025] [::1]:60592 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:27:40 2025] [::1]:60592 Closing
+[Mon Nov 10 19:27:41 2025] [::1]:60593 Accepted
+[Mon Nov 10 19:27:41 2025] [::1]:60593 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:27:41 2025] [::1]:60593 Closing
+[Mon Nov 10 19:27:42 2025] [::1]:60594 Accepted
+[Mon Nov 10 19:27:42 2025] [::1]:60594 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:27:42 2025] [::1]:60594 Closing
+[Mon Nov 10 19:27:43 2025] [::1]:60595 Accepted
+[Mon Nov 10 19:27:43 2025] [::1]:60595 Closing
+[Mon Nov 10 19:27:43 2025] [::1]:60596 Accepted
+[Mon Nov 10 19:27:43 2025] [::1]:60596 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:27:43 2025] [::1]:60596 Closing
+[Mon Nov 10 19:27:44 2025] [::1]:60597 Accepted
+[Mon Nov 10 19:27:44 2025] [::1]:60597 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:27:44 2025] [::1]:60597 Closing
+[Mon Nov 10 19:27:45 2025] [::1]:60598 Accepted
+[Mon Nov 10 19:27:45 2025] [::1]:60598 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:27:45 2025] [::1]:60598 Closing
+[Mon Nov 10 19:27:47 2025] [::1]:60599 Accepted
+[Mon Nov 10 19:27:47 2025] [::1]:60599 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:27:47 2025] [::1]:60599 Closing
+[Mon Nov 10 19:27:48 2025] [::1]:60600 Accepted
+[Mon Nov 10 19:27:48 2025] [::1]:60600 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:27:48 2025] [::1]:60600 Closing
+[Mon Nov 10 19:27:48 2025] [::1]:60601 Accepted
+[Mon Nov 10 19:27:48 2025] [::1]:60601 Closing
+[Mon Nov 10 19:27:49 2025] [::1]:60602 Accepted
+[Mon Nov 10 19:27:49 2025] [::1]:60602 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:27:49 2025] [::1]:60602 Closing
+[Mon Nov 10 19:27:50 2025] [::1]:60603 Accepted
+[Mon Nov 10 19:27:50 2025] [::1]:60603 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:27:50 2025] [::1]:60603 Closing
+[Mon Nov 10 19:27:51 2025] [::1]:60604 Accepted
+[Mon Nov 10 19:27:51 2025] [::1]:60604 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:27:51 2025] [::1]:60604 Closing
+[Mon Nov 10 19:27:52 2025] [::1]:60605 Accepted
+[Mon Nov 10 19:27:52 2025] [::1]:60605 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:27:52 2025] [::1]:60605 Closing
+[Mon Nov 10 19:27:53 2025] [::1]:60606 Accepted
+[Mon Nov 10 19:27:53 2025] [::1]:60606 Closing
+[Mon Nov 10 19:27:53 2025] [::1]:60607 Accepted
+[Mon Nov 10 19:27:53 2025] [::1]:60607 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:27:53 2025] [::1]:60607 Closing
+[Mon Nov 10 19:27:55 2025] [::1]:60608 Accepted
+[Mon Nov 10 19:27:55 2025] [::1]:60608 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:27:55 2025] [::1]:60608 Closing
+[Mon Nov 10 19:27:56 2025] [::1]:60609 Accepted
+[Mon Nov 10 19:27:56 2025] [::1]:60609 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:27:56 2025] [::1]:60609 Closing
+[Mon Nov 10 19:27:57 2025] [::1]:60610 Accepted
+[Mon Nov 10 19:27:57 2025] [::1]:60610 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:27:57 2025] [::1]:60610 Closing
+[Mon Nov 10 19:27:58 2025] [::1]:60611 Accepted
+[Mon Nov 10 19:27:58 2025] [::1]:60611 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:27:58 2025] [::1]:60611 Closing
+[Mon Nov 10 19:27:58 2025] [::1]:60612 Accepted
+[Mon Nov 10 19:27:58 2025] [::1]:60612 Closing
+[Mon Nov 10 19:27:59 2025] [::1]:60613 Accepted
+[Mon Nov 10 19:27:59 2025] [::1]:60613 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:27:59 2025] [::1]:60613 Closing
+[Mon Nov 10 19:28:00 2025] [::1]:60614 Accepted
+[Mon Nov 10 19:28:00 2025] [::1]:60614 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:28:00 2025] [::1]:60614 Closing
+[Mon Nov 10 19:28:01 2025] [::1]:60615 Accepted
+[Mon Nov 10 19:28:01 2025] [::1]:60615 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:28:01 2025] [::1]:60615 Closing
+[Mon Nov 10 19:28:03 2025] [::1]:60616 Accepted
+[Mon Nov 10 19:28:03 2025] [::1]:60616 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:28:03 2025] [::1]:60616 Closing
+[Mon Nov 10 19:28:03 2025] [::1]:60617 Accepted
+[Mon Nov 10 19:28:03 2025] [::1]:60617 Closing
+[Mon Nov 10 19:28:04 2025] [::1]:60618 Accepted
+[Mon Nov 10 19:28:04 2025] [::1]:60618 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:28:04 2025] [::1]:60618 Closing
+[Mon Nov 10 19:28:05 2025] [::1]:60619 Accepted
+[Mon Nov 10 19:28:05 2025] [::1]:60619 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:28:05 2025] [::1]:60619 Closing
+[Mon Nov 10 19:28:06 2025] [::1]:60620 Accepted
+[Mon Nov 10 19:28:06 2025] [::1]:60620 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:28:06 2025] [::1]:60620 Closing
+[Mon Nov 10 19:28:07 2025] [::1]:60621 Accepted
+[Mon Nov 10 19:28:07 2025] [::1]:60621 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:28:07 2025] [::1]:60621 Closing
+[Mon Nov 10 19:28:08 2025] [::1]:60622 Accepted
+[Mon Nov 10 19:28:08 2025] [::1]:60622 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:28:08 2025] [::1]:60622 Closing
+[Mon Nov 10 19:28:09 2025] [::1]:60623 Accepted
+[Mon Nov 10 19:28:09 2025] [::1]:60623 Closing
+[Mon Nov 10 19:28:09 2025] [::1]:60624 Accepted
+[Mon Nov 10 19:28:09 2025] [::1]:60624 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:28:09 2025] [::1]:60624 Closing
+[Mon Nov 10 19:28:10 2025] [::1]:60625 Accepted
+[Mon Nov 10 19:28:10 2025] [::1]:60625 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:28:10 2025] [::1]:60625 Closing
+[Mon Nov 10 19:28:12 2025] [::1]:60626 Accepted
+[Mon Nov 10 19:28:12 2025] [::1]:60626 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:28:12 2025] [::1]:60626 Closing
+[Mon Nov 10 19:28:13 2025] [::1]:60627 Accepted
+[Mon Nov 10 19:28:13 2025] [::1]:60627 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:28:13 2025] [::1]:60627 Closing
+[Mon Nov 10 19:28:14 2025] [::1]:60628 Accepted
+[Mon Nov 10 19:28:14 2025] [::1]:60628 Closing
+[Mon Nov 10 19:28:14 2025] [::1]:60629 Accepted
+[Mon Nov 10 19:28:14 2025] [::1]:60629 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:28:14 2025] [::1]:60629 Closing
+[Mon Nov 10 19:28:15 2025] [::1]:60630 Accepted
+[Mon Nov 10 19:28:15 2025] [::1]:60630 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:28:15 2025] [::1]:60630 Closing
+[Mon Nov 10 19:28:16 2025] [::1]:60631 Accepted
+[Mon Nov 10 19:28:16 2025] [::1]:60631 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:28:16 2025] [::1]:60631 Closing
+[Mon Nov 10 19:28:17 2025] [::1]:60633 Accepted
+[Mon Nov 10 19:28:17 2025] [::1]:60633 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:28:17 2025] [::1]:60633 Closing
+[Mon Nov 10 19:28:18 2025] [::1]:60634 Accepted
+[Mon Nov 10 19:28:18 2025] [::1]:60634 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:28:18 2025] [::1]:60634 Closing
+[Mon Nov 10 19:28:19 2025] [::1]:60635 Accepted
+[Mon Nov 10 19:28:19 2025] [::1]:60635 Closing
+[Mon Nov 10 19:28:20 2025] [::1]:60637 Accepted
+[Mon Nov 10 19:28:20 2025] [::1]:60637 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:28:20 2025] [::1]:60637 Closing
+[Mon Nov 10 19:28:21 2025] [::1]:60638 Accepted
+[Mon Nov 10 19:28:21 2025] [::1]:60638 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:28:21 2025] [::1]:60638 Closing
+[Mon Nov 10 19:28:22 2025] [::1]:60639 Accepted
+[Mon Nov 10 19:28:22 2025] [::1]:60639 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:28:22 2025] [::1]:60639 Closing
+[Mon Nov 10 19:28:23 2025] [::1]:60640 Accepted
+[Mon Nov 10 19:28:23 2025] [::1]:60640 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:28:23 2025] [::1]:60640 Closing
+[Mon Nov 10 19:28:24 2025] [::1]:60641 Accepted
+[Mon Nov 10 19:28:24 2025] [::1]:60641 Closing
+[Mon Nov 10 19:28:24 2025] [::1]:60642 Accepted
+[Mon Nov 10 19:28:24 2025] [::1]:60642 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:28:24 2025] [::1]:60642 Closing
+[Mon Nov 10 19:28:25 2025] [::1]:60643 Accepted
+[Mon Nov 10 19:28:25 2025] [::1]:60643 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:28:25 2025] [::1]:60643 Closing
+[Mon Nov 10 19:28:26 2025] [::1]:60644 Accepted
+[Mon Nov 10 19:28:26 2025] [::1]:60644 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:28:26 2025] [::1]:60644 Closing
+[Mon Nov 10 19:28:27 2025] [::1]:60645 Accepted
+[Mon Nov 10 19:28:27 2025] [::1]:60645 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:28:27 2025] [::1]:60645 Closing
+[Mon Nov 10 19:28:29 2025] [::1]:60646 Accepted
+[Mon Nov 10 19:28:29 2025] [::1]:60646 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:28:29 2025] [::1]:60646 Closing
+[Mon Nov 10 19:28:29 2025] [::1]:60647 Accepted
+[Mon Nov 10 19:28:29 2025] [::1]:60647 Closing
+[Mon Nov 10 19:28:30 2025] [::1]:60648 Accepted
+[Mon Nov 10 19:28:30 2025] [::1]:60648 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:28:30 2025] [::1]:60648 Closing
+[Mon Nov 10 19:28:31 2025] [::1]:60649 Accepted
+[Mon Nov 10 19:28:31 2025] [::1]:60649 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:28:31 2025] [::1]:60649 Closing
+[Mon Nov 10 19:28:32 2025] [::1]:60650 Accepted
+[Mon Nov 10 19:28:32 2025] [::1]:60650 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:28:32 2025] [::1]:60650 Closing
+[Mon Nov 10 19:28:33 2025] [::1]:60651 Accepted
+[Mon Nov 10 19:28:33 2025] [::1]:60651 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:28:33 2025] [::1]:60651 Closing
+[Mon Nov 10 19:28:34 2025] [::1]:60652 Accepted
+[Mon Nov 10 19:28:34 2025] [::1]:60652 Closing
+[Mon Nov 10 19:28:34 2025] [::1]:60653 Accepted
+[Mon Nov 10 19:28:34 2025] [::1]:60653 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:28:34 2025] [::1]:60653 Closing
+[Mon Nov 10 19:28:35 2025] [::1]:60654 Accepted
+[Mon Nov 10 19:28:35 2025] [::1]:60654 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:28:35 2025] [::1]:60654 Closing
+[Mon Nov 10 19:28:37 2025] [::1]:60655 Accepted
+[Mon Nov 10 19:28:37 2025] [::1]:60655 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:28:37 2025] [::1]:60655 Closing
+[Mon Nov 10 19:28:38 2025] [::1]:60656 Accepted
+[Mon Nov 10 19:28:38 2025] [::1]:60656 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:28:38 2025] [::1]:60656 Closing
+[Mon Nov 10 19:28:39 2025] [::1]:60657 Accepted
+[Mon Nov 10 19:28:39 2025] [::1]:60657 Closing
+[Mon Nov 10 19:28:39 2025] [::1]:60658 Accepted
+[Mon Nov 10 19:28:39 2025] [::1]:60658 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:28:39 2025] [::1]:60658 Closing
+[Mon Nov 10 19:28:40 2025] [::1]:60659 Accepted
+[Mon Nov 10 19:28:40 2025] [::1]:60659 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:28:40 2025] [::1]:60659 Closing
+[Mon Nov 10 19:28:41 2025] [::1]:60660 Accepted
+[Mon Nov 10 19:28:41 2025] [::1]:60660 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:28:41 2025] [::1]:60660 Closing
+[Mon Nov 10 19:28:42 2025] [::1]:60661 Accepted
+[Mon Nov 10 19:28:42 2025] [::1]:60661 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:28:42 2025] [::1]:60661 Closing
+[Mon Nov 10 19:28:43 2025] [::1]:60662 Accepted
+[Mon Nov 10 19:28:43 2025] [::1]:60662 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:28:43 2025] [::1]:60662 Closing
+[Mon Nov 10 19:28:44 2025] [::1]:60663 Accepted
+[Mon Nov 10 19:28:44 2025] [::1]:60663 Closing
+[Mon Nov 10 19:28:44 2025] [::1]:60664 Accepted
+[Mon Nov 10 19:28:44 2025] [::1]:60664 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:28:44 2025] [::1]:60664 Closing
+[Mon Nov 10 19:28:46 2025] [::1]:60665 Accepted
+[Mon Nov 10 19:28:46 2025] [::1]:60665 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:28:46 2025] [::1]:60665 Closing
+[Mon Nov 10 19:28:47 2025] [::1]:60666 Accepted
+[Mon Nov 10 19:28:47 2025] [::1]:60666 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:28:47 2025] [::1]:60666 Closing
+[Mon Nov 10 19:28:48 2025] [::1]:60667 Accepted
+[Mon Nov 10 19:28:48 2025] [::1]:60667 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:28:48 2025] [::1]:60667 Closing
+[Mon Nov 10 19:28:49 2025] [::1]:60668 Accepted
+[Mon Nov 10 19:28:49 2025] [::1]:60668 Closing
+[Mon Nov 10 19:28:49 2025] [::1]:60669 Accepted
+[Mon Nov 10 19:28:49 2025] [::1]:60669 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:28:49 2025] [::1]:60669 Closing
+[Mon Nov 10 19:28:50 2025] [::1]:60670 Accepted
+[Mon Nov 10 19:28:50 2025] [::1]:60670 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:28:50 2025] [::1]:60670 Closing
+[Mon Nov 10 19:28:51 2025] [::1]:60671 Accepted
+[Mon Nov 10 19:28:51 2025] [::1]:60671 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:28:51 2025] [::1]:60671 Closing
+[Mon Nov 10 19:28:52 2025] [::1]:60672 Accepted
+[Mon Nov 10 19:28:52 2025] [::1]:60672 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:28:52 2025] [::1]:60672 Closing
+[Mon Nov 10 19:28:54 2025] [::1]:60673 Accepted
+[Mon Nov 10 19:28:54 2025] [::1]:60673 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:28:54 2025] [::1]:60673 Closing
+[Mon Nov 10 19:28:54 2025] [::1]:60674 Accepted
+[Mon Nov 10 19:28:54 2025] [::1]:60674 Closing
+[Mon Nov 10 19:28:55 2025] [::1]:60675 Accepted
+[Mon Nov 10 19:28:55 2025] [::1]:60675 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:28:55 2025] [::1]:60675 Closing
+[Mon Nov 10 19:28:56 2025] [::1]:60676 Accepted
+[Mon Nov 10 19:28:56 2025] [::1]:60676 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:28:56 2025] [::1]:60676 Closing
+[Mon Nov 10 19:28:57 2025] [::1]:60677 Accepted
+[Mon Nov 10 19:28:57 2025] [::1]:60677 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:28:57 2025] [::1]:60677 Closing
+[Mon Nov 10 19:28:58 2025] [::1]:60678 Accepted
+[Mon Nov 10 19:28:58 2025] [::1]:60678 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:28:58 2025] [::1]:60678 Closing
+[Mon Nov 10 19:28:59 2025] [::1]:60680 Accepted
+[Mon Nov 10 19:28:59 2025] [::1]:60680 Closing
+[Mon Nov 10 19:28:59 2025] [::1]:60683 Accepted
+[Mon Nov 10 19:28:59 2025] [::1]:60683 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:28:59 2025] [::1]:60683 Closing
+[Mon Nov 10 19:29:00 2025] [::1]:60684 Accepted
+[Mon Nov 10 19:29:00 2025] [::1]:60684 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:29:00 2025] [::1]:60684 Closing
+[Mon Nov 10 19:29:01 2025] [::1]:60685 Accepted
+[Mon Nov 10 19:29:01 2025] [::1]:60685 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:29:01 2025] [::1]:60685 Closing
+[Mon Nov 10 19:29:03 2025] [::1]:60687 Accepted
+[Mon Nov 10 19:29:03 2025] [::1]:60687 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:29:03 2025] [::1]:60687 Closing
+[Mon Nov 10 19:29:04 2025] [::1]:60688 Accepted
+[Mon Nov 10 19:29:04 2025] [::1]:60688 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:29:04 2025] [::1]:60688 Closing
+[Mon Nov 10 19:29:04 2025] [::1]:60689 Accepted
+[Mon Nov 10 19:29:04 2025] [::1]:60689 Closing
+[Mon Nov 10 19:29:05 2025] [::1]:60690 Accepted
+[Mon Nov 10 19:29:05 2025] [::1]:60690 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:29:05 2025] [::1]:60690 Closing
+[Mon Nov 10 19:29:06 2025] [::1]:60691 Accepted
+[Mon Nov 10 19:29:06 2025] [::1]:60691 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:29:06 2025] [::1]:60691 Closing
+[Mon Nov 10 19:29:07 2025] [::1]:60692 Accepted
+[Mon Nov 10 19:29:07 2025] [::1]:60692 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:29:07 2025] [::1]:60692 Closing
+[Mon Nov 10 19:29:08 2025] [::1]:60693 Accepted
+[Mon Nov 10 19:29:08 2025] [::1]:60693 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:29:08 2025] [::1]:60693 Closing
+[Mon Nov 10 19:29:09 2025] [::1]:60694 Accepted
+[Mon Nov 10 19:29:09 2025] [::1]:60694 Closing
+[Mon Nov 10 19:29:09 2025] [::1]:60695 Accepted
+[Mon Nov 10 19:29:09 2025] [::1]:60695 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:29:09 2025] [::1]:60695 Closing
+[Mon Nov 10 19:29:11 2025] [::1]:60696 Accepted
+[Mon Nov 10 19:29:11 2025] [::1]:60696 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:29:11 2025] [::1]:60696 Closing
+[Mon Nov 10 19:29:12 2025] [::1]:60697 Accepted
+[Mon Nov 10 19:29:12 2025] [::1]:60697 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:29:12 2025] [::1]:60697 Closing
+[Mon Nov 10 19:29:13 2025] [::1]:60698 Accepted
+[Mon Nov 10 19:29:13 2025] [::1]:60698 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:29:13 2025] [::1]:60698 Closing
+[Mon Nov 10 19:29:14 2025] [::1]:60699 Accepted
+[Mon Nov 10 19:29:14 2025] [::1]:60699 Closing
+[Mon Nov 10 19:29:14 2025] [::1]:60700 Accepted
+[Mon Nov 10 19:29:14 2025] [::1]:60700 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:29:14 2025] [::1]:60700 Closing
+[Mon Nov 10 19:29:15 2025] [::1]:60702 Accepted
+[Mon Nov 10 19:29:15 2025] [::1]:60702 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:29:15 2025] [::1]:60702 Closing
+[Mon Nov 10 19:29:16 2025] [::1]:60703 Accepted
+[Mon Nov 10 19:29:16 2025] [::1]:60703 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:29:16 2025] [::1]:60703 Closing
+[Mon Nov 10 19:29:17 2025] [::1]:60704 Accepted
+[Mon Nov 10 19:29:17 2025] [::1]:60704 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:29:17 2025] [::1]:60704 Closing
+[Mon Nov 10 19:29:18 2025] [::1]:60705 Accepted
+[Mon Nov 10 19:29:18 2025] [::1]:60705 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:29:18 2025] [::1]:60705 Closing
+[Mon Nov 10 19:29:19 2025] [::1]:60706 Accepted
+[Mon Nov 10 19:29:19 2025] [::1]:60706 Closing
+[Mon Nov 10 19:29:20 2025] [::1]:60707 Accepted
+[Mon Nov 10 19:29:20 2025] [::1]:60707 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:29:20 2025] [::1]:60707 Closing
+[Mon Nov 10 19:29:21 2025] [::1]:60708 Accepted
+[Mon Nov 10 19:29:21 2025] [::1]:60708 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:29:21 2025] [::1]:60708 Closing
+[Mon Nov 10 19:29:22 2025] [::1]:60709 Accepted
+[Mon Nov 10 19:29:22 2025] [::1]:60709 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:29:22 2025] [::1]:60709 Closing
+[Mon Nov 10 19:29:23 2025] [::1]:60710 Accepted
+[Mon Nov 10 19:29:23 2025] [::1]:60710 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:29:23 2025] [::1]:60710 Closing
+[Mon Nov 10 19:29:24 2025] [::1]:60711 Accepted
+[Mon Nov 10 19:29:24 2025] [::1]:60711 Closing
+[Mon Nov 10 19:29:24 2025] [::1]:60712 Accepted
+[Mon Nov 10 19:29:24 2025] [::1]:60712 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:29:24 2025] [::1]:60712 Closing
+[Mon Nov 10 19:29:25 2025] [::1]:60713 Accepted
+[Mon Nov 10 19:29:25 2025] [::1]:60713 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:29:25 2025] [::1]:60713 Closing
+[Mon Nov 10 19:29:26 2025] [::1]:60714 Accepted
+[Mon Nov 10 19:29:26 2025] [::1]:60714 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:29:26 2025] [::1]:60714 Closing
+[Mon Nov 10 19:29:28 2025] [::1]:60716 Accepted
+[Mon Nov 10 19:29:28 2025] [::1]:60716 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:29:28 2025] [::1]:60716 Closing
+[Mon Nov 10 19:29:29 2025] [::1]:60717 Accepted
+[Mon Nov 10 19:29:29 2025] [::1]:60717 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:29:29 2025] [::1]:60717 Closing
+[Mon Nov 10 19:29:29 2025] [::1]:60718 Accepted
+[Mon Nov 10 19:29:29 2025] [::1]:60718 Closing
+[Mon Nov 10 19:29:30 2025] [::1]:60719 Accepted
+[Mon Nov 10 19:29:30 2025] [::1]:60719 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:29:30 2025] [::1]:60719 Closing
+[Mon Nov 10 19:29:31 2025] [::1]:60720 Accepted
+[Mon Nov 10 19:29:31 2025] [::1]:60720 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:29:31 2025] [::1]:60720 Closing
+[Mon Nov 10 19:29:32 2025] [::1]:60721 Accepted
+[Mon Nov 10 19:29:32 2025] [::1]:60721 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:29:32 2025] [::1]:60721 Closing
+[Mon Nov 10 19:29:33 2025] [::1]:60722 Accepted
+[Mon Nov 10 19:29:33 2025] [::1]:60722 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:29:33 2025] [::1]:60722 Closing
+[Mon Nov 10 19:29:34 2025] [::1]:60723 Accepted
+[Mon Nov 10 19:29:34 2025] [::1]:60723 Closing
+[Mon Nov 10 19:29:34 2025] [::1]:60724 Accepted
+[Mon Nov 10 19:29:34 2025] [::1]:60724 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:29:34 2025] [::1]:60724 Closing
+[Mon Nov 10 19:29:35 2025] [::1]:60726 Accepted
+[Mon Nov 10 19:29:35 2025] [::1]:60726 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:29:35 2025] [::1]:60726 Closing
+[Mon Nov 10 19:29:37 2025] [::1]:60727 Accepted
+[Mon Nov 10 19:29:37 2025] [::1]:60727 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:29:37 2025] [::1]:60727 Closing
+[Mon Nov 10 19:29:38 2025] [::1]:60728 Accepted
+[Mon Nov 10 19:29:38 2025] [::1]:60728 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:29:38 2025] [::1]:60728 Closing
+[Mon Nov 10 19:29:39 2025] [::1]:60729 Accepted
+[Mon Nov 10 19:29:39 2025] [::1]:60729 Closing
+[Mon Nov 10 19:29:39 2025] [::1]:60730 Accepted
+[Mon Nov 10 19:29:39 2025] [::1]:60730 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:29:39 2025] [::1]:60730 Closing
+[Mon Nov 10 19:29:40 2025] [::1]:60731 Accepted
+[Mon Nov 10 19:29:40 2025] [::1]:60731 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:29:40 2025] [::1]:60731 Closing
+[Mon Nov 10 19:29:41 2025] [::1]:60732 Accepted
+[Mon Nov 10 19:29:41 2025] [::1]:60732 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:29:41 2025] [::1]:60732 Closing
+[Mon Nov 10 19:29:42 2025] [::1]:60733 Accepted
+[Mon Nov 10 19:29:42 2025] [::1]:60733 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:29:42 2025] [::1]:60733 Closing
+[Mon Nov 10 19:29:43 2025] [::1]:60734 Accepted
+[Mon Nov 10 19:29:43 2025] [::1]:60734 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:29:43 2025] [::1]:60734 Closing
+[Mon Nov 10 19:29:44 2025] [::1]:60735 Accepted
+[Mon Nov 10 19:29:44 2025] [::1]:60735 Closing
+[Mon Nov 10 19:29:45 2025] [::1]:60736 Accepted
+[Mon Nov 10 19:29:45 2025] [::1]:60736 Closed without sending a request; it was probably just an unused speculative preconnection
+[Mon Nov 10 19:29:45 2025] [::1]:60736 Closing

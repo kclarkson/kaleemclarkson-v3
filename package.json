@@ -5,7 +5,10 @@
   "main": "editor/server.js",
   "scripts": {
     "editor": "node editor/server.js",
-    "start": "node editor/server.js"
+    "start": "node editor/server.js",
+    "dev": "cecil serve",
+    "build": "cecil build",
+    "preview": "cecil serve --preview"
   },
   "keywords": ["cecil", "markdown", "editor", "cms"],
   "author": "Kaleem Clarkson",

@@ -3,7 +3,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>http://localhost:8000/</id>
   <title>Kaleem Clarkson</title>
-  <subtitle><![CDATA[Personal website - launching soon!]]></subtitle>
+  <subtitle><![CDATA[A Keynote Speaker who is passionate about work-life integration and location-independence.]]></subtitle>
   <link href="http://localhost:8000/atom.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:8000/" rel="alternate" type="text/html" />
   <updated>2025-11-10T00:00:00+00:00</updated>
@@ -24,6 +24,6 @@ With nearly 20 years of strategic operations and event planning experience, he h
     </content>
     <link href="http://localhost:8000/about/" rel="alternate" type="text/html" />
     <published>2025-11-10T00:00:00+00:00</published>
-    <updated>2025-11-10T20:00:38+00:00</updated>
+    <updated>2025-11-10T20:40:00+00:00</updated>
   </entry>
 </feed>

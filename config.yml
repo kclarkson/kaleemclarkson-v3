@@ -1,9 +1,10 @@
 title: "Kaleem Clarkson"
-baseline: "Coming Soon"
-description: "Personal website - launching soon!"
-baseurl: /
+baseline: "Helping companies connect their people, purpose, and performance"
+description: "A Keynote Speaker who is passionate about work-life integration and location-independence."
+baseurl: https://www.kaleemclarkson.com
 url: https://www.kaleemclarkson.com
-destination: docs
+output:
+  dir: docs
 theme:
   - comingsoon
 comingsoon:

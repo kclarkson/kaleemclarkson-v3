@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(tree:*)",
+      "Bash(php cecil.phar:*)",
+      "Bash(cecil build:*)",
+      "Bash(cat:*)",
+      "Bash(cecil serve:*)",
+      "Bash(xargs cat:*)",
+      "Bash(npm install)",
+      "Bash(composer exec:*)",
+      "Bash(pkill:*)",
+      "Bash(lsof:*)",
+      "Bash(xargs:*)",
+      "Bash(./vendor/bin/cecil build:*)",
+      "Bash(kill:*)",
+      "Bash(timeout 10 composer exec:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

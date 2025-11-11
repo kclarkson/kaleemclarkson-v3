@@ -5,65 +5,192 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     {%~ include 'partials/metatags.html.twig' ~%}
     <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico')|url }}" />
-    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i" rel="stylesheet" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <script src="https://use.fontawesome.com/releases/v6.5.1/js/all.js" crossorigin="anonymous"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;600;800;900&display=swap" rel="stylesheet">
+
+    <!-- Theme Styles -->
     <link href="{{ asset('scss/styles.scss')|url }}" rel="stylesheet" />
   </head>
   <body>
-    <div class="overlay"></div>
-    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-      <source src="{{ asset('mp4/bg.mp4')|url }}" type="video/mp4">
-    </video>
-    <div class="masthead">
-      <div class="masthead-bg"></div>
-      <div class="container h-100">
-        <div class="row h-100">
-          <div class="col-12 my-auto">
-            <div class="masthead-content text-white py-5 py-md-0">
-              <h1 class="mb-3">{{ site.title }}</h1>
-              <p class="h2 mb-5">{{ site.baseline }}</p>
-              {%- block content ~%}
-              {%- if page.content is empty -%}
-              <p>{% trans %}Page not found.{% endtrans %}</p>
-              <p><a href="{{ url() }}">← {% trans %}Return{% endtrans %}</a></p>
-              {%- else -%}
-              {{ page.content }}
-              {%- endif -%}
-              {%- endblock ~%}
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="{{ url() }}">
+          {{ site.title }}<span class="accent-text">.</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url() }}">Home</a>
+            </li>
+            {%- for item in site.menus.main|default([])|sort_by_weight ~%}
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url(item.url) }}">{{ item.name }}</a>
+            </li>
+            {%- endfor ~%}
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+      <div class="container">
+        <div class="page-header-content">
+          <h1 class="page-title">
+            {%- if page.title is defined -%}
+            {{ page.title }}<span class="accent-text">.</span>
+            {%- else -%}
+            Page<span class="accent-text">.</span>
+            {%- endif -%}
+          </h1>
+          {%- if page.description is defined -%}
+          <p class="page-subtitle">{{ page.description }}</p>
+          {%- endif -%}
+        </div>
+      </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    {%- if page.section is defined -%}
+    <section class="breadcrumb-section">
+      <div class="container">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{{ url() }}">Home</a></li>
+            {%- if page.section -%}
+            <li class="breadcrumb-item"><a href="{{ url(page.section) }}">{{ page.section }}</a></li>
+            {%- endif -%}
+            <li class="breadcrumb-item active" aria-current="page">{{ page.title }}</li>
+          </ol>
+        </nav>
+      </div>
+    </section>
+    {%- endif -%}
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10 content-wrapper">
+            {%- block content ~%}
+            {%- if page.content is empty -%}
+            <div class="alert alert-warning" role="alert">
+              <h4 class="alert-heading">{% trans %}Page not found.{% endtrans %}</h4>
+              <p>{% trans %}The page you are looking for does not exist.{% endtrans %}</p>
+              <hr>
+              <p class="mb-0"><a href="{{ url() }}" class="alert-link">← {% trans %}Return to homepage{% endtrans %}</a></p>
             </div>
+            {%- else -%}
+            <article class="content-body">
+              {{ page.content }}
+            </article>
+            {%- endif -%}
+            {%- endblock ~%}
+
+            <!-- Page Navigation (Prev/Next) -->
+            {%- if page.prev.path is defined or page.next.path is defined -%}
+            <nav class="page-navigation">
+              <div class="row g-3">
+                {%- if page.prev.path is defined -%}
+                <div class="col-md-6">
+                  <a href="{{ url(page.prev) }}" class="nav-link-box">
+                    <div class="nav-link-label">
+                      <i class="fas fa-arrow-left"></i> Previous
+                    </div>
+                    <div class="nav-link-title">{{ page.prev.title }}</div>
+                  </a>
+                </div>
+                {%- endif -%}
+                {%- if page.next.path is defined -%}
+                <div class="col-md-6{% if page.prev.path is not defined %} ms-auto{% endif %}">
+                  <a href="{{ url(page.next) }}" class="nav-link-box text-end">
+                    <div class="nav-link-label">
+                      Next <i class="fas fa-arrow-right"></i>
+                    </div>
+                    <div class="nav-link-title">{{ page.next.title }}</div>
+                  </a>
+                </div>
+                {%- endif -%}
+              </div>
+            </nav>
+            {%- endif -%}
           </div>
         </div>
       </div>
-    </div>
-    <div class="social-icons">
-      <ul class="list-unstyled text-center mb-0">
-        {%- if site.social.twitter.site is defined ~%}
-        <li class="list-unstyled-item">
-          <a href="https://twitter.com/{{ site.social.twitter.site }}"><i class="fab fa-twitter"></i></a>
-        </li>
-        {%- endif ~%}
-        {%- if site.social.facebook.username is defined ~%}
-        <li class="list-unstyled-item">
-            <a href="https://facebook.com/{{ site.social.facebook.username }}"><i class="fab fa-facebook-f"></i></a>
-        </li>
-        {%- endif ~%}
-        {%- if site.social.instagram.username is defined ~%}
-        <li class="list-unstyled-item">
-            <a href="https://instagram.com/{{ site.social.instagram.username }}"><i class="fab fa-instagram"></i></a>
-        </li>
-        {%- endif ~%}
-        {%- if site.social.github.username is defined ~%}
-        <li class="list-unstyled-item">
-          <a href="https://github.com/{{ site.social.github.username }}"><i class="fab fa-github"></i></a>
-        </li>
-        {%- endif ~%}
-        {%- if site.social.linkedin.username is defined ~%}
-        <li class="list-unstyled-item">
-            <a href="https://linkedin.com/in/{{ site.social.linkedin.username }}"><i class="fab fa-linkedin"></i></a>
-        </li>
-        {%- endif ~%}
-      </ul>
-    </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row footer-content">
+          <div class="col-md-6 mb-4 mb-md-0">
+            <h5>{{ site.title }}</h5>
+            <p>{{ site.description|default('') }}</p>
+            <div class="footer-social-icons">
+              {%- if site.social.twitter.site is defined ~%}
+              <a href="https://twitter.com/{{ site.social.twitter.site }}" class="footer-social-icon" aria-label="Twitter">
+                <i class="fab fa-twitter"></i>
+              </a>
+              {%- endif ~%}
+              {%- if site.social.facebook.username is defined ~%}
+              <a href="https://facebook.com/{{ site.social.facebook.username }}" class="footer-social-icon" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              {%- endif ~%}
+              {%- if site.social.instagram.username is defined ~%}
+              <a href="https://instagram.com/{{ site.social.instagram.username }}" class="footer-social-icon" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+              {%- endif ~%}
+              {%- if site.social.github.username is defined ~%}
+              <a href="https://github.com/{{ site.social.github.username }}" class="footer-social-icon" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+              {%- endif ~%}
+              {%- if site.social.linkedin.username is defined ~%}
+              <a href="https://linkedin.com/in/{{ site.social.linkedin.username }}" class="footer-social-icon" aria-label="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              {%- endif ~%}
+            </div>
+          </div>
+          <div class="col-md-3 mb-4 mb-md-0">
+            <h5>Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="{{ url() }}">Home</a></li>
+              {%- for item in site.menus.main|default([])|sort_by_weight ~%}
+              <li><a href="{{ url(item.url) }}">{{ item.name }}</a></li>
+              {%- endfor ~%}
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h5>Contact</h5>
+            {%- if site.email is defined -%}
+            <p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+            {%- endif -%}
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p class="mb-0">&copy; {{ "now"|date("Y") }} {{ site.title }}. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>
 </html>

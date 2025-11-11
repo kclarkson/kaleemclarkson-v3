@@ -198,9 +198,6 @@ Your content goes here in **Markdown** format.
 # Build the site
 composer exec cecil build
 
-# Move built site to docs/ folder
-rm -rf docs && mv _site docs
-
 # Preview locally
 composer exec cecil serve
 # Open: http://localhost:8000
@@ -301,7 +298,6 @@ Your site deploys automatically to GitHub Pages when you push to main.
 
 # 2. Build the site (if not using editor)
 composer exec cecil build
-rm -rf docs && mv _site docs
 
 # 3. Review changes
 git status
@@ -490,6 +486,44 @@ git pull
 composer exec cecil serve  # Terminal 1
 npm run editor             # Terminal 2
 ```
+
+### Build Commands
+
+#### Development Server
+```bash
+composer exec cecil serve
+# or
+php cecil.phar serve
+# or
+npm run dev
+```
+- Outputs to: `.cecil/preview/`
+- URL: http://localhost:8000
+- Features: Live reload, non-minified CSS
+- Auto-rebuilds when files change
+
+#### Production Build
+```bash
+composer exec cecil build
+# or
+php cecil.phar build
+# or
+npm run build
+```
+- Outputs to: `docs/` (per config.yml)
+- Minifies CSS
+- Generates production URLs
+- Creates fingerprinted assets (e.g., `styles.[hash].css`)
+
+#### Clean Build (Recommended after major changes)
+```bash
+composer exec cecil clear && composer exec cecil build
+# or
+php cecil.phar clear && php cecil.phar build
+```
+- Clears `.cecil/` cache first
+- Forces fresh production build
+- Use when: updating Bootstrap, changing SCSS structure, fixing missing assets
 
 ### Save & Deploy
 ```bash
