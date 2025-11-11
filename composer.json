@@ -3,8 +3,7 @@
     "description": "Personal website built with Cecil",
     "type": "project",
     "require": {
-        "cecil/cecil": "^8.70",
-        "cecil/theme-comingsoon": "^1.7"
+        "cecil/cecil": "^8.70"
     },
     "config": {
         "allow-plugins": {

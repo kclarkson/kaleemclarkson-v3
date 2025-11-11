@@ -28,7 +28,11 @@
       "Bash(git log:*)",
       "Bash(node:*)",
       "Bash(/tmp/styles-working.css.map)",
-      "Bash(/tmp/custom-extract.css)"
+      "Bash(/tmp/custom-extract.css)",
+      "Bash(test:*)",
+      "Bash(php -r:*)",
+      "Bash(php vendor/bin/cecil build:*)",
+      "Bash(composer show:*)"
     ],
     "deny": [],
     "ask": []

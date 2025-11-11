@@ -451,7 +451,7 @@ The site uses Sass (SCSS) for styling with Bootstrap 5 as the foundation.
 
 #### File Structure
 ```
-themes/comingsoon/assets/scss/
+scss/
 ├── styles.scss                      # Main entry point (imports everything)
 ├── _variables_kaleemclarkson.scss  # Your custom color variables
 ├── _variables_bootstrap.scss        # Bootstrap variable overrides
@@ -493,18 +493,18 @@ This runs:
 **2. Edit your Sass files:**
 ```bash
 # Edit any component
-code themes/comingsoon/assets/scss/components/_hero.scss
+code scss/components/_hero.scss
 
 # Edit colors
-code themes/comingsoon/assets/scss/_variables_kaleemclarkson.scss
+code scss/_variables_kaleemclarkson.scss
 
 # Edit Bootstrap overrides
-code themes/comingsoon/assets/scss/_variables_bootstrap.scss
+code scss/_variables_bootstrap.scss
 ```
 
 **3. See changes instantly:**
 - Save your `.scss` file
-- Sass automatically compiles to `themes/comingsoon/static/css/styles.css`
+- Sass automatically compiles to `docs/css/styles.css`
 - Cecil detects the CSS change and triggers browser reload
 - Your changes appear in the browser immediately!
 
@@ -530,7 +530,7 @@ npm run build
 
 #### Customizing Colors
 
-Edit `themes/comingsoon/assets/scss/_variables_kaleemclarkson.scss`:
+Edit `scss/_variables_kaleemclarkson.scss`:
 
 ```scss
 // Brand Colors
@@ -548,7 +548,7 @@ These variables are available throughout your Sass files.
 
 **Option 1: Edit existing component files**
 ```scss
-// themes/comingsoon/assets/scss/components/_hero.scss
+// scss/components/_hero.scss
 .hero {
   background: $primary-color;
   padding: 4rem 0;
@@ -562,7 +562,7 @@ These variables are available throughout your Sass files.
 **Option 2: Create a new component file**
 ```bash
 # Create new file
-code themes/comingsoon/assets/scss/components/_testimonials.scss
+code scss/components/_testimonials.scss
 
 # Add your styles
 .testimonials {
@@ -599,7 +599,7 @@ Then import it in `styles.scss`:
 **Want to see the compiled CSS?**
 ```bash
 # View the compiled output
-cat themes/comingsoon/static/css/styles.css
+cat docs/css/styles.css
 ```
 
 ---
@@ -662,8 +662,8 @@ npm run dev
 - Features: Live reload, expanded CSS for debugging
 
 **What's happening:**
-- Watches: `themes/comingsoon/assets/scss/**/*.scss`
-- Compiles to: `themes/comingsoon/static/css/styles.css`
+- Watches: `scss/**/*.scss`
+- Compiles to: `docs/css/styles.css`
 - Cecil picks up the CSS changes automatically
 
 #### Development Server (Cecil Only)

@@ -7,8 +7,8 @@
     "editor": "node editor/server.js",
     "start": "node editor/server.js",
     "dev": "concurrently \"npm run watch:sass\" \"cecil serve\"",
-    "watch:sass": "sass --watch --quiet-deps --load-path=themes/comingsoon/static/node_modules themes/comingsoon/assets/scss/styles.scss:docs/css/styles.css --style=expanded",
-    "build:sass": "sass --quiet --load-path=themes/comingsoon/static/node_modules themes/comingsoon/assets/scss/styles.scss:docs/css/styles.css --style=compressed",
+    "watch:sass": "sass --watch --quiet-deps --load-path=node_modules scss/styles.scss:docs/css/styles.css --style=expanded",
+    "build:sass": "sass --quiet --load-path=node_modules scss/styles.scss:docs/css/styles.css --style=compressed",
     "build": "npm run build:sass && cecil build",
     "preview": "cecil serve --preview"
   },
@@ -21,6 +21,8 @@
   "author": "Kaleem Clarkson",
   "license": "MIT",
   "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.8",
     "cors": "^2.8.5",
     "express": "^4.18.2"
   },

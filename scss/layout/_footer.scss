@@ -3,8 +3,8 @@
 // ============================================================================
 
 .footer {
-  background-color: #343a40;
-  color: #fefefe;
+  background-color: $dark-gray;
+  color: $white;
   padding: 3rem 0 1.5rem;
 }
 .footer h5, .footer .h5 {
@@ -17,7 +17,7 @@
   opacity: 0.9;
 }
 .footer a {
-  color: #fefefe;
+  color: $white;
   text-decoration: none;
   transition: all 0.3s ease;
 }

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9b4e41a31abc0513f7176ae10f45b819",
+    "content-hash": "5e6c6e806605e2db267f0bf083785277",
     "packages": [
         {
             "name": "benjaminhoegh/parsedown-toc",
@@ -256,122 +256,6 @@
                 }
             ],
             "time": "2025-10-08T10:46:28+00:00"
-        },
-        {
-            "name": "cecil/theme-comingsoon",
-            "version": "1.7.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Cecilapp/theme-comingsoon.git",
-                "reference": "7275ff04a4487308ed4e32ae28ed41fa5c8644a0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Cecilapp/theme-comingsoon/zipball/7275ff04a4487308ed4e32ae28ed41fa5c8644a0",
-                "reference": "7275ff04a4487308ed4e32ae28ed41fa5c8644a0",
-                "shasum": ""
-            },
-            "require": {
-                "cecil/theme-installer": "^2.0"
-            },
-            "type": "cecil-theme",
-            "extra": {
-                "name": "comingsoon",
-                "branch-alias": {
-                    "dev-master": "1.x-dev"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "Cecil theme: Coming Soon",
-            "keywords": [
-                "cecil",
-                "coming soon",
-                "theme"
-            ],
-            "support": {
-                "issues": "https://github.com/Cecilapp/theme-comingsoon/issues",
-                "source": "https://github.com/Cecilapp/theme-comingsoon/tree/1.7.0"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/ArnaudLigny",
-                    "type": "github"
-                },
-                {
-                    "url": "https://opencollective.com/cecil",
-                    "type": "open_collective"
-                }
-            ],
-            "time": "2025-01-27T15:48:08+00:00"
-        },
-        {
-            "name": "cecil/theme-installer",
-            "version": "2.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Cecilapp/theme-installer.git",
-                "reference": "588ec8523a978229d23e10a0b8e0b6420192c154"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Cecilapp/theme-installer/zipball/588ec8523a978229d23e10a0b8e0b6420192c154",
-                "reference": "588ec8523a978229d23e10a0b8e0b6420192c154",
-                "shasum": ""
-            },
-            "require": {
-                "composer-plugin-api": ">=2.0"
-            },
-            "require-dev": {
-                "composer/composer": ">=2.0"
-            },
-            "type": "composer-plugin",
-            "extra": {
-                "class": "Cecil\\Installer\\Composer\\CecilPlugin",
-                "branch-alias": {
-                    "dev-master": "2.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Cecil\\Installer\\Composer": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Arnaud Ligny",
-                    "email": "arnaud@ligny.fr",
-                    "homepage": "https://arnaudligny.fr",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Installer for Cecil's themes",
-            "keywords": [
-                "cecil",
-                "installer",
-                "themes"
-            ],
-            "support": {
-                "issues": "https://github.com/Cecilapp/theme-installer/issues",
-                "source": "https://github.com/Cecilapp/theme-installer/tree/2.0.0"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/ArnaudLigny",
-                    "type": "github"
-                },
-                {
-                    "url": "https://opencollective.com/cecil",
-                    "type": "open_collective"
-                }
-            ],
-            "time": "2024-01-09T14:53:24+00:00"
         },
         {
             "name": "cocur/slugify",
@@ -5050,10 +4934,10 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {},
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": {},
-    "platform-dev": {},
+    "platform": [],
+    "platform-dev": [],
     "plugin-api-version": "2.6.0"
 }
