@@ -3,6 +3,7 @@ const fs = require('fs').promises;
 const path = require('path');
 const { exec } = require('child_process');
 const cors = require('cors');
+const yaml = require('js-yaml');
 
 const app = express();
 app.use(cors());
@@ -73,21 +74,22 @@ app.get('/api/pages/*', async (req, res) => {
 
         // Parse front matter
         let frontMatter = {};
+        let frontMatterRaw = '';
         let markdown = content;
 
         if (content.startsWith('---')) {
             const endIndex = content.indexOf('---', 3);
             if (endIndex !== -1) {
-                const frontMatterText = content.substring(3, endIndex).trim();
+                frontMatterRaw = content.substring(3, endIndex).trim();
                 markdown = content.substring(endIndex + 3).trim();
 
-                // Simple YAML parser for common fields
-                frontMatterText.split('\n').forEach(line => {
-                    const match = line.match(/^(\w+):\s*(.+)$/);
-                    if (match) {
-                        frontMatter[match[1]] = match[2].replace(/^["']|["']$/g, '');
-                    }
-                });
+                // Parse YAML using js-yaml
+                try {
+                    frontMatter = yaml.load(frontMatterRaw) || {};
+                } catch (error) {
+                    console.error('YAML parse error:', error);
+                    frontMatter = {};
+                }
             }
         }
 
@@ -95,6 +97,7 @@ app.get('/api/pages/*', async (req, res) => {
             success: true,
             markdown,
             frontMatter,
+            frontMatterRaw, // Send raw YAML for editing
             path: pagePath
         });
     } catch (error) {
@@ -109,7 +112,7 @@ app.get('/api/pages/*', async (req, res) => {
 app.post('/api/pages/*', async (req, res) => {
     try {
         const pagePath = req.params[0];
-        const { markdown, frontMatter } = req.body;
+        const { markdown, frontMatterRaw } = req.body;
         const filepath = path.join(PAGES_DIR, pagePath);
 
         // Security check
@@ -124,19 +127,16 @@ app.post('/api/pages/*', async (req, res) => {
         const dir = path.dirname(filepath);
         await fs.mkdir(dir, { recursive: true });
 
-        // Build front matter
-        const fm = frontMatter || {};
-        const frontMatterLines = ['---'];
+        // Build full content with frontmatter
+        let fullContent = '';
 
-        if (fm.title) frontMatterLines.push(`title: "${fm.title}"`);
-        if (fm.date) frontMatterLines.push(`date: ${fm.date}`);
-        if (fm.published !== undefined) frontMatterLines.push(`published: ${fm.published}`);
-        if (fm.layout) frontMatterLines.push(`layout: ${fm.layout}`);
-        if (fm.description) frontMatterLines.push(`description: "${fm.description}"`);
-
-        frontMatterLines.push('---');
-
-        const fullContent = frontMatterLines.join('\n') + '\n' + markdown;
+        if (frontMatterRaw) {
+            // Use raw YAML as-is (user edited it directly)
+            fullContent = '---\n' + frontMatterRaw + '\n---\n' + markdown;
+        } else {
+            // No frontmatter provided, just use markdown
+            fullContent = markdown;
+        }
 
         // Write file
         await fs.writeFile(filepath, fullContent, 'utf8');

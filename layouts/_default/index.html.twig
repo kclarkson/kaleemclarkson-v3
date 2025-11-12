@@ -27,7 +27,7 @@
       <!-- Video Background -->
       <div class="hero-video-wrapper">
         <video class="hero-video" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-          <source src="/videos/kaleem-maw-2023.mp4" type="video/mp4">
+          <source src="/videos/homepage-hero.mp4" type="video/mp4">
         </video>
         <div class="hero-video-overlay"></div>
       </div>
@@ -35,17 +35,17 @@
       <!-- Hero Content -->
       <div class="container h-100">
         <div class="row h-100 align-items-center">
-          <div class="col-lg-7">
+          <div class="col-lg-8">
             <div class="hero-content">
               <h1 class="hero-title mb-4">
-                <span class="accent-text-orange">Find Your</span><br>
-                <span class="text-white">ENERGY EDGE</span>
+                <span class="accent-text-orange">{{ page.hero.title_line1|default('Find Your') }}</span><br>
+                <span class="text-white">{{ page.hero.title_line2|default('ENERGY EDGE') }}</span>
               </h1>
-              <p class="hero-subtitle">Transform Your Team's Performance Through Human Connection</p>
-              <p class="hero-description">Since 2013, Kaleem Clarkson has helped leaders at Fortune 500 companies and innovative startups build remote cultures where people thrive and businesses flourish.</p>
+              <p class="hero-subtitle">{{ page.hero.subtitle|default('Transform Your Team\'s Performance Through Human Connection') }}</p>
+              <p class="hero-description">{{ page.hero.description|default('Since 2013, Kaleem Clarkson has helped leaders at Fortune 500 companies and innovative startups build remote cultures where people thrive and businesses flourish.') }}</p>
               <div class="d-flex flex-wrap gap-3 mt-4">
-                <a href="#video" class="btn btn-custom-primary">WATCH KALEEM IN ACTION</a>
-                <a href="#booking" class="btn btn-custom-secondary">BOOK KALEEM</a>
+                <a href="{{ page.hero.button1.link|default('#video') }}" class="btn btn-custom-primary">{{ page.hero.button1.text|default('WATCH KALEEM IN ACTION') }}</a>
+                <a href="{{ page.hero.button2.link|default('#booking') }}" class="btn btn-custom-secondary">{{ page.hero.button2.text|default('BOOK KALEEM') }}</a>
               </div>
             </div>
           </div>

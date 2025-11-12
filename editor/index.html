@@ -201,6 +201,68 @@
             min-width: 100px;
         }
 
+        .frontmatter-section {
+            padding: 20px 30px;
+            background: #f7fafc;
+            border-bottom: 1px solid #e1e8ed;
+        }
+
+        .frontmatter-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .frontmatter-header h3 {
+            font-size: 14px;
+            font-weight: 600;
+            color: #2d3748;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .frontmatter-toggle {
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 6px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 12px;
+            transition: background 0.2s;
+        }
+
+        .frontmatter-toggle:hover {
+            background: #5568d3;
+        }
+
+        .frontmatter-editor {
+            width: 100%;
+            min-height: 150px;
+            max-height: 300px;
+            padding: 12px;
+            border: 2px solid #e1e8ed;
+            border-radius: 6px;
+            font-family: 'Courier New', monospace;
+            font-size: 13px;
+            resize: vertical;
+            background: white;
+            transition: border-color 0.2s;
+        }
+
+        .frontmatter-editor:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .frontmatter-hint {
+            font-size: 12px;
+            color: #718096;
+            margin-top: 8px;
+        }
+
         .editor-wrapper {
             flex: 1;
             overflow: hidden;
@@ -351,6 +413,26 @@
             </div>
 
             <div id="status" class="status"></div>
+
+            <!-- Frontmatter Editor -->
+            <div class="frontmatter-section" id="frontmatter-section">
+                <div class="frontmatter-header">
+                    <h3>⚙️ Frontmatter (YAML)</h3>
+                    <button class="frontmatter-toggle" onclick="toggleFrontmatter()">
+                        <span id="frontmatter-toggle-text">Hide</span>
+                    </button>
+                </div>
+                <div id="frontmatter-container">
+                    <textarea
+                        id="frontmatter-editor"
+                        class="frontmatter-editor"
+                        placeholder="title: &quot;Page Title&quot;&#10;date: 2025-11-11&#10;published: true"
+                    ></textarea>
+                    <p class="frontmatter-hint">
+                        💡 Edit the YAML frontmatter directly. This preserves all nested fields like <code>hero:</code> configuration.
+                    </p>
+                </div>
+            </div>
 
             <div class="editor-wrapper">
                 <div id="editor"></div>
