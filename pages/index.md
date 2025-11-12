@@ -4,7 +4,7 @@ date: 2025-11-11
 published: true
 hero:
   title_line1: "Find Your"
-  title_line2: "ENERGY EDGE"
+  title_line2: "COMPETITIVE EDGE"
   subtitle: "Transform Your Team's Performance Through Human Connection"
   description: "Since 2013, Kaleem Clarkson has helped leaders at Fortune 500 companies and innovative startups build remote cultures where people thrive and businesses flourish."
   button1:
