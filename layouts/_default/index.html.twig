@@ -58,9 +58,9 @@
       <div class="container">
         <div class="row">
           <div class="col-12 text-center">
-            <div class="star-rating mb-2">★★★★★</div>
-            <h3 class="fw-black text-uppercase mb-2">"TOP 10 MUST-SEE MOTIVATIONAL SPEAKERS"</h3>
-            <p class="text-muted mb-0">— SUCCESS MAGAZINE</p>
+            <div class="star-rating mb-2">{% for i in 1..site.data.homepage['testimonial-bar'].stars %}★{% endfor %}</div>
+            <h3 class="fw-black text-uppercase mb-2">"{{ site.data.homepage['testimonial-bar'].title }}"</h3>
+            <p class="text-muted mb-0">— {{ site.data.homepage['testimonial-bar'].source }}</p>
           </div>
         </div>
       </div>
@@ -102,50 +102,21 @@
     <section class="keynotes-section pv-4">
       <div class="container">
         <div class="row g-4">
-          <!-- Increase Sales Card -->
+          {% for keynote in site.data.homepage.keynotes %}
           <div class="col-lg-4">
             <div class="keynote-card position-relative h-100">
               <div class="keynote-image-placeholder position-relative">
-                <img src="https://via.placeholder.com/400x500/1a1a1a/ffffff?text=INCREASE+SALES" alt="Increase Sales" class="img-fluid w-100" style="height: 400px; object-fit: cover;">
+                <img src="{{ keynote.image }}" alt="{{ keynote.title }}" class="img-fluid w-100" style="height: 400px; object-fit: cover;">
                 <div class="card-overlay"></div>
               </div>
               <div class="card-overlay-content text-white">
-                <h3 class="keynote-title text-white mb-3">INCREASE SALES</h3>
-                <p class="mb-3">Channel your energy into revenue generating moves, spark sales growth through game-like influence, and amplify impact with bold consistent momentum.</p>
-                <a href="#" class="learn-more-link">LEARN MORE →</a>
+                <h3 class="keynote-title text-white mb-3">{{ keynote.title }}</h3>
+                <p class="mb-3">{{ keynote.description }}</p>
+                <a href="{{ keynote.link }}" class="learn-more-link">LEARN MORE →</a>
               </div>
             </div>
           </div>
-
-          <!-- Elevate Leadership Card -->
-          <div class="col-lg-4">
-            <div class="keynote-card position-relative h-100">
-              <div class="keynote-image-placeholder position-relative">
-                <img src="https://via.placeholder.com/400x500/1a1a1a/ffffff?text=ELEVATE+LEADERSHIP" alt="Elevate Leadership" class="img-fluid w-100" style="height: 400px; object-fit: cover;">
-                <div class="card-overlay"></div>
-              </div>
-              <div class="card-overlay-content text-white">
-                <h3 class="keynote-title text-white mb-3">ELEVATE LEADERSHIP</h3>
-                <p class="mb-3">Galvanize others with renewed vitality, ignite positive emotional contagion, and communicate the mission authentically and compellingly.</p>
-                <a href="#" class="learn-more-link">LEARN MORE →</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Optimize Performance Card -->
-          <div class="col-lg-4">
-            <div class="keynote-card position-relative h-100">
-              <div class="keynote-image-placeholder position-relative">
-                <img src="https://via.placeholder.com/400x500/1a1a1a/ffffff?text=OPTIMIZE+PERFORMANCE" alt="Optimize Performance" class="img-fluid w-100" style="height: 400px; object-fit: cover;">
-                <div class="card-overlay"></div>
-              </div>
-              <div class="card-overlay-content text-white">
-                <h3 class="keynote-title text-white mb-3">OPTIMIZE PERFORMANCE</h3>
-                <p class="mb-3">Achieve greater productivity AND profitability as you optimize performance and align your work with what drives meaningful results.</p>
-                <a href="#" class="learn-more-link">LEARN MORE →</a>
-              </div>
-            </div>
-          </div>
+          {% endfor %}
         </div>
       </div>
     </section>
@@ -156,33 +127,23 @@
         <div class="row align-items-center">
           <div class="col-lg-6">
             <h2 class="section-title mb-4">
-              <span class="accent-text-orange">Energy Management</span><br>
-              IS THE NEW TIME MANAGEMENT
+              <span class="accent-text-orange">{{ site.data.homepage.energy.title }}</span><br>
+              {{ site.data.homepage.energy.subtitle }}
             </h2>
             <p class="lead mb-4">
-              When it comes to selling, leading, and performing in today's increasingly automated world, your personal energy is your ultimate differentiator.
+              {{ site.data.homepage.energy.lead }}
             </p>
-            <p class="mb-4">
-              Historically speaking, talking about someone's "energy" was a topic reserved for palm readers and new age retreats. But fast-forward to our new AI and automation-driven world of work, and conversations about positive human energy have evolved from a "woo-woo, nice-to-have" to a paramount workplace "need-to-have."
-            </p>
-            <p class="mb-4">
-              While we can no longer out-work or out-hustle our robotic competitors, we do retain one powerful edge: our human energy.
-            </p>
-            <p class="fw-bold mb-4">
-              In fact, your "energy" is now the #1 most critical driver of professional success or failure. And Kaleem Clarkson can prove it.
-            </p>
-            <p class="mb-4">
-              Her groundbreaking, proprietary, PhD-led research study unearthed that a leader's personal energy was perceived as more influential and impactful than their education, skillset, or connections COMBINED. This surprising scientific discovery proves that in today's marketplace, the fastest way to raise your professional value is to raise your personal energy edge.</p>
+            {{ site.data.homepage.energy.content | markdown_to_html }}
             <div class="d-flex flex-wrap gap-3 mt-5">
-              <a href="#booking" class="btn btn-custom-primary">BOOK KALEEM</a>
+              <a href="{{ site.data.homepage.energy.cta_primary_link }}" class="btn btn-custom-primary">{{ site.data.homepage.energy.cta_primary_text }}</a>
               <div>
-                <a href="#keynotes" class="d-block mt-3 fw-semibold text-dark text-decoration-none">FULL KEYNOTE DESCRIPTIONS →</a>
+                <a href="{{ site.data.homepage.energy.cta_secondary_link }}" class="d-block mt-3 fw-semibold text-dark text-decoration-none">{{ site.data.homepage.energy.cta_secondary_text }}</a>
               </div>
             </div>
           </div>
           <div class="col-lg-6">
             <div class="big-idea-image-placeholder mb-4 mb-lg-0 ps-lg-5">
-              <img src="/images/kaleem-on-stage.jpg" alt="Kaleem on stage" class="img-fluid rounded shadow-lg">
+              <img src="{{ site.data.homepage.energy.image }}" alt="Kaleem on stage" class="img-fluid rounded shadow-lg">
             </div>
           </div>
         </div>
