@@ -27,6 +27,11 @@
   color: $white;
 }
 
+// Accent Text Classes for headings and highlights
+.accent-text-orange {
+  color: $orange;
+}
+
 // Padding Classes
 .ph-5 {
   @include media-breakpoint-up(md) {

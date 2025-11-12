@@ -7,9 +7,10 @@
     "editor": "node editor/server.js",
     "start": "node editor/server.js",
     "dev": "concurrently \"npm run watch:sass\" \"cecil serve\"",
-    "watch:sass": "sass --watch --quiet-deps --load-path=node_modules scss/styles.scss:docs/css/styles.css --style=expanded",
-    "build:sass": "sass --quiet --load-path=node_modules scss/styles.scss:docs/css/styles.css --style=compressed",
-    "build": "npm run build:sass && cecil build",
+    "watch:sass": "sass --watch --quiet-deps --load-path=node_modules scss/styles.scss:static/css/styles.css --style=expanded",
+    "build:sass": "sass --quiet --load-path=node_modules scss/styles.scss:static/css/styles.css --style=expanded",
+    "build:sass:prod": "sass --quiet --load-path=node_modules scss/styles.scss:static/css/styles.css --style=compressed",
+    "build": "npm run build:sass:prod && cecil build",
     "preview": "cecil serve --preview"
   },
   "keywords": [

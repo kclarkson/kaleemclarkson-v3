@@ -4,8 +4,8 @@
 // Custom button styles for CTAs and interactive elements
 
 .btn-custom-primary {
-  background-color: #43b449;
-  color: #343a40;
+  background-color: $primary-green;
+  color: $white;
   font-weight: 800;
   text-transform: uppercase;
   padding: 1rem 2.5rem;
@@ -14,31 +14,42 @@
   font-size: 1rem;
   letter-spacing: 0.05em;
   transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba($primary-green, 0.3);
 
   &:hover {
-    background-color: #fefefe;
-    color: #343a40;
+    background-color: darken($primary-green, 8%);
+    color: $white;
     transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(67, 180, 73, 0.3);
+    box-shadow: 0 8px 20px rgba($primary-green, 0.4);
+  }
+
+  &:active {
+    transform: translateY(0);
   }
 }
 
 .btn-custom-secondary {
   background-color: transparent;
-  color: #fefefe;
-  font-weight: 600;
+  color: $white;
+  font-weight: 700;
   text-transform: uppercase;
   padding: 1rem 2.5rem;
   border-radius: 0;
-  border: 2px solid #fefefe;
+  border: 2px solid $white;
   font-size: 1rem;
   letter-spacing: 0.05em;
   transition: all 0.3s ease;
 
   &:hover {
-    background-color: #fefefe;
-    color: #343a40;
+    background-color: $white;
+    color: $primary-dark;
+    border-color: $white;
     transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba($white, 0.3);
+  }
+
+  &:active {
+    transform: translateY(0);
   }
 }
 

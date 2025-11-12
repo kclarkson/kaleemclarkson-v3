@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-Disallow: /404.html
-Sitemap: https://www.kaleemclarkson.com/sitemap.xml

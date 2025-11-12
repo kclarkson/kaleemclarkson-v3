@@ -504,3 +504,52 @@
     font-size: 0.875rem;
   }
 }
+
+// ============================================
+// OVERLAY CARD STYLES - For redesign
+// ============================================
+// Dark overlay for cards with background images
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba($dark-gray, 0.7);
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+
+// Card content positioning on top of overlay
+.card-overlay-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem;
+  z-index: 2;
+}
+
+// Learn more link with arrow animation
+.learn-more-link {
+  color: $orange;
+  text-decoration: none;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  letter-spacing: 0.05em;
+  transition: all 0.3s ease;
+  display: inline-block;
+
+  &:hover {
+    color: darken($orange, 10%);
+    transform: translateX(5px);
+  }
+}
+
+// Star rating display
+.star-rating {
+  color: $orange;
+  font-size: 1.5rem;
+  letter-spacing: 0.25rem;
+}
