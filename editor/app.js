@@ -322,6 +322,22 @@ function showStatus(message, type = 'info') {
 }
 
 /**
+ * Show status message for data editor
+ */
+function showDataStatus(message, type = 'info') {
+    const statusEl = document.getElementById('status-data');
+    statusEl.textContent = message;
+    statusEl.className = 'status ' + type;
+
+    // Auto-hide after 5 seconds for success messages
+    if (type === 'success') {
+        setTimeout(() => {
+            statusEl.className = 'status';
+        }, 5000);
+    }
+}
+
+/**
  * Utility: Slugify text for file names
  */
 function slugify(text) {
@@ -395,7 +411,7 @@ function renderDataFileList() {
  */
 async function loadDataFile(filePath) {
     try {
-        showStatus('Loading data file...', 'info');
+        showDataStatus('Loading data file...', 'info');
 
         const response = await fetch(`${API_URL}/data/${filePath}`);
         const data = await response.json();
@@ -410,7 +426,7 @@ async function loadDataFile(filePath) {
 
         // Switch to data editor view
         document.getElementById('editor-container').style.display = 'none';
-        document.getElementById('data-editor-container').style.display = 'block';
+        document.getElementById('data-editor-container').style.display = 'flex';
 
         // Render data fields
         renderDataFields(currentDataContent, filePath);
@@ -418,10 +434,10 @@ async function loadDataFile(filePath) {
         // Update UI
         renderDataFileList();
 
-        showStatus(`✅ Loaded: ${filePath}`, 'success');
+        showDataStatus(`✅ Loaded: ${filePath}`, 'success');
 
     } catch (error) {
-        showStatus('Error loading data file: ' + error.message, 'error');
+        showDataStatus('Error loading data file: ' + error.message, 'error');
     }
 }
 
@@ -546,6 +562,14 @@ function renderDataFields(data, filePath) {
     const container = document.getElementById('data-fields');
     container.innerHTML = '';
 
+    // Clear old editor instances
+    Object.keys(dataEditors).forEach(key => {
+        if (dataEditors[key] && typeof dataEditors[key].destroy === 'function') {
+            dataEditors[key].destroy();
+        }
+    });
+    dataEditors = {};
+
     // Add file header
     const header = document.createElement('div');
     header.className = 'data-file-header';
@@ -586,6 +610,8 @@ function renderDataFields(data, filePath) {
             const fieldPath = editorEl.closest('.data-field').dataset.path;
             const value = getNestedValue(data, fieldPath) || '';
 
+            console.log('Creating editor for path:', fieldPath, 'with value:', value);
+
             const editorInstance = new toastui.Editor({
                 el: editorEl,
                 initialValue: value,
@@ -602,6 +628,7 @@ function renderDataFields(data, filePath) {
 
             dataEditors[fieldPath] = editorInstance;
         });
+        console.log('Total editors created:', Object.keys(dataEditors).length);
     }, 100);
 }
 
@@ -610,15 +637,17 @@ function renderDataFields(data, filePath) {
  */
 async function saveDataFile() {
     if (!currentDataFile) {
-        showStatus('No data file selected', 'error');
+        showDataStatus('No data file selected', 'error');
         return;
     }
 
     try {
-        showStatus('Saving data file...', 'info');
+        showDataStatus('Saving data file...', 'info');
 
         // Collect all field values
         const updatedData = collectDataFieldValues();
+
+        console.log('Collected data:', updatedData);
 
         // Save via API
         const response = await fetch(`${API_URL}/data/${currentDataFile}`, {
@@ -633,16 +662,19 @@ async function saveDataFile() {
 
         const data = await response.json();
 
+        console.log('Save response:', data);
+
         if (!data.success) {
             throw new Error(data.error || 'Failed to save data file');
         }
 
         currentDataContent = updatedData;
 
-        showStatus(`✅ Saved successfully! ${data.rebuilt ? 'Site rebuilt.' : ''}`, 'success');
+        showDataStatus(`✅ Saved successfully! ${data.rebuilt ? 'Site rebuilt.' : ''}`, 'success');
 
     } catch (error) {
-        showStatus('Error saving data file: ' + error.message, 'error');
+        console.error('Save error:', error);
+        showDataStatus('Error saving data file: ' + error.message, 'error');
     }
 }
 
@@ -652,16 +684,25 @@ async function saveDataFile() {
 function collectDataFieldValues() {
     const data = JSON.parse(JSON.stringify(currentDataContent)); // Deep clone
 
+    console.log('Starting data collection from:', currentDataContent);
+    console.log('Available editor instances:', Object.keys(dataEditors));
+
     // Collect markdown editor values
     Object.keys(dataEditors).forEach(fieldPath => {
         const value = dataEditors[fieldPath].getMarkdown();
+        console.log(`Collecting markdown from ${fieldPath}:`, value);
         setNestedValue(data, fieldPath, value);
     });
 
     // Collect regular input values
-    document.querySelectorAll('.data-field input[data-type]').forEach(input => {
+    const inputs = document.querySelectorAll('.data-field input[data-type]');
+    console.log('Found', inputs.length, 'input fields');
+
+    inputs.forEach(input => {
         const fieldPath = input.closest('.data-field').dataset.path;
         let value = input.value;
+
+        console.log(`Collecting input from ${fieldPath} (type: ${input.dataset.type}):`, value);
 
         switch (input.dataset.type) {
             case 'number':
@@ -675,6 +716,7 @@ function collectDataFieldValues() {
         setNestedValue(data, fieldPath, value);
     });
 
+    console.log('Final collected data:', data);
     return data;
 }
 
