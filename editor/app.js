@@ -5,7 +5,9 @@ const API_URL = 'http://localhost:3000/api';
 let editor;
 let currentPage = null;
 let currentFrontMatter = {};
+let currentFrontMatterRaw = '';
 let pages = [];
+let frontmatterVisible = true;
 
 /**
  * Initialize the editor on page load
@@ -134,9 +136,13 @@ async function loadPage(pagePath) {
         // Update current page state
         currentPage = pagePath;
         currentFrontMatter = data.frontMatter || {};
+        currentFrontMatterRaw = data.frontMatterRaw || '';
 
         // Update title input
         document.getElementById('page-title').value = currentFrontMatter.title || '';
+
+        // Update frontmatter editor
+        document.getElementById('frontmatter-editor').value = currentFrontMatterRaw;
 
         // Update UI
         renderPageList();
@@ -160,8 +166,8 @@ async function savePage() {
     try {
         showStatus('Saving page...', 'info');
 
-        const title = document.getElementById('page-title').value.trim();
         const markdown = editor.getMarkdown();
+        const frontMatterRaw = document.getElementById('frontmatter-editor').value.trim();
 
         // Determine the page path
         let pagePath = currentPage;
@@ -172,14 +178,6 @@ async function savePage() {
             }
         }
 
-        // Prepare front matter
-        const frontMatter = {
-            ...currentFrontMatter,
-            title: title || pagePath.replace('.md', '').split('/').pop(),
-            date: currentFrontMatter.date || new Date().toISOString().split('T')[0],
-            published: currentFrontMatter.published !== undefined ? currentFrontMatter.published : true
-        };
-
         // Save via API
         const response = await fetch(`${API_URL}/pages/${pagePath}`, {
             method: 'POST',
@@ -188,7 +186,7 @@ async function savePage() {
             },
             body: JSON.stringify({
                 markdown,
-                frontMatter
+                frontMatterRaw
             })
         });
 
@@ -204,7 +202,7 @@ async function savePage() {
             await loadPages();
         }
 
-        currentFrontMatter = frontMatter;
+        currentFrontMatterRaw = frontMatterRaw;
 
         showStatus(`✅ Saved successfully! ${data.rebuilt ? 'Site rebuilt.' : ''}`, 'success');
 
@@ -244,8 +242,10 @@ async function deletePage() {
         // Reset editor
         currentPage = null;
         currentFrontMatter = {};
+        currentFrontMatterRaw = '';
         editor.setMarkdown('# Select or create a page');
         document.getElementById('page-title').value = '';
+        document.getElementById('frontmatter-editor').value = '';
         document.getElementById('new-page-path').value = '';
 
         // Reload page list
@@ -289,10 +289,29 @@ function createNewPage() {
     // Set up new page
     currentPage = null;
     currentFrontMatter = {};
+    currentFrontMatterRaw = `title: "${titleFromPath}"\ndate: ${new Date().toISOString().split('T')[0]}\npublished: true`;
     document.getElementById('page-title').value = titleFromPath;
+    document.getElementById('frontmatter-editor').value = currentFrontMatterRaw;
     editor.setMarkdown(`# ${titleFromPath}\n\nStart writing your content here...`);
 
     showStatus(`Creating new page: ${fileName}`, 'info');
+}
+
+/**
+ * Toggle frontmatter editor visibility
+ */
+function toggleFrontmatter() {
+    frontmatterVisible = !frontmatterVisible;
+    const container = document.getElementById('frontmatter-container');
+    const toggleText = document.getElementById('frontmatter-toggle-text');
+
+    if (frontmatterVisible) {
+        container.style.display = 'block';
+        toggleText.textContent = 'Hide';
+    } else {
+        container.style.display = 'none';
+        toggleText.textContent = 'Show';
+    }
 }
 
 /**
