@@ -8,6 +8,7 @@ themes/
 
 # Node modules
 node_modules/
+static/node_modules
 package-lock.json
 
 # OS files
