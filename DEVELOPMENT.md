@@ -70,6 +70,9 @@ cd themes/comingsoon/static && npm install && cd ../../..
 
 # Install Node.js dependencies (editor)
 npm install
+
+# Create symlink for Bootstrap (required for Cecil to find SCSS imports)
+ln -s ../node_modules static/node_modules
 ```
 
 ### Step 5: Verify Installation
@@ -378,12 +381,18 @@ Can't find stylesheet to import.
 @import "bootstrap/scss/bootstrap.scss";
 ```
 
-**Solution:** Install Bootstrap in the theme directory
+**Solution:** Create the symlink and install dependencies
 ```bash
-cd themes/comingsoon/static && npm install && cd ../../..
+# Install npm packages
+npm install
+
+# Create the symlink (this is the key step)
+ln -s ../node_modules static/node_modules
 ```
 
-This is required because the Coming Soon theme uses Bootstrap, which must be installed separately.
+This is required because Cecil processes SCSS files from the `static/` directory, but npm installs packages in the root `node_modules/` directory. The symlink bridges this gap.
+
+**Note:** The symlink is created automatically if you ran the initial setup (Step 4), but you may need to recreate it if you cloned the repo on a new machine.
 
 ### Issue: "composer: command not found"
 
