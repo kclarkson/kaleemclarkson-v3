@@ -7,6 +7,11 @@ let currentPage = null;
 let currentFrontMatter = {};
 let currentFrontMatterRaw = '';
 let pages = [];
+let dataFiles = [];
+let currentDataFile = null;
+let currentDataContent = null;
+let dataEditors = {}; // Store multiple editor instances for data fields
+let currentMode = 'pages'; // 'pages' or 'data'
 let frontmatterVisible = true;
 
 /**
@@ -41,13 +46,18 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     // Load page list
     await loadPages();
+    await loadDataFiles();
 
     // Keyboard shortcuts
     document.addEventListener('keydown', (e) => {
         // Ctrl/Cmd + S to save
         if ((e.ctrlKey || e.metaKey) && e.key === 's') {
             e.preventDefault();
-            savePage();
+            if (currentMode === 'pages') {
+                savePage();
+            } else {
+                saveDataFile();
+            }
         }
     });
 });
@@ -331,6 +341,22 @@ function showStatus(message, type = 'info') {
 }
 
 /**
+ * Show status message for data editor
+ */
+function showDataStatus(message, type = 'info') {
+    const statusEl = document.getElementById('status-data');
+    statusEl.textContent = message;
+    statusEl.className = 'status ' + type;
+
+    // Auto-hide after 5 seconds for success messages
+    if (type === 'success') {
+        setTimeout(() => {
+            statusEl.className = 'status';
+        }, 5000);
+    }
+}
+
+/**
  * Utility: Slugify text for file names
  */
 function slugify(text) {
@@ -340,4 +366,424 @@ function slugify(text) {
         .replace(/[^\w\s-]/g, '')
         .replace(/\s+/g, '-')
         .replace(/-+/g, '-');
+}
+
+// ============ DATA FILES FUNCTIONALITY ============
+
+/**
+ * Load all data files from the API
+ */
+async function loadDataFiles() {
+    try {
+        const response = await fetch(`${API_URL}/data`);
+        const data = await response.json();
+
+        if (!data.success) {
+            throw new Error(data.error || 'Failed to load data files');
+        }
+
+        dataFiles = data.files;
+        renderDataFileList();
+
+    } catch (error) {
+        console.error('Error loading data files:', error);
+        showStatus('Error loading data files: ' + error.message, 'error');
+    }
+}
+
+/**
+ * Render the data file list in the sidebar
+ */
+function renderDataFileList() {
+    const dataList = document.getElementById('data-list');
+    if (!dataList) return;
+
+    dataList.innerHTML = '';
+
+    if (dataFiles.length === 0) {
+        dataList.innerHTML = `
+            <div class="empty-state">
+                <div class="empty-state-icon">📊</div>
+                <p>No data files yet</p>
+            </div>
+        `;
+        return;
+    }
+
+    dataFiles.forEach(file => {
+        const li = document.createElement('li');
+        li.className = 'page-item';
+        if (currentDataFile === file) {
+            li.classList.add('active');
+        }
+
+        const icon = '📊';
+        li.innerHTML = `<span class="page-item-icon">${icon}</span>${file}`;
+
+        li.onclick = () => loadDataFile(file);
+        dataList.appendChild(li);
+    });
+}
+
+/**
+ * Load a specific data file
+ */
+async function loadDataFile(filePath) {
+    try {
+        showDataStatus('Loading data file...', 'info');
+
+        const response = await fetch(`${API_URL}/data/${filePath}`);
+        const data = await response.json();
+
+        if (!data.success) {
+            throw new Error(data.error || 'Failed to load data file');
+        }
+
+        currentDataFile = filePath;
+        currentDataContent = data.data;
+        currentMode = 'data';
+
+        // Switch to data editor view
+        document.getElementById('editor-container').style.display = 'none';
+        document.getElementById('data-editor-container').style.display = 'flex';
+
+        // Render data fields
+        renderDataFields(currentDataContent, filePath);
+
+        // Update UI
+        renderDataFileList();
+
+        showDataStatus(`✅ Loaded: ${filePath}`, 'success');
+
+    } catch (error) {
+        showDataStatus('Error loading data file: ' + error.message, 'error');
+    }
+}
+
+/**
+ * Detect field type based on name and value
+ */
+function detectFieldType(fieldName, value) {
+    const name = fieldName.toLowerCase();
+
+    // Array detection
+    if (Array.isArray(value)) {
+        return 'array';
+    }
+
+    // Object detection
+    if (typeof value === 'object' && value !== null) {
+        return 'object';
+    }
+
+    // Boolean detection
+    if (typeof value === 'boolean') {
+        return 'boolean';
+    }
+
+    // Number detection
+    if (typeof value === 'number') {
+        return 'number';
+    }
+
+    // Markdown field patterns
+    const markdownPatterns = ['content', 'body', 'description', 'bio', 'summary', 'text', 'excerpt', 'message', 'quote', 'details', 'about'];
+    if (markdownPatterns.includes(name)) {
+        return 'markdown';
+    }
+
+    // Check for markdown indicators in content
+    if (typeof value === 'string' && (
+        value.includes('\n\n') ||
+        value.includes('**') ||
+        value.includes('*') ||
+        value.includes('[') ||
+        value.includes('#') ||
+        (value.length > 100 && value.includes('\n'))
+    )) {
+        return 'markdown';
+    }
+
+    // URL/Link patterns
+    const urlPatterns = ['link', 'url', 'href', 'image', 'video', 'src', 'path'];
+    if (urlPatterns.some(pattern => name.includes(pattern))) {
+        return 'url';
+    }
+
+    // Default to text
+    return 'text';
+}
+
+/**
+ * Render a single data field
+ */
+function renderDataField(fieldName, value, fieldPath) {
+    const fieldType = detectFieldType(fieldName, value);
+    const fieldId = `field-${fieldPath.replace(/\./g, '-')}`;
+
+    let html = `<div class="data-field" data-path="${fieldPath}">`;
+    html += `<label for="${fieldId}">${fieldName}</label>`;
+
+    switch (fieldType) {
+        case 'markdown':
+            html += `<div id="${fieldId}" class="markdown-editor"></div>`;
+            break;
+
+        case 'text':
+            html += `<input type="text" id="${fieldId}" class="form-control" value="${escapeHtml(value || '')}" data-type="text">`;
+            break;
+
+        case 'url':
+            html += `<input type="url" id="${fieldId}" class="form-control" value="${escapeHtml(value || '')}" data-type="url">`;
+            break;
+
+        case 'number':
+            html += `<input type="number" id="${fieldId}" class="form-control" value="${value}" data-type="number">`;
+            break;
+
+        case 'boolean':
+            html += `<input type="checkbox" id="${fieldId}" ${value ? 'checked' : ''} data-type="boolean">`;
+            break;
+
+        case 'array':
+            html += `<div class="array-container" id="${fieldId}">`;
+            value.forEach((item, index) => {
+                if (typeof item === 'object') {
+                    html += `<div class="array-item"><h4>${fieldName} #${index + 1}</h4>`;
+                    Object.keys(item).forEach(key => {
+                        html += renderDataField(key, item[key], `${fieldPath}.${index}.${key}`);
+                    });
+                    html += `</div>`;
+                } else {
+                    html += `<input type="text" class="form-control array-simple-item" value="${escapeHtml(item)}" data-index="${index}">`;
+                }
+            });
+            html += `</div>`;
+            break;
+
+        case 'object':
+            html += `<div class="object-container">`;
+            Object.keys(value).forEach(key => {
+                html += renderDataField(key, value[key], `${fieldPath}.${key}`);
+            });
+            html += `</div>`;
+            break;
+    }
+
+    html += `</div>`;
+    return html;
+}
+
+/**
+ * Render all data fields
+ */
+function renderDataFields(data, filePath) {
+    const container = document.getElementById('data-fields');
+    container.innerHTML = '';
+
+    // Clear old editor instances
+    Object.keys(dataEditors).forEach(key => {
+        if (dataEditors[key] && typeof dataEditors[key].destroy === 'function') {
+            dataEditors[key].destroy();
+        }
+    });
+    dataEditors = {};
+
+    // Add file header
+    const header = document.createElement('div');
+    header.className = 'data-file-header';
+    header.innerHTML = `
+        <h2>📊 ${filePath}</h2>
+        <button onclick="saveDataFile()" class="btn btn-primary">Save</button>
+    `;
+    container.appendChild(header);
+
+    // Render fields
+    const fieldsContainer = document.createElement('div');
+    fieldsContainer.className = 'fields-container';
+
+    if (Array.isArray(data)) {
+        // Root level array
+        data.forEach((item, index) => {
+            const itemHtml = `<div class="array-item"><h3>Item #${index + 1}</h3>`;
+            fieldsContainer.innerHTML += itemHtml;
+            if (typeof item === 'object') {
+                Object.keys(item).forEach(key => {
+                    fieldsContainer.innerHTML += renderDataField(key, item[key], `${index}.${key}`);
+                });
+            }
+            fieldsContainer.innerHTML += `</div>`;
+        });
+    } else {
+        // Root level object
+        Object.keys(data).forEach(key => {
+            fieldsContainer.innerHTML += renderDataField(key, data[key], key);
+        });
+    }
+
+    container.appendChild(fieldsContainer);
+
+    // Initialize markdown editors
+    setTimeout(() => {
+        document.querySelectorAll('.markdown-editor').forEach(editorEl => {
+            const fieldPath = editorEl.closest('.data-field').dataset.path;
+            const value = getNestedValue(data, fieldPath) || '';
+
+            console.log('Creating editor for path:', fieldPath, 'with value:', value);
+
+            const editorInstance = new toastui.Editor({
+                el: editorEl,
+                initialValue: value,
+                previewStyle: 'vertical',
+                height: '300px',
+                initialEditType: 'wysiwyg',
+                usageStatistics: false,
+                toolbarItems: [
+                    ['heading', 'bold', 'italic'],
+                    ['ul', 'ol'],
+                    ['link', 'code']
+                ]
+            });
+
+            dataEditors[fieldPath] = editorInstance;
+        });
+        console.log('Total editors created:', Object.keys(dataEditors).length);
+    }, 100);
+}
+
+/**
+ * Save the current data file
+ */
+async function saveDataFile() {
+    if (!currentDataFile) {
+        showDataStatus('No data file selected', 'error');
+        return;
+    }
+
+    try {
+        showDataStatus('Saving data file...', 'info');
+
+        // Collect all field values
+        const updatedData = collectDataFieldValues();
+
+        console.log('Collected data:', updatedData);
+
+        // Save via API
+        const response = await fetch(`${API_URL}/data/${currentDataFile}`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                data: updatedData
+            })
+        });
+
+        const data = await response.json();
+
+        console.log('Save response:', data);
+
+        if (!data.success) {
+            throw new Error(data.error || 'Failed to save data file');
+        }
+
+        currentDataContent = updatedData;
+
+        showDataStatus(`✅ Saved successfully! ${data.rebuilt ? 'Site rebuilt.' : ''}`, 'success');
+
+    } catch (error) {
+        console.error('Save error:', error);
+        showDataStatus('Error saving data file: ' + error.message, 'error');
+    }
+}
+
+/**
+ * Collect values from all data fields
+ */
+function collectDataFieldValues() {
+    const data = JSON.parse(JSON.stringify(currentDataContent)); // Deep clone
+
+    console.log('Starting data collection from:', currentDataContent);
+    console.log('Available editor instances:', Object.keys(dataEditors));
+
+    // Collect markdown editor values
+    Object.keys(dataEditors).forEach(fieldPath => {
+        const value = dataEditors[fieldPath].getMarkdown();
+        console.log(`Collecting markdown from ${fieldPath}:`, value);
+        setNestedValue(data, fieldPath, value);
+    });
+
+    // Collect regular input values
+    const inputs = document.querySelectorAll('.data-field input[data-type]');
+    console.log('Found', inputs.length, 'input fields');
+
+    inputs.forEach(input => {
+        const fieldPath = input.closest('.data-field').dataset.path;
+        let value = input.value;
+
+        console.log(`Collecting input from ${fieldPath} (type: ${input.dataset.type}):`, value);
+
+        switch (input.dataset.type) {
+            case 'number':
+                value = parseFloat(value);
+                break;
+            case 'boolean':
+                value = input.checked;
+                break;
+        }
+
+        setNestedValue(data, fieldPath, value);
+    });
+
+    console.log('Final collected data:', data);
+    return data;
+}
+
+/**
+ * Get nested value from object using dot notation
+ */
+function getNestedValue(obj, path) {
+    return path.split('.').reduce((current, key) => current?.[key], obj);
+}
+
+/**
+ * Set nested value in object using dot notation
+ */
+function setNestedValue(obj, path, value) {
+    const keys = path.split('.');
+    const lastKey = keys.pop();
+    const target = keys.reduce((current, key) => current[key], obj);
+    target[lastKey] = value;
+}
+
+/**
+ * Escape HTML for safe display
+ */
+function escapeHtml(text) {
+    const div = document.createElement('div');
+    div.textContent = text;
+    return div.innerHTML;
+}
+
+/**
+ * Switch between pages and data modes
+ */
+function switchToPages() {
+    currentMode = 'pages';
+    document.getElementById('editor-container').style.display = 'flex';
+    document.getElementById('data-editor-container').style.display = 'none';
+    document.getElementById('pages-tab').classList.add('active');
+    document.getElementById('data-tab').classList.remove('active');
+    document.getElementById('pages-content').classList.add('active');
+    document.getElementById('data-content').classList.remove('active');
+}
+
+function switchToData() {
+    currentMode = 'data';
+    document.getElementById('editor-container').style.display = 'none';
+    document.getElementById('data-editor-container').style.display = 'flex';
+    document.getElementById('pages-tab').classList.remove('active');
+    document.getElementById('data-tab').classList.add('active');
+    document.getElementById('pages-content').classList.remove('active');
+    document.getElementById('data-content').classList.add('active');
 }

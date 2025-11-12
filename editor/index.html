@@ -360,41 +360,158 @@
         ::-webkit-scrollbar-thumb:hover {
             background: #a0aec0;
         }
+
+        /* Tabs */
+        .sidebar-tabs {
+            display: flex;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #e1e8ed;
+        }
+
+        .sidebar-tab {
+            flex: 1;
+            padding: 10px;
+            text-align: center;
+            cursor: pointer;
+            font-size: 13px;
+            font-weight: 500;
+            color: #718096;
+            transition: all 0.2s;
+            border-bottom: 2px solid transparent;
+            margin-bottom: -2px;
+        }
+
+        .sidebar-tab:hover {
+            color: #667eea;
+        }
+
+        .sidebar-tab.active {
+            color: #667eea;
+            border-bottom: 2px solid #667eea;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        /* Data editor styles */
+        #data-editor-container {
+            display: none;
+        }
+
+        .data-file-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #e1e8ed;
+        }
+
+        .data-field {
+            margin-bottom: 20px;
+        }
+
+        .data-field label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #2d3748;
+            font-size: 14px;
+        }
+
+        .data-field input.form-control,
+        .data-field textarea.form-control {
+            width: 100%;
+            padding: 10px 12px;
+            border: 2px solid #e1e8ed;
+            border-radius: 6px;
+            font-size: 14px;
+            transition: border-color 0.2s;
+        }
+
+        .data-field input:focus,
+        .data-field textarea:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .array-item {
+            background: #f7fafc;
+            padding: 15px;
+            border-radius: 6px;
+            margin-bottom: 15px;
+            border-left: 3px solid #667eea;
+        }
+
+        .array-item h4 {
+            font-size: 16px;
+            margin-bottom: 15px;
+            color: #667eea;
+        }
+
+        .object-container {
+            padding-left: 20px;
+            border-left: 2px solid #e1e8ed;
+        }
+
+        .markdown-editor {
+            margin-top: 5px;
+        }
     </style>
 </head>
 <body>
     <!-- Header -->
     <div class="header">
         <h1>📝 Cecil Page Editor</h1>
-        <p>Edit your Markdown pages with live preview</p>
+        <p>Edit your Markdown pages and data files with live preview</p>
     </div>
 
     <!-- Main Container -->
     <div class="container">
         <!-- Sidebar -->
         <div class="sidebar">
-            <div class="new-page-section">
-                <h2>➕ Create New Page</h2>
-                <input
-                    type="text"
-                    id="new-page-path"
-                    class="new-page-input"
-                    placeholder="e.g., about.md or blog/post.md"
-                />
-                <button class="btn btn-primary" onclick="createNewPage()">
-                    <span>✨</span> Create Page
-                </button>
+            <!-- Tabs -->
+            <div class="sidebar-tabs">
+                <div class="sidebar-tab active" id="pages-tab" onclick="switchToPages()">📄 Pages</div>
+                <div class="sidebar-tab" id="data-tab" onclick="switchToData()">📊 Data Files</div>
             </div>
 
-            <h2>📄 Your Pages</h2>
-            <div id="pages-loading" class="loading">
-                Loading pages...
+            <!-- Pages Tab -->
+            <div class="tab-content active" id="pages-content">
+                <div class="new-page-section">
+                    <h2>➕ Create New Page</h2>
+                    <input
+                        type="text"
+                        id="new-page-path"
+                        class="new-page-input"
+                        placeholder="e.g., about.md or blog/post.md"
+                    />
+                    <button class="btn btn-primary" onclick="createNewPage()">
+                        <span>✨</span> Create Page
+                    </button>
+                </div>
+
+                <h2>📄 Your Pages</h2>
+                <div id="pages-loading" class="loading">
+                    Loading pages...
+                </div>
+                <ul class="page-list" id="page-list" style="display: none;"></ul>
             </div>
-            <ul class="page-list" id="page-list" style="display: none;"></ul>
+
+            <!-- Data Files Tab -->
+            <div class="tab-content" id="data-content">
+                <h2>📊 Data Files</h2>
+                <ul class="page-list" id="data-list"></ul>
+            </div>
         </div>
 
-        <!-- Editor Panel -->
-        <div class="editor-panel">
+        <!-- Editor Panel (for markdown pages) -->
+        <div class="editor-panel" id="editor-container">
             <div class="editor-toolbar">
                 <input
                     type="text"
@@ -436,6 +553,14 @@
 
             <div class="editor-wrapper">
                 <div id="editor"></div>
+            </div>
+        </div>
+
+        <!-- Data Editor Panel (for data files) -->
+        <div class="editor-panel" id="data-editor-container">
+            <div id="status-data" class="status"></div>
+            <div class="editor-wrapper">
+                <div id="data-fields"></div>
             </div>
         </div>
     </div>
