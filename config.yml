@@ -5,3 +5,19 @@ baseurl: https://www.kaleemclarkson.com
 url: https://www.kaleemclarkson.com
 output:
   dir: docs
+
+# Assets configuration
+assets:
+  target: static               # where to look for assets
+  compile:
+    style: compressed          # minified CSS for production
+    import: [., node_modules]  # import paths for @import (. = static dir, node_modules = project root)
+    sourcemap: false           # disable in production (enable for debug)
+  fingerprint: true            # enable cache busting
+  minify: true                 # additional minification
+
+# Cache configuration
+cache:
+  enabled: true
+  assets:
+    ttl: ~                     # never expire asset cache

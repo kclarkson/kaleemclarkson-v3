@@ -1,0 +1,555 @@
+// ============================================================================
+// Components: Cards
+// ============================================================================
+// Custom card component styles
+
+// Add custom card styles here if needed
+
+
+
+// ============================================
+// BORDERED CARD STYLES - Text Type Formatting
+// ============================================
+// Inspired by problem-outcome-grid from leadership coaching page
+// Apply to text type paragraphs for styled content blocks
+
+// Red bordered card (for challenges/problems)
+.text-card-red {
+  background: $white;
+  border-left: 5px solid $blend-red;
+  border-radius: 8px;
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+
+  // Optional: Add subtle shadow for depth
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+
+  // Style headings within the card
+  h1, h2, h3, h4, h5, h6 {
+    color: $blend-red;
+    margin-top: 0;
+  }
+
+  // First heading gets no top margin
+  > *:first-child {
+    margin-top: 0;
+  }
+
+  // Last element gets no bottom margin
+  > *:last-child {
+    margin-bottom: 0;
+  }
+}
+
+// Green bordered card (for outcomes/results)
+.text-card-green {
+  background: $white;
+  border-left: 5px solid $green;
+  border-radius: 8px;
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+
+  // Optional: Add subtle shadow for depth
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+
+  // Style headings within the card
+  h1, h2, h3, h4, h5, h6 {
+    color: $green;
+    margin-top: 0;
+  }
+
+  // First heading gets no top margin
+  > *:first-child {
+    margin-top: 0;
+  }
+
+  // Last element gets no bottom margin
+  > *:last-child {
+    margin-bottom: 0;
+  }
+}
+
+// Orange bordered card (alternative/brand)
+.text-card-orange {
+  background: $white;
+  border-left: 5px solid $orange;
+  border-radius: 8px;
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+
+  // Optional: Add subtle shadow for depth
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+
+  // Style headings within the card
+  h1, h2, h3, h4, h5, h6 {
+    color: $orange;
+    margin-top: 0;
+  }
+
+  // First heading gets no top margin
+  > *:first-child {
+    margin-top: 0;
+  }
+
+  // Last element gets no bottom margin
+  > *:last-child {
+    margin-bottom: 0;
+  }
+}
+
+// Brown bordered card (alternative)
+.text-card-brown {
+  background: $white;
+  border-left: 5px solid $brown;
+  border-radius: 8px;
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+
+  // Optional: Add subtle shadow for depth
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+
+  // Style headings within the card
+  h1, h2, h3, h4, h5, h6 {
+    color: $brown;
+    margin-top: 0;
+  }
+
+  // First heading gets no top margin
+  > *:first-child {
+    margin-top: 0;
+  }
+
+  // Last element gets no bottom margin
+  > *:last-child {
+    margin-bottom: 0;
+  }
+}
+
+// ============================================
+// COACHING SERVICES CARD
+// ============================================
+// Card style with top border hover effect
+// Inspired by Leadership Coaching Services section
+
+.coaching-services-card {
+  background: $light-brown;
+  padding: 2rem;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+
+  // Top border that scales in on hover
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: $orange;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+    transform-origin: left;
+  }
+
+  // Hover effects
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+
+    &::before {
+      transform: scaleX(1);
+    }
+  }
+
+  // Style headings within the card
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+  }
+
+  // First element gets no top margin
+  > *:first-child {
+    margin-top: 0;
+  }
+
+  // Last element gets no bottom margin
+  > *:last-child {
+    margin-bottom: 0;
+  }
+}
+
+// ============================================
+// PROCESS STEP CARD VARIANTS
+// ============================================
+// Color and styling variants for process-step-card component
+// Apply to container paragraphs wrapping process-step-card paragraphs
+
+// Orange circle variant (default style from Leadership Journey)
+.process-step-orange-circle {
+  .process-step__number {
+    background: $orange;
+    color: $white;
+    font-size: 1.2rem;
+  }
+
+  .process-step__title {
+    color: $dark-gray;
+    font-size: 1.25rem;
+  }
+
+  .process-step__text {
+    color: $gray-600;
+  }
+}
+
+// Green circle variant
+.process-step-green-circle {
+  .process-step__number {
+    background: $green;
+    color: $white;
+    font-size: 1.2rem;
+  }
+
+  .process-step__title {
+    color: $dark-gray;
+    font-size: 1.25rem;
+  }
+
+  .process-step__text {
+    color: $gray-600;
+  }
+}
+
+// Brown circle variant
+.process-step-brown-circle {
+  .process-step__number {
+    background: $brown;
+    color: $white;
+    font-size: 1.2rem;
+  }
+
+  .process-step__title {
+    color: $dark-gray;
+    font-size: 1.25rem;
+  }
+
+  .process-step__text {
+    color: $gray-600;
+  }
+}
+
+// ============================================
+// PRICING CARD BORDER & BADGE COLOR VARIANTS
+// ============================================
+// Color variants for pricing-card component highlights
+// Apply to pricing card paragraphs via entity_classes field
+// Controls both border color and badge background for featured/highlighted cards
+
+// Orange variant
+.pricing-card-border-orange {
+  border-color: $orange;
+
+  .pricing-card__badge {
+    background: $orange;
+    color: $white;
+  }
+
+  .pricing-card__price {
+    color: $orange;
+  }
+}
+
+// Bright Orange variant
+.pricing-card-border-bright-orange {
+  border-color: $bright-orange;
+
+  .pricing-card__badge {
+    background: $bright-orange;
+    color: $white;
+  }
+
+  .pricing-card__price {
+    color: $bright-orange;
+  }
+}
+
+// Green variant
+.pricing-card-border-green {
+  border-color: $green;
+
+  .pricing-card__badge {
+    background: $green;
+    color: $white;
+  }
+
+  .pricing-card__price {
+    color: $green;
+  }
+}
+
+// Dark Brown variant
+.pricing-card-border-dark-brown {
+  border-color: $dark-brown;
+
+  .pricing-card__badge {
+    background: $dark-brown;
+    color: $white;
+  }
+
+  .pricing-card__price {
+    color: $dark-brown;
+  }
+}
+
+// Dark Charcoal variant
+.pricing-card-border-dark-charcoal {
+  border-color: $dark-charcoal;
+
+  .pricing-card__badge {
+    background: $dark-charcoal;
+    color: $white;
+  }
+
+  .pricing-card__price {
+    color: $dark-charcoal;
+  }
+}
+
+// ============================================
+// ICON CARD - SQUARE ICON TOP
+// ============================================
+// Applied to card paragraphs for vertical layout with square icon at top
+// Inspired by ProjectTypeCard component from ProjectBasedConsulting page
+// Features:
+// - Square icon wrapper with rounded corners at top
+// - Icon background uses primary color at 10% opacity
+// - Content flows vertically below icon
+// - Hover effect with border color change and shadow
+// - Clean, modern card design
+
+.card-icon-square-top {
+  padding: 1.5rem;
+  border: 1px solid $gray-300;
+  border-radius: 0.5rem;
+  box-shadow: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+
+  &:hover {
+    border-color: $orange;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+  }
+
+  // Icon wrapper styling - square with rounded corners
+  .icon-card__icon-wrapper {
+    width: fit-content;
+    padding: 1rem;
+    margin-left: 0;
+    margin-right: auto;
+    margin-bottom: 1rem;
+    background: rgba($orange, 0.1);
+    border-radius: 0.75rem;
+    transition: background-color 0.3s ease;
+  }
+
+  &:hover .icon-card__icon-wrapper {
+    background: rgba($orange, 0.2);
+  }
+
+  // Image wrapper styling
+  .icon-card__image {
+    width: fit-content;
+    margin-bottom: 1rem;
+  }
+
+  // Content flows vertically
+  .icon-card__content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  // Title styling
+  .icon-card__title {
+    margin-bottom: 0.75rem;
+  }
+
+  // Description styling
+  .icon-card__description {
+    margin-bottom: 1rem;
+    flex-grow: 1;
+  }
+
+  // Metric/badge styling
+  .icon-card__metric {
+    width: fit-content;
+  }
+}
+
+
+// ============================================
+// ICON CARD - HORIZONTAL LAYOUT (Icon Left)
+// ============================================
+// Applied to card paragraphs for horizontal layout with icon on left
+// Inspired by TriggerCard component from ProjectBasedConsulting page
+// Features:
+// - Icon in circular wrapper positioned left
+// - Title and description flow horizontally beside icon
+// - Hover effect with border color change and shadow
+// - Clean, modern card design
+
+// Use combined class selector for higher specificity
+.icon-card.card-icon-left {
+  // Override default card styling
+  padding: 1.5rem;
+  border: 1px solid $gray-300;
+  box-shadow: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    border-color: #f7941f;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  // Override default column layout to horizontal row
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 1rem;
+
+  // Icon wrapper styling for horizontal layout
+  .icon-card__icon-wrapper {
+    width: 3rem;
+    height: 3rem;
+    padding: 0.75rem;
+    margin: 0;
+    flex-shrink: 0;
+  }
+
+  // Image wrapper for horizontal layout
+  .icon-card__image {
+    margin: 0;
+    flex-shrink: 0;
+  }
+
+  // Content area takes remaining space
+  .icon-card__content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+}
+
+
+
+// ============================================
+// PROCESS PHASE CARD - CENTER NUMBERED STEP
+// ============================================
+// Applied to process-step paragraphs via entity_classes to override default horizontal layout
+// Inspired by ProcessPhaseCard component from Project-Based Consulting page
+// Features:
+// - Overrides default horizontal layout to vertical centered
+// - Circular numbered badge centered at top
+// - Card border and shadow effects
+// - Vertically stacked content sections
+// - Full height card layout
+
+.process-card-center-step.process-step-card {
+  // Override default flex layout to column centered
+  flex-direction: column;
+  align-items: center;
+
+  // Add card styling
+  padding: 2rem;
+  border: 1px solid $gray-300;
+  border-radius: 0.5rem;
+  box-shadow: none;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  height: 100%;
+  margin-bottom: 0;
+
+  &:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+  }
+
+  // Center the number badge and remove right margin
+  .process-step__number {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.75rem;
+    background: $orange;
+    color: $white;
+    font-size: 1.125rem;
+  }
+
+  // Center align the content area
+  .process-step__content {
+    text-align: center;
+    width: 100%;
+  }
+
+  // Title styling
+  .process-step__title {
+    font-size: 1.75rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+  }
+
+  // Text content - left align for readability
+  .process-step__text {
+    text-align: left;
+    font-size: 0.875rem;
+  }
+}
+
+// ============================================
+// OVERLAY CARD STYLES - For redesign
+// ============================================
+// Dark overlay for cards with background images
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba($dark-gray, 0.7);
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+
+// Card content positioning on top of overlay
+.card-overlay-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem;
+  z-index: 2;
+}
+
+// Learn more link with arrow animation
+.learn-more-link {
+  color: $orange;
+  text-decoration: none;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  letter-spacing: 0.05em;
+  transition: all 0.3s ease;
+  display: inline-block;
+
+  &:hover {
+    color: darken($orange, 10%);
+    transform: translateX(5px);
+  }
+}
+
+// Star rating display
+.star-rating {
+  color: $orange;
+  font-size: 1.5rem;
+  letter-spacing: 0.25rem;
+}

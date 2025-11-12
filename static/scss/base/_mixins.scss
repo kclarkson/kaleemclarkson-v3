@@ -1,0 +1,78 @@
+// ============================================================================
+// Base: Mixins
+// ============================================================================
+// Custom mixins for the kaleemclarkson.com project
+// TODO: Add custom mixins as needed
+
+// Example: Responsive font sizing
+@mixin responsive-font($min-size, $max-size) {
+  font-size: clamp(#{$min-size}, 2.5vw, #{$max-size});
+}
+
+// Example: Flex center
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin boxshadow {
+  box-shadow: 2px 3px 6px #00000029;
+}
+
+@mixin link-color($link-color, $link-color-hover) {
+  a {
+    color: $link-color;
+
+    &:hover {
+      color: scale-color($link-color-hover, $lightness: -14%);
+    }
+  }
+}
+
+@mixin border-radius-top {
+  border-top-left-radius: $spacing-sm;
+  border-top-right-radius: $spacing-sm;
+}
+
+@mixin read-section {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 740px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+@mixin caption {
+  font-size: 0.875rem; // Bootstrap .small equivalent
+  background: $light-gray;
+  text-align: center;
+  font-style: italic;
+  padding: 0.75rem;
+}
+
+@mixin career-button {
+  @include button-style($ro-career, darken($ro-career, 20%));
+}
+
+@mixin dating-button {
+  @include button-style($ro-dating, darken($ro-dating, 20%));
+}
+
+@mixin friend-button {
+  @include button-style($ro-friend, darken($ro-friend, 20%));
+}
+
+
+@mixin blend-icon($code) {
+  content: '#{$code}';
+  font-family: bootstrap-icons;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  text-decoration: inherit;
+}

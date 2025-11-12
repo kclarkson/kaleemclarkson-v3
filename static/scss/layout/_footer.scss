@@ -1,0 +1,63 @@
+// ============================================================================
+// Layout/ Footer
+// ============================================================================
+
+.footer {
+  background-color: $dark-gray;
+  color: $white;
+  padding: 3rem 0 1.5rem;
+}
+.footer h5, .footer .h5 {
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  letter-spacing: 0.05em;
+}
+.footer p {
+  opacity: 0.9;
+}
+.footer a {
+  color: $white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.footer a:hover {
+  color: #43b449;
+}
+
+.footer-content {
+  margin-bottom: 2rem;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 1.5rem;
+  text-align: center;
+  font-size: 0.875rem;
+  opacity: 0.8;
+}
+
+.footer-social-icons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.footer-social-icons .footer-social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  background-color: transparent;
+  border: 2px solid #fefefe;
+  color: #fefefe;
+  font-size: 1.25rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+.footer-social-icons .footer-social-icon:hover {
+  background-color: #43b449;
+  border-color: #43b449;
+  color: #343a40;
+  transform: translateY(-3px);
+}

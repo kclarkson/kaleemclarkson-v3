@@ -1,0 +1,9 @@
+debug: true
+assets:
+  target: static           # where to look for assets
+  compile:
+    style: expanded        # readable CSS
+    import: [., node_modules]  # import paths for @import
+    sourcemap: true        # enable source maps
+  fingerprint: false       # faster builds
+  minify: false           # readable output

@@ -1,0 +1,49 @@
+// ============================================================================
+// Modules: Forms
+// ============================================================================
+// Custom form styles for the kaleemclarkson.com project
+// TODO: Add custom form styles as needed
+
+// Form container
+.form-container {
+  // Add styles here
+}
+
+// Custom form inputs
+.form-input {
+  // Add styles here
+}
+
+// ============================================================================
+// Additional Form Styles from Cecil Comingsoon Theme
+// ============================================================================
+
+// Light font weight for inputs (Cecil comingsoon theme uses 300)
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="url"],
+textarea,
+select {
+  font-weight: 300;
+}
+
+// Newsletter input group styling
+.input-group-newsletter {
+  input {
+    height: auto;
+    font-size: 1rem;
+    padding: 1rem;
+    font-weight: 300;
+  }
+
+  button {
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 1rem;
+  }
+}

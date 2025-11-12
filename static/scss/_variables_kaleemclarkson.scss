@@ -1,0 +1,89 @@
+// ============================================================================
+// Theme Color Variables
+// ============================================================================
+// Custom color palette for kaleemclarkson.com
+// Note: These variables are used throughout the site and override Bootstrap defaults
+
+// Brand Colors
+$primary-green: #43b449;
+$primary-dark: #343a40;
+$primary-light: #fefefe;
+
+// Custom Global
+// -------------
+
+$orange: #f7941f;
+$light-orange: #f3a65a;
+$bright-orange: #ff6b35;
+$red-orange: #f9411f;
+$blend-red: #dc3545;
+
+
+$brown: #613812;
+$light-brown: #a67c52;
+$medium-brown: #705858;
+$dark-brown: #30221e;
+
+$dark-charcoal: #343a40;
+$sand:#f6f2ef;
+$sand-2: #f2ede9;
+$warm-beige: #cec1a5;
+$light-beige: #e9e0c8;
+
+$light-blue-100: #fafbff;
+$light-blue-200: #c8d9f0;
+
+$light-blue: #e5ecfd;
+
+$dark-purple: #32303f;
+$relead-orange: #f9ba76;
+$teal: #35d0e4;
+$teal-gray: #0d3b4d;
+$dark-green: #2d7f31;
+$green: #43b449;
+
+
+// Bootstrap Icons // 
+$clipboard: '\f28B'; // Clipboard
+$plus-symbol: '\f4f9'; // Cicle Plus Symbol
+$arrow-right:  '\f231'; // Triangle Right  
+$circle-checkmark: '\f26a'; // Solid Circle with Chekmark 
+$circle-line-checkmark: '\f26b'; // Circle lin with Chekmark
+
+
+// Grays //
+$gray-50: #f7f7f7;
+$gray-100: #f6f6f6 !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+
+
+$light-gray: $gray-50;
+$medium-gray: $gray-500;
+$dark-gray: $gray-800;
+$black: #0a0a0a;
+$white: #fefefe;
+
+// Theme Variables // 
+$primary: $green;
+
+// Button Colors // 
+
+$btn-link-color: $white !important;
+$btn-link-hover-color: $light-gray;
+
+// Body Fonts // 
+$body-background: $white;
+$body-font-color: $dark-gray;
+$body-font-family: 'Karla','Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+$body-antialiased: true;
+$global-weight-normal: normal;
+$global-weight-bold: bold;
+$lead-lineheight: 1.6;
+$small-font: 0.875rem;
