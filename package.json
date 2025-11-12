@@ -7,7 +7,7 @@
     "editor": "node editor/server.js",
     "start": "node editor/server.js",
     "build": "cecil build",
-    "dev": "cecil serve --clear-cache=css",
+    "dev": "cecil serve --env=dev --clear-cache=css",
     "preview": "cecil serve --preview"
   },
   "keywords": [
