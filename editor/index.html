@@ -165,6 +165,7 @@
             background: white;
             display: flex;
             flex-direction: column;
+            height: 100%;
             overflow: hidden;
         }
 
@@ -172,13 +173,11 @@
             padding: 20px 30px;
             background: white;
             border-bottom: 1px solid #e1e8ed;
-            display: flex;
-            gap: 15px;
-            align-items: center;
+            flex-shrink: 0;
         }
 
         .toolbar-input {
-            flex: 1;
+            width: 100%;
             padding: 12px 16px;
             border: 2px solid #e1e8ed;
             border-radius: 6px;
@@ -191,20 +190,34 @@
             border-color: #667eea;
         }
 
-        .toolbar-actions {
+        .editor-content {
+            flex: 1;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .editor-actions {
+            padding: 20px 30px;
+            background: white;
+            border-top: 2px solid #e1e8ed;
             display: flex;
             gap: 10px;
+            justify-content: flex-end;
+            flex-shrink: 0;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.05);
         }
 
         .toolbar-btn {
-            padding: 12px 20px;
-            min-width: 100px;
+            padding: 12px 24px;
+            min-width: 120px;
         }
 
         .frontmatter-section {
             padding: 20px 30px;
             background: #f7fafc;
             border-bottom: 1px solid #e1e8ed;
+            flex-shrink: 0;
         }
 
         .frontmatter-header {
@@ -265,12 +278,15 @@
 
         .editor-wrapper {
             flex: 1;
-            overflow: hidden;
+            min-height: 400px;
             padding: 20px 30px;
+            display: flex;
+            flex-direction: column;
         }
 
         #editor {
-            height: 100%;
+            flex: 1;
+            min-height: 400px;
         }
 
         .status {
@@ -342,6 +358,16 @@
             color: #718096;
         }
 
+        /* Toast UI Editor Toolbar Spacing */
+        .toastui-editor-defaultUI {
+            border: none;
+        }
+
+        .toastui-editor-toolbar {
+            background: #fafbfc !important;
+            border-bottom: 1px solid #e1e8ed !important;
+        }
+
         /* Scrollbar styling */
         ::-webkit-scrollbar {
             width: 8px;
@@ -359,6 +385,47 @@
 
         ::-webkit-scrollbar-thumb:hover {
             background: #a0aec0;
+        }
+
+        /* Desktop optimizations */
+        @media (min-width: 1024px) {
+            .container {
+                grid-template-columns: 300px 1fr;
+            }
+
+            .frontmatter-editor {
+                max-height: 250px;
+            }
+
+            .editor-wrapper {
+                min-height: 500px;
+            }
+
+            #editor {
+                min-height: 500px;
+            }
+        }
+
+        @media (min-width: 1440px) {
+            .container {
+                grid-template-columns: 320px 1fr;
+            }
+
+            .editor-toolbar {
+                padding: 25px 40px;
+            }
+
+            .frontmatter-section {
+                padding: 25px 40px;
+            }
+
+            .editor-wrapper {
+                padding: 25px 40px;
+            }
+
+            .editor-actions {
+                padding: 25px 40px;
+            }
         }
     </style>
 </head>
@@ -395,6 +462,7 @@
 
         <!-- Editor Panel -->
         <div class="editor-panel">
+            <!-- Title Input -->
             <div class="editor-toolbar">
                 <input
                     type="text"
@@ -402,40 +470,46 @@
                     class="toolbar-input"
                     placeholder="Page title..."
                 />
-                <div class="toolbar-actions">
-                    <button class="btn btn-success toolbar-btn" onclick="savePage()">
-                        💾 Save
-                    </button>
-                    <button class="btn btn-danger toolbar-btn" onclick="deletePage()">
-                        🗑️ Delete
-                    </button>
-                </div>
             </div>
 
             <div id="status" class="status"></div>
 
-            <!-- Frontmatter Editor -->
-            <div class="frontmatter-section" id="frontmatter-section">
-                <div class="frontmatter-header">
-                    <h3>⚙️ Frontmatter (YAML)</h3>
-                    <button class="frontmatter-toggle" onclick="toggleFrontmatter()">
-                        <span id="frontmatter-toggle-text">Hide</span>
-                    </button>
+            <!-- Scrollable Content Area -->
+            <div class="editor-content">
+                <!-- Frontmatter Editor -->
+                <div class="frontmatter-section" id="frontmatter-section">
+                    <div class="frontmatter-header">
+                        <h3>⚙️ Frontmatter (YAML)</h3>
+                        <button class="frontmatter-toggle" onclick="toggleFrontmatter()">
+                            <span id="frontmatter-toggle-text">Hide</span>
+                        </button>
+                    </div>
+                    <div id="frontmatter-container">
+                        <textarea
+                            id="frontmatter-editor"
+                            class="frontmatter-editor"
+                            placeholder="title: &quot;Page Title&quot;&#10;date: 2025-11-11&#10;published: true"
+                        ></textarea>
+                        <p class="frontmatter-hint">
+                            💡 Edit the YAML frontmatter directly. This preserves all nested fields like <code>hero:</code> configuration.
+                        </p>
+                    </div>
                 </div>
-                <div id="frontmatter-container">
-                    <textarea
-                        id="frontmatter-editor"
-                        class="frontmatter-editor"
-                        placeholder="title: &quot;Page Title&quot;&#10;date: 2025-11-11&#10;published: true"
-                    ></textarea>
-                    <p class="frontmatter-hint">
-                        💡 Edit the YAML frontmatter directly. This preserves all nested fields like <code>hero:</code> configuration.
-                    </p>
+
+                <!-- Editor -->
+                <div class="editor-wrapper">
+                    <div id="editor"></div>
                 </div>
             </div>
 
-            <div class="editor-wrapper">
-                <div id="editor"></div>
+            <!-- Action Buttons at Bottom -->
+            <div class="editor-actions">
+                <button class="btn btn-success toolbar-btn" onclick="savePage()">
+                    💾 Save
+                </button>
+                <button class="btn btn-danger toolbar-btn" onclick="deletePage()">
+                    🗑️ Delete
+                </button>
             </div>
         </div>
     </div>
