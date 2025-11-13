@@ -12527,7 +12527,7 @@ h2,
   letter-spacing: -0.02em;
 }
 .navbar-brand .accent-text {
-  color: #43b449;
+  color: #f7941f;
 }
 
 .navbar-nav .nav-link {
@@ -12540,7 +12540,7 @@ h2,
   transition: all 0.3s ease;
 }
 .navbar-nav .nav-link:hover, .navbar-nav .nav-link.active {
-  color: #43b449 !important;
+  color: #f7941f !important;
 }
 
 .navbar-toggler {
@@ -13361,7 +13361,7 @@ select {
 }
 
 .accent-text {
-  color: #43b449;
+  color: #f7941f;
 }
 
 .credentials-section {

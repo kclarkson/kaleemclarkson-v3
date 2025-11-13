@@ -17,7 +17,7 @@
   letter-spacing: -0.02em;
 
   .accent-text {
-    color: #43b449;
+    color: $orange;
   }
 }
 
@@ -33,7 +33,7 @@
 
     &:hover,
     &.active {
-      color: #43b449 !important;
+      color: $orange !important;
     }
   }
 }
