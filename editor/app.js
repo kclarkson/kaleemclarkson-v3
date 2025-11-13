@@ -493,6 +493,11 @@ function detectFieldType(fieldName, value) {
         return 'number';
     }
 
+    // SVG code field
+    if (name === 'svg') {
+        return 'code';
+    }
+
     // Markdown field patterns
     const markdownPatterns = ['content', 'body', 'description', 'bio', 'summary', 'text', 'excerpt', 'message', 'quote', 'details', 'about'];
     if (markdownPatterns.includes(name)) {
@@ -534,6 +539,10 @@ function renderDataField(fieldName, value, fieldPath) {
     switch (fieldType) {
         case 'markdown':
             html += `<div id="${fieldId}" class="markdown-editor"></div>`;
+            break;
+
+        case 'code':
+            html += `<textarea id="${fieldId}" class="form-control code-editor" rows="10" data-type="code">${escapeHtml(value || '')}</textarea>`;
             break;
 
         case 'text':
@@ -739,6 +748,17 @@ function collectDataFieldValues() {
                 break;
         }
 
+        setNestedValue(data, fieldPath, value);
+    });
+
+    // Collect textarea values (code fields, etc.)
+    const textareas = document.querySelectorAll('.data-field textarea[data-type]');
+    console.log('Found', textareas.length, 'textarea fields');
+
+    textareas.forEach(textarea => {
+        const fieldPath = textarea.closest('.data-field').dataset.path;
+        const value = textarea.value;
+        console.log(`Collecting textarea from ${fieldPath}:`, value);
         setNestedValue(data, fieldPath, value);
     });
 
