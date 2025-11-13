@@ -1,0 +1,17 @@
+section_title: "Signature Themes and"
+section_title_accent: "Keynotes"
+themes:
+  - title: "The Remote Employee Experience (TREE)"
+    description: "How to design a people centered remote employee lifecycle that attracts, onboards, engages, and develops talent from anywhere. Audiences learn the TREE framework, identify gaps in their current experience, and leave with a short list of high impact changes they can make within ninety days."
+    image: "https://via.placeholder.com/400x250/030E24/E2FF03?text=TREE+Framework"
+    alt: "The Remote Employee Experience"
+
+  - title: "Social Connection Strategy for Distributed Teams"
+    description: "Based on his talks and ongoing work with global clients, Kaleem shares a simple model for building colleague, mentor, and community connections in remote and hybrid environments. He shows how to move beyond virtual happy hours to build rituals, programs, and tools that actually deepen relationships and reduce isolation."
+    image: "https://via.placeholder.com/400x250/030E24/E2FF03?text=Social+Connection"
+    alt: "Social Connection Strategy"
+
+  - title: "Leading Flexible Work Without Losing Your Culture"
+    description: "This session gives executives and people leaders a clear path through the noise around flexible work. Using real examples from clients and his own company, Kaleem explains how to align policies with values, design communication norms, and create a culture that supports both flexibility and accountability."
+    image: "https://via.placeholder.com/400x250/030E24/E2FF03?text=Flexible+Work"
+    alt: "Leading Flexible Work"
