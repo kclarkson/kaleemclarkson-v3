@@ -679,6 +679,14 @@ function renderDataFields(data, filePath) {
             dataEditors[fieldPath] = editorInstance;
         });
         console.log('Total editors created:', Object.keys(dataEditors).length);
+
+        // Scroll to top after all editors are initialized and rendered
+        setTimeout(() => {
+            const dataFieldsContainer = document.getElementById('data-fields');
+            if (dataFieldsContainer) {
+                dataFieldsContainer.scrollTop = 0;
+            }
+        }, 200);
     }, 100);
 }
 
