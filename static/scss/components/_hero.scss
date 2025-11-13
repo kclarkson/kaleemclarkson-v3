@@ -21,7 +21,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(circle at 50% 50%, rgba($primary-green, 0.08) 0%, transparent 50%);
+  background: radial-gradient(circle at 50% 50%, rgba($orange, 0.08) 0%, transparent 50%);
   pointer-events: none;
   z-index: 3;
 }
@@ -214,7 +214,7 @@
   font-weight: 600;
 }
 .breadcrumb-item a:hover {
-  color: #43b449;
+  color: $orange;
 }
 .breadcrumb-item.active {
   color: #6c757d;
@@ -262,7 +262,7 @@
 }
 .nav-link-box:hover {
   background-color: #343a40;
-  border-left-color: #43b449;
+  border-left-color: $orange;
   transform: translateX(5px);
 }
 .nav-link-box:hover .nav-link-label,
