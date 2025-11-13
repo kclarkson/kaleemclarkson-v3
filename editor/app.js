@@ -605,12 +605,11 @@ function renderDataFields(data, filePath) {
     });
     dataEditors = {};
 
-    // Add file header
+    // Add file header (H1 with filename only, no button)
     const header = document.createElement('div');
     header.className = 'data-file-header';
     header.innerHTML = `
-        <h2>📊 ${filePath}</h2>
-        <button onclick="saveDataFile()" class="btn btn-primary">Save</button>
+        <h1>${filePath}</h1>
     `;
     container.appendChild(header);
 
