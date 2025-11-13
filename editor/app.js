@@ -639,6 +639,16 @@ function renderDataFields(data, filePath) {
 
     container.appendChild(fieldsContainer);
 
+    // Add action buttons at bottom
+    const actionBar = document.createElement('div');
+    actionBar.className = 'data-editor-actions';
+    actionBar.innerHTML = `
+        <button class="btn btn-success toolbar-btn" onclick="saveDataFile()">
+            💾 Save
+        </button>
+    `;
+    container.appendChild(actionBar);
+
     // Initialize markdown editors
     setTimeout(() => {
         document.querySelectorAll('.markdown-editor').forEach(editorEl => {
