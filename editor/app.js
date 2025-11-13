@@ -457,6 +457,12 @@ async function loadDataFile(filePath) {
         // Render data fields
         renderDataFields(currentDataContent, filePath);
 
+        // Scroll to top of data editor
+        const dataFieldsContainer = document.getElementById('data-fields');
+        if (dataFieldsContainer) {
+            dataFieldsContainer.scrollTop = 0;
+        }
+
         // Update UI
         renderDataFileList();
 
