@@ -34,7 +34,8 @@
       "Bash(php vendor/bin/cecil build:*)",
       "Bash(composer show:*)",
       "Bash(tr:*)",
-      "Bash(cecil:*)"
+      "Bash(cecil:*)",
+      "Bash(git push:*)"
     ],
     "deny": [],
     "ask": []
