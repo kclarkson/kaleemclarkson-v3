@@ -78,7 +78,7 @@
           <div class="col-lg-10">
             <div class="logo-grid">
               {% for client in site.data.homepage['credentials-section'].logos %}
-              <img src="{{ client.image }}" alt="{{ client.alt }}" class="client-logo">
+              <div class="client-logo" title="{{ client.name }}">{{ client.svg | raw }}</div>
               {% endfor %}
             </div>
           </div>
