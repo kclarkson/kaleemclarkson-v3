@@ -384,9 +384,17 @@ async function loadDataFiles() {
         dataFiles = data.files;
         renderDataFileList();
 
+        // Update UI to show the list
+        const loadingEl = document.getElementById('data-loading');
+        const listEl = document.getElementById('data-list');
+        if (loadingEl) loadingEl.style.display = 'none';
+        if (listEl) listEl.style.display = 'block';
+
     } catch (error) {
         console.error('Error loading data files:', error);
         showStatus('Error loading data files: ' + error.message, 'error');
+        const loadingEl = document.getElementById('data-loading');
+        if (loadingEl) loadingEl.textContent = 'Error loading data files';
     }
 }
 
