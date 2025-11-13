@@ -45,9 +45,11 @@ async function getAllMarkdownFiles(dir, baseDir = dir) {
 app.get('/api/pages', async (req, res) => {
     try {
         const pages = await getAllMarkdownFiles(PAGES_DIR);
+        // Filter out index.md since it's managed via data files
+        const filteredPages = pages.filter(page => page !== 'index.md');
         res.json({
             success: true,
-            pages: pages.sort()
+            pages: filteredPages.sort()
         });
     } catch (error) {
         res.status(500).json({
