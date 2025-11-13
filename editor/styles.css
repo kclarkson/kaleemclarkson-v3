@@ -364,6 +364,7 @@ body {
     visibility: visible !important;
     border-bottom: 1px solid #e1e8ed;
     background: white;
+    height: auto;
 }
 
 .toastui-editor-mode-switch .tab-item {
