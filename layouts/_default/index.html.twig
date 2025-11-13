@@ -27,7 +27,7 @@
       <!-- Video Background -->
       <div class="hero-video-wrapper">
         <video class="hero-video" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-          <source src="{{ site.data.homepage['01-hero-section'].video_src }}" type="video/mp4">
+          <source src="{{ site.data.homepage['hero-section'].video_src }}" type="video/mp4">
         </video>
         <div class="hero-video-overlay"></div>
       </div>
@@ -38,14 +38,14 @@
           <div class="col-lg-8">
             <div class="hero-content">
               <h1 class="hero-title mb-4">
-                <span class="accent-text-orange">{{ site.data.homepage['01-hero-section'].title_line1 }}</span><br>
-                <span class="text-white">{{ site.data.homepage['01-hero-section'].title_line2 }}</span>
+                <span class="accent-text-orange">{{ site.data.homepage['hero-section'].title_line1 }}</span><br>
+                <span class="text-white">{{ site.data.homepage['hero-section'].title_line2 }}</span>
               </h1>
-              <p class="hero-subtitle">{{ site.data.homepage['01-hero-section'].subtitle }}</p>
-              <p class="hero-description">{{ site.data.homepage['01-hero-section'].description }}</p>
+              <p class="hero-subtitle">{{ site.data.homepage['hero-section'].subtitle }}</p>
+              <p class="hero-description">{{ site.data.homepage['hero-section'].description }}</p>
               <div class="d-flex flex-wrap gap-3 mt-4">
-                <a href="{{ site.data.homepage['01-hero-section'].button1.link }}" class="btn btn-custom-primary">{{ site.data.homepage['01-hero-section'].button1.text }}</a>
-                <a href="{{ site.data.homepage['01-hero-section'].button2.link }}" class="btn btn-custom-secondary">{{ site.data.homepage['01-hero-section'].button2.text }}</a>
+                <a href="{{ site.data.homepage['hero-section'].button1.link }}" class="btn btn-custom-primary">{{ site.data.homepage['hero-section'].button1.text }}</a>
+                <a href="{{ site.data.homepage['hero-section'].button2.link }}" class="btn btn-custom-secondary">{{ site.data.homepage['hero-section'].button2.text }}</a>
               </div>
             </div>
           </div>
@@ -58,9 +58,9 @@
       <div class="container">
         <div class="row">
           <div class="col-12 text-center">
-            <div class="star-rating mb-2">{% for i in 1..site.data.homepage['02-testimonial-bar'].stars %}★{% endfor %}</div>
-            <h3 class="fw-black text-uppercase mb-2">"{{ site.data.homepage['02-testimonial-bar'].title }}"</h3>
-            <p class="text-muted mb-0">— {{ site.data.homepage['02-testimonial-bar'].source }}</p>
+            <div class="star-rating mb-2">{% for i in 1..site.data.homepage['testimonial-bar'].stars %}★{% endfor %}</div>
+            <h3 class="fw-black text-uppercase mb-2">"{{ site.data.homepage['testimonial-bar'].title }}"</h3>
+            <p class="text-muted mb-0">— {{ site.data.homepage['testimonial-bar'].source }}</p>
           </div>
         </div>
       </div>
@@ -71,13 +71,13 @@
       <div class="container">
         <div class="row">
           <div class="col-12 text-center mb-4">
-            <h2 class="section-title text-uppercase">{{ site.data.homepage['03-credentials-section'].title }}<span class="accent-text">:</span></h2>
+            <h2 class="section-title text-uppercase">{{ site.data.homepage['credentials-section'].title }}<span class="accent-text">:</span></h2>
           </div>
         </div>
         <div class="row justify-content-center">
           <div class="col-lg-10">
             <div class="logo-grid">
-              {% for client in site.data.homepage['03-credentials-section'].logos %}
+              {% for client in site.data.homepage['credentials-section'].logos %}
               <img src="{{ client.image }}" alt="{{ client.alt }}" class="client-logo">
               {% endfor %}
             </div>
@@ -90,7 +90,7 @@
     <section class="keynotes-section pv-4">
       <div class="container">
         <div class="row g-4">
-          {% for keynote in site.data.homepage['04-keynotes-section'] %}
+          {% for keynote in site.data.homepage['keynotes-section'] %}
           <div class="col-lg-4">
             <div class="keynote-card position-relative h-100">
               <div class="keynote-image-placeholder position-relative">
@@ -115,23 +115,23 @@
         <div class="row align-items-center">
           <div class="col-lg-6">
             <h2 class="section-title mb-4">
-              <span class="accent-text-orange">{{ site.data.homepage['05-big-idea-section'].title }}</span><br>
-              {{ site.data.homepage['05-big-idea-section'].subtitle }}
+              <span class="accent-text-orange">{{ site.data.homepage['big-idea-section'].title }}</span><br>
+              {{ site.data.homepage['big-idea-section'].subtitle }}
             </h2>
             <p class="lead mb-4">
-              {{ site.data.homepage['05-big-idea-section'].lead }}
+              {{ site.data.homepage['big-idea-section'].lead }}
             </p>
-            {{ site.data.homepage['05-big-idea-section'].content | markdown_to_html }}
+            {{ site.data.homepage['big-idea-section'].content | markdown_to_html }}
             <div class="d-flex flex-wrap gap-3 mt-5">
-              <a href="{{ site.data.homepage['05-big-idea-section'].cta_primary_link }}" class="btn btn-custom-primary">{{ site.data.homepage['05-big-idea-section'].cta_primary_text }}</a>
+              <a href="{{ site.data.homepage['big-idea-section'].cta_primary_link }}" class="btn btn-custom-primary">{{ site.data.homepage['big-idea-section'].cta_primary_text }}</a>
               <div>
-                <a href="{{ site.data.homepage['05-big-idea-section'].cta_secondary_link }}" class="d-block mt-3 fw-semibold text-dark text-decoration-none">{{ site.data.homepage['05-big-idea-section'].cta_secondary_text }}</a>
+                <a href="{{ site.data.homepage['big-idea-section'].cta_secondary_link }}" class="d-block mt-3 fw-semibold text-dark text-decoration-none">{{ site.data.homepage['big-idea-section'].cta_secondary_text }}</a>
               </div>
             </div>
           </div>
           <div class="col-lg-6">
             <div class="big-idea-image-placeholder mb-4 mb-lg-0 ps-lg-5">
-              <img src="{{ site.data.homepage['05-big-idea-section'].image }}" alt="Kaleem on stage" class="img-fluid rounded shadow-lg">
+              <img src="{{ site.data.homepage['big-idea-section'].image }}" alt="Kaleem on stage" class="img-fluid rounded shadow-lg">
             </div>
           </div>
         </div>
@@ -143,11 +143,11 @@
       <div class="container">
         <div class="row mb-5">
           <div class="col-12 text-center">
-            <h2 class="section-title">{{ site.data.homepage['06-signature-themes'].section_title }} <span class="accent-text">{{ site.data.homepage['06-signature-themes'].section_title_accent }}</span></h2>
+            <h2 class="section-title">{{ site.data.homepage['signature-themes'].section_title }} <span class="accent-text">{{ site.data.homepage['signature-themes'].section_title_accent }}</span></h2>
           </div>
         </div>
         <div class="row g-4">
-          {% for theme in site.data.homepage['06-signature-themes'].themes %}
+          {% for theme in site.data.homepage['signature-themes'].themes %}
           <div class="col-lg-4">
             <div class="keynote-card">
               <div class="keynote-image-placeholder mb-3">
@@ -167,11 +167,11 @@
       <div class="container">
         <div class="row mb-5">
           <div class="col-12 text-center">
-            <h2 class="section-title text-white">{{ site.data.homepage['07-testimonials-section'].section_title }} <span class="accent-text">{{ site.data.homepage['07-testimonials-section'].section_title_accent }}</span></h2>
+            <h2 class="section-title text-white">{{ site.data.homepage['testimonials-section'].section_title }} <span class="accent-text">{{ site.data.homepage['testimonials-section'].section_title_accent }}</span></h2>
           </div>
         </div>
         <div class="row g-4">
-          {% for testimonial in site.data.homepage['07-testimonials-section'].testimonials %}
+          {% for testimonial in site.data.homepage['testimonials-section'].testimonials %}
           <div class="col-lg-4">
             <div class="testimonial-card">
               <p class="testimonial-text">"{{ testimonial.quote }}"</p>
@@ -192,12 +192,12 @@
         <div class="row align-items-center">
           <div class="col-lg-5">
             <div class="about-image-placeholder mb-4 mb-lg-0">
-              <img src="{{ site.data.homepage['08-about-section'].image }}" alt="{{ site.data.homepage['08-about-section'].image_alt }}" class="img-fluid rounded">
+              <img src="{{ site.data.homepage['about-section'].image }}" alt="{{ site.data.homepage['about-section'].image_alt }}" class="img-fluid rounded">
             </div>
           </div>
           <div class="col-lg-7">
-            <h2 class="section-title">{{ site.data.homepage['08-about-section'].title }} <span class="accent-text">{{ site.data.homepage['08-about-section'].title_accent }}</span></h2>
-            {{ site.data.homepage['08-about-section'].content | markdown_to_html }}
+            <h2 class="section-title">{{ site.data.homepage['about-section'].title }} <span class="accent-text">{{ site.data.homepage['about-section'].title_accent }}</span></h2>
+            {{ site.data.homepage['about-section'].content | markdown_to_html }}
           </div>
         </div>
       </div>
@@ -208,11 +208,11 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-8 text-center">
-            <h2 class="section-title text-white">{{ site.data.homepage['09-booking-section'].title }} <span class="accent-text">{{ site.data.homepage['09-booking-section'].title_accent }}</span>?</h2>
+            <h2 class="section-title text-white">{{ site.data.homepage['booking-section'].title }} <span class="accent-text">{{ site.data.homepage['booking-section'].title_accent }}</span>?</h2>
             <p class="lead text-white mb-4">
-              {{ site.data.homepage['09-booking-section'].subtitle }}
+              {{ site.data.homepage['booking-section'].subtitle }}
             </p>
-            <a href="{{ site.data.homepage['09-booking-section'].cta_link }}" class="btn btn-custom-primary btn-lg">{{ site.data.homepage['09-booking-section'].cta_text }}</a>
+            <a href="{{ site.data.homepage['booking-section'].cta_link }}" class="btn btn-custom-primary btn-lg">{{ site.data.homepage['booking-section'].cta_text }}</a>
           </div>
         </div>
       </div>
