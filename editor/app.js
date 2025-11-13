@@ -457,6 +457,12 @@ async function loadDataFile(filePath) {
         // Render data fields
         renderDataFields(currentDataContent, filePath);
 
+        // Scroll to top of data editor
+        const dataFieldsContainer = document.getElementById('data-fields');
+        if (dataFieldsContainer) {
+            dataFieldsContainer.scrollTop = 0;
+        }
+
         // Update UI
         renderDataFileList();
 
@@ -605,12 +611,11 @@ function renderDataFields(data, filePath) {
     });
     dataEditors = {};
 
-    // Add file header
+    // Add file header (H1 with filename only, no button)
     const header = document.createElement('div');
     header.className = 'data-file-header';
     header.innerHTML = `
-        <h2>📊 ${filePath}</h2>
-        <button onclick="saveDataFile()" class="btn btn-primary">Save</button>
+        <h1>${filePath}</h1>
     `;
     container.appendChild(header);
 
@@ -674,6 +679,14 @@ function renderDataFields(data, filePath) {
             dataEditors[fieldPath] = editorInstance;
         });
         console.log('Total editors created:', Object.keys(dataEditors).length);
+
+        // Scroll to top after all editors are initialized and rendered
+        setTimeout(() => {
+            const dataFieldsContainer = document.getElementById('data-fields');
+            if (dataFieldsContainer) {
+                dataFieldsContainer.scrollTop = 0;
+            }
+        }, 200);
     }, 100);
 }
 
