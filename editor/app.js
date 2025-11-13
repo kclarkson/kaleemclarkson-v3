@@ -32,8 +32,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             ['hr', 'quote'],
             ['ul', 'ol', 'task', 'indent', 'outdent'],
             ['table', 'image', 'link'],
-            ['code', 'codeblock'],
-            ['scrollSync']
+            ['code', 'codeblock']
         ],
         hooks: {
             // Auto-save on content change (debounced)
