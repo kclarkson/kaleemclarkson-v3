@@ -92,14 +92,13 @@
         <div class="row g-4">
           {% for keynote in site.data.homepage['keynotes-section'] %}
           <div class="col-lg-4">
-            <div class="keynote-card position-relative h-100">
-              <div class="keynote-image-placeholder position-relative">
-                <img src="{{ keynote.image }}" alt="{{ keynote.title }}" class="img-fluid w-100" style="height: 400px; object-fit: cover;">
-                <div class="card-overlay"></div>
+            <div class="keynote-card h-100">
+              <div class="keynote-header" style="background-image: url('{{ keynote.image }}');">
+                <div class="keynote-header-overlay"></div>
+                <h3 class="keynote-title">{{ keynote.title }}</h3>
               </div>
-              <div class="card-overlay-content text-white">
-                <h3 class="keynote-title text-white mb-3">{{ keynote.title }}</h3>
-                <p class="mb-3">{{ keynote.description }}</p>
+              <div class="keynote-body">
+                <p class="keynote-description">{{ keynote.description }}</p>
                 <a href="{{ keynote.link }}" class="learn-more-link">LEARN MORE →</a>
               </div>
             </div>
