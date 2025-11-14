@@ -54,7 +54,7 @@
     </section>
 
     <!-- Testimonial Bar -->
-    <section class="testimonial-bar py-4 bg-white">
+    <section class="testimonial-bar pv-4 bg-white">
       <div class="container">
         <div class="row">
           <div class="col-12 text-center">
@@ -74,13 +74,54 @@
             <h2 class="section-title text-uppercase">{{ site.data.homepage['credentials-section'].title }}</h2>
           </div>
         </div>
-        <div class="row justify-content-center">
-          <div class="col-lg-10">
+        <div class="row justify-content-space-between">
+          <div class="col-lg-12">
             <div class="logo-grid">
               {% for client in site.data.homepage['credentials-section'].logos %}
               <div class="client-logo" title="{{ client.name }}">{{ client.svg | raw }}</div>
               {% endfor %}
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+      <!-- Testimonials Section -->
+    <section class="testimonials-section pv-4">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-12 text-center">
+            <h2 class="section-title text-white">{{ site.data.homepage['testimonials-section'].section_title }} <span class="accent-text">{{ site.data.homepage['testimonials-section'].section_title_accent }}</span></h2>
+          </div>
+        </div>
+        <div class="row g-4">
+          {% for testimonial in site.data.homepage['testimonials-section'].testimonials %}
+          <div class="col-lg-4">
+            <div class="testimonial-card">
+              <p class="testimonial-text">"{{ testimonial.quote }}"</p>
+              <div class="testimonial-author">
+                <strong>{{ testimonial.author }}</strong><br>
+                <small>{{ testimonial.organization }}</small>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section pv-4">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-5">
+            <div class="about-image-placeholder mb-4 mb-lg-0">
+              <img src="{{ site.data.homepage['about-section'].image }}" alt="{{ site.data.homepage['about-section'].image_alt }}" class="img-fluid rounded">
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <h2 class="section-title">{{ site.data.homepage['about-section'].title }} <span class="accent-text">{{ site.data.homepage['about-section'].title_accent }}</span></h2>
+            {{ site.data.homepage['about-section'].content | markdown_to_html }}
           </div>
         </div>
       </div>
@@ -161,46 +202,6 @@
       </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section class="testimonials-section pv-4">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-12 text-center">
-            <h2 class="section-title text-white">{{ site.data.homepage['testimonials-section'].section_title }} <span class="accent-text">{{ site.data.homepage['testimonials-section'].section_title_accent }}</span></h2>
-          </div>
-        </div>
-        <div class="row g-4">
-          {% for testimonial in site.data.homepage['testimonials-section'].testimonials %}
-          <div class="col-lg-4">
-            <div class="testimonial-card">
-              <p class="testimonial-text">"{{ testimonial.quote }}"</p>
-              <div class="testimonial-author">
-                <strong>{{ testimonial.author }}</strong><br>
-                <small>{{ testimonial.organization }}</small>
-              </div>
-            </div>
-          </div>
-          {% endfor %}
-        </div>
-      </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about-section pv-4">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-5">
-            <div class="about-image-placeholder mb-4 mb-lg-0">
-              <img src="{{ site.data.homepage['about-section'].image }}" alt="{{ site.data.homepage['about-section'].image_alt }}" class="img-fluid rounded">
-            </div>
-          </div>
-          <div class="col-lg-7">
-            <h2 class="section-title">{{ site.data.homepage['about-section'].title }} <span class="accent-text">{{ site.data.homepage['about-section'].title_accent }}</span></h2>
-            {{ site.data.homepage['about-section'].content | markdown_to_html }}
-          </div>
-        </div>
-      </div>
-    </section>
 
     <!-- Booking CTA Section -->
     <section id="booking" class="booking-section pv-4">
