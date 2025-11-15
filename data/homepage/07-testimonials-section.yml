@@ -1,14 +1,9 @@
-section_title: "What People"
-section_title_accent: "Say"
+section_title: What People
+section_title_accent: Say
 testimonials:
-  - quote: "Kaleem translated remote work theory into practical moves our managers could use the next day. Our leaders walked out with a clear plan to strengthen connection across time zones."
-    author: "VP of People"
-    organization: "Global software company"
-
-  - quote: "The feedback from our attendees was off the charts. Kaleem's blend of data, stories, and humor had everyone nodding, laughing, and most importantly, rethinking how we support our distributed teams."
-    author: "Chief Human Resources Officer"
-    organization: "National nonprofit"
-
-  - quote: "Kaleem helped our senior leadership team shift from arguing about where people work to focusing on how they work together. It was the mindset reset we needed."
-    author: "Chief Executive Officer"
-    organization: "Professional services firm"
+  - quote: Kaleem translated remote work theory into practical moves our managers could use the next day. Our leaders walked out with a clear plan to strengthen connection across time zones.
+    author: VP of People
+    organization: Global software company
+  - quote: The feedback from our attendees was off the charts. Kaleem's blend of data, stories, and humor had everyone nodding, laughing, and most importantly, rethinking how we support our distributed teams.
+    author: Chief Human Resources Officer
+    organization: National nonprofit
