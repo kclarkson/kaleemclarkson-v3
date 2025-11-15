@@ -166,12 +166,14 @@
         <div class="row g-4">
           {% for theme in site.data.homepage['signature-themes'].themes %}
           <div class="col-lg-4">
-            <div class="keynote-card">
-              <div class="keynote-image mb-3">
-                <img src="{{ theme.image }}" alt="{{ theme.alt }}" class="img-fluid rounded">
+            <div class="keynote-card h-100">
+              <div class="keynote-header" style="background-image: url('{{ theme.image }}');">
+                <div class="keynote-header-overlay"></div>
+                <h3 class="keynote-title">{{ theme.title }}</h3>
               </div>
-              <h3 class="keynote-title">{{ theme.title }}</h3>
-              <p>{{ theme.description }}</p>
+              <div class="keynote-body">
+                <p class="keynote-description">{{ theme.description }}</p>
+              </div>
             </div>
           </div>
           {% endfor %}
