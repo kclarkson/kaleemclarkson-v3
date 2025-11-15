@@ -18,17 +18,7 @@ $bright-orange: #ff6b35;
 $red-orange: #f9411f;
 $blend-red: #dc3545;
 
-
-$brown: #613812;
-$light-brown: #a67c52;
-$medium-brown: #705858;
-$dark-brown: #30221e;
-
 $dark-charcoal: #343a40;
-$sand:#f6f2ef;
-$sand-2: #f2ede9;
-$warm-beige: #cec1a5;
-$light-beige: #e9e0c8;
 
 $light-blue-100: #fafbff;
 $light-blue-200: #c8d9f0;
@@ -49,6 +39,22 @@ $plus-symbol: '\f4f9'; // Cicle Plus Symbol
 $arrow-right:  '\f231'; // Triangle Right  
 $circle-checkmark: '\f26a'; // Solid Circle with Chekmark 
 $circle-line-checkmark: '\f26b'; // Circle lin with Chekmark
+
+// Browns // 
+$brown-50: #f6f2ef;
+$brown-100: #f2ede9;
+$brown-200: #e9e0c8;
+$brown-300: #cec1a5;
+$brown-400: #a67c52;
+$brown-500: #705858;
+$brown-600: #613812;
+$brown-700: #30221e;
+
+
+$light-brown: $brown-50;
+$medium-brown: $brown-400;
+$brown: $brown-600; 
+$dark-brown: $brown-700;
 
 
 // Grays //

@@ -124,10 +124,10 @@
 // Big Idea Section (Featured content with image)
 .big-idea-section {
   padding: 100px 0;
-  background-color: $gray-50;
+  background-color: $light-brown;
 }
 
-.big-idea-image-placeholder {
+.big-idea-image {
   img {
     border-radius: 10px;
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
@@ -136,8 +136,7 @@
 
 // Keynotes Section (Card grid)
 .keynotes-section {
-  padding: 100px 0;
-  background-color: $white;
+  background-color: $light-blue-200;
 }
 
 .keynote-card {
@@ -253,7 +252,7 @@
   background-color: $white;
 }
 
-.about-image-placeholder {
+.about-image {
   img {
     border-radius: 10px;
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
