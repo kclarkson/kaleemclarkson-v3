@@ -185,21 +185,38 @@
       <div class="container">
         <div class="row mb-5">
           <div class="col-12 text-center">
-            <h2 class="section-title text-white">{{ site.data.homepage['testimonials-section'].section_title }} <span class="accent-text">{{ site.data.homepage['testimonials-section'].section_title_accent }}</span></h2>
+            <h2 class="section-title">{{ site.data.homepage['testimonials-section'].section_title }} <span class="accent-text">{{ site.data.homepage['testimonials-section'].section_title_accent }}</span></h2>
           </div>
         </div>
-        <div class="row g-4">
-          {% for testimonial in site.data.homepage['testimonials-section'].testimonials %}
-          <div class="col-lg-4">
-            <div class="testimonial-card">
-              <p class="testimonial-text">"{{ testimonial.quote }}"</p>
-              <div class="testimonial-author">
-                <strong>{{ testimonial.author }}</strong><br>
-                <small>{{ testimonial.organization }}</small>
+        <div class="row g-4 align-items-center">
+          <!-- Testimonials Column -->
+          <div class="col-lg-6">
+            <div class="testimonials-stack">
+              {% for testimonial in site.data.homepage['testimonials-section'].testimonials %}
+              <div class="testimonial-card-horizontal">
+                <p class="testimonial-text">"{{ testimonial.quote }}"</p>
+                <div class="testimonial-author">
+                  <strong>{{ testimonial.author }}</strong><br>
+                  <small>{{ testimonial.organization }}</small>
+                </div>
+              </div>
+              {% endfor %}
+            </div>
+          </div>
+
+          <!-- Video Column -->
+          <div class="col-lg-6">
+            <div class="testimonial-video-wrapper">
+              <div class="ratio ratio-16x9">
+                <iframe
+                  src="https://www.youtube.com/embed/FVAwBTixIbc"
+                  title="YouTube video"
+                  allowfullscreen
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                ></iframe>
               </div>
             </div>
           </div>
-          {% endfor %}
         </div>
       </div>
     </section>
