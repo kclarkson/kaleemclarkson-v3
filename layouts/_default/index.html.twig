@@ -35,20 +35,19 @@
       <!-- Hero Content -->
       <div class="container h-100">
         <div class="row h-100 align-items-center">
-          <div class="col-lg-8">
-            <div class="hero-content">
-              <h1 class="hero-title mb-4">
-                <span class="accent-text-orange">{{ site.data.homepage['hero-section'].title_line1 }}</span><br>
-                <span class="text-white">{{ site.data.homepage['hero-section'].title_line2 }}</span>
-              </h1>
-              <p class="hero-subtitle">{{ site.data.homepage['hero-section'].subtitle }}</p>
-              <p class="hero-description">{{ site.data.homepage['hero-section'].description }}</p>
-              <div class="d-flex flex-wrap gap-3 mt-4">
-                <a href="{{ site.data.homepage['hero-section'].button1.link }}" class="btn btn-custom-primary">{{ site.data.homepage['hero-section'].button1.text }}</a>
-                <a href="{{ site.data.homepage['hero-section'].button2.link }}" class="btn btn-custom-secondary">{{ site.data.homepage['hero-section'].button2.text }}</a>
-              </div>
+          <div class="hero-content">
+            <h1 class="hero-title mb-4 col-lg-8">
+              <span class="accent-text-orange">{{ site.data.homepage['hero-section'].title_line1 }}</span><br>
+              <span class="text-white">{{ site.data.homepage['hero-section'].title_line2 }}</span>
+            </h1>
+            <p class="hero-subtitle col-lg-6">{{ site.data.homepage['hero-section'].subtitle }}</p>
+            <p class="hero-description col-lg-7">{{ site.data.homepage['hero-section'].description }}</p>
+            <div class="d-flex flex-wrap gap-3 mt-4">
+              <a href="{{ site.data.homepage['hero-section'].button1.link }}" class="btn btn-custom-primary">{{ site.data.homepage['hero-section'].button1.text }}</a>
+              <a href="{{ site.data.homepage['hero-section'].button2.link }}" class="btn btn-custom-secondary">{{ site.data.homepage['hero-section'].button2.text }}</a>
             </div>
           </div>
+          
         </div>
       </div>
     </section>
@@ -87,10 +86,15 @@
     </section>
 
      <!-- Keynote Topics Section -->
-    <section class="keynote-results pv-4">
+    <section class="keynote-results pv-5">
       <div class="container">
+        <div class="row mb-4">
+          <div class="col-12 text-center">
+            <h2 class="section-title">{{ site.data.homepage['keynotes-section'].section_title }} <span class="accent-text">{{ site.data.homepage['keynotes-section'].section_title_accent }}</span></h2>
+          </div>
+        </div>
         <div class="row g-4">
-          {% for keynote in site.data.homepage['keynotes-section'] %}
+          {% for keynote in site.data.homepage['keynotes-section'].keynote %}
           <div class="col-lg-4">
             <div class="keynote-card h-100">
               <div class="keynote-header" style="background-image: url('{{ keynote.image }}');">

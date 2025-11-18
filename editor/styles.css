@@ -374,6 +374,7 @@ body {
     font-size: 13px;
     color: #718096;
     transition: all 0.2s;
+    height: auto;
 }
 
 .toastui-editor-mode-switch .tab-item.active {
