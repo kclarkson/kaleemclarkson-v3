@@ -17,6 +17,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;600;800;900&display=swap" rel="stylesheet">
 
+    <!-- Calendly Widget -->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+
     <!-- Theme Styles -->
     {{ html(asset('scss/styles.scss')) }}
   </head>
@@ -44,7 +48,11 @@
             <p class="hero-description col-lg-7">{{ site.data.homepage['hero-section'].description }}</p>
             <div class="d-flex flex-wrap gap-3 mt-4">
               <a href="{{ site.data.homepage['hero-section'].button1.link }}" class="btn btn-primary">{{ site.data.homepage['hero-section'].button1.text }}</a>
-              <a href="{{ site.data.homepage['hero-section'].button2.link }}" class="btn btn-secondary">{{ site.data.homepage['hero-section'].button2.text }}</a>
+              {% include 'partials/calendly-button.html.twig' with {
+                text: site.data.homepage['hero-section'].button2.text,
+                btn_class: 'btn-secondary',
+                show_icon: true
+              } %}
             </div>
           </div>
           
@@ -125,7 +133,11 @@
             </p>
             {{ site.data.homepage['big-idea-section'].content | markdown_to_html }}
             <div class="d-flex flex-wrap gap-3 mt-5">
-              <a href="{{ site.data.homepage['big-idea-section'].cta_primary_link }}" class="btn btn-primary">{{ site.data.homepage['big-idea-section'].cta_primary_text }}</a>
+              {% include 'partials/calendly-button.html.twig' with {
+                text: site.data.homepage['big-idea-section'].cta_primary_text,
+                btn_class: 'btn-primary',
+                show_icon: true
+              } %}
               <a href="{{ site.data.homepage['big-idea-section'].cta_secondary_link }}" class="btn btn-outline-primary">{{ site.data.homepage['big-idea-section'].cta_secondary_text }}</a>
             </div>
           </div>
@@ -235,7 +247,12 @@
             <p class="lead text-white mb-4">
               {{ site.data.homepage['booking-section'].subtitle }}
             </p>
-            <a href="{{ site.data.homepage['booking-section'].cta_link }}" class="btn btn-primary btn-lg">{{ site.data.homepage['booking-section'].cta_text }}</a>
+            {% include 'partials/calendly-button.html.twig' with {
+              text: site.data.homepage['booking-section'].cta_text,
+              btn_class: 'btn-primary',
+              btn_size: 'btn-lg',
+              show_icon: true
+            } %}
           </div>
         </div>
       </div>

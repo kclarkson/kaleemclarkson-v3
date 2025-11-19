@@ -1,0 +1,31 @@
+{#
+  Calendly Button Component
+
+  Usage:
+  {% include 'partials/calendly-button.html.twig' with {
+    text: 'Schedule A Chat',
+    btn_class: 'btn-primary',
+    btn_size: '',
+    show_icon: true
+  } %}
+
+  Parameters:
+  - text: Button text (default: 'Schedule A Chat')
+  - btn_class: Button style class (default: 'btn-primary', options: 'btn-primary', 'btn-secondary', 'btn-outline-primary')
+  - btn_size: Button size class (default: '', options: '', 'btn-lg', 'btn-sm')
+  - show_icon: Show calendar icon (default: true)
+#}
+
+{% set button_text = text|default('Schedule A Chat') %}
+{% set button_class = btn_class|default('btn-primary') %}
+{% set button_size = btn_size|default('') %}
+{% set display_icon = show_icon|default(true) %}
+
+<a href=""
+   onclick="Calendly.initPopupWidget({url: 'https://calendly.com/blendmeinc/intro?hide_gdpr_banner=1&primary_color=1a0dab'});return false;"
+   class="btn {{ button_class }} {{ button_size }} calendly-button">
+  {%- if display_icon -%}
+    <i class="fa-regular fa-calendar"></i>
+  {%- endif -%}
+  {{ button_text }}
+</a>

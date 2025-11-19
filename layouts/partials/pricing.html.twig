@@ -70,7 +70,12 @@
         <div class="row mt-5">
           <div class="col-lg-8 mx-auto text-center">
             <div class="pricing-cta">
-              <a href="{{ pricing.primary_cta.destination }}" class="btn btn-primary btn-lg">{{ pricing.primary_cta.label }}</a>
+              {% include 'partials/calendly-button.html.twig' with {
+                text: pricing.primary_cta.label,
+                btn_class: 'btn-primary',
+                btn_size: 'btn-lg',
+                show_icon: true
+              } %}
             </div>
           </div>
         </div>
