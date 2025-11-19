@@ -55,13 +55,5 @@ offerings:
     ideal_for: Industry panels, executive roundtables, thought leadership forums
 
 primary_cta:
-  label: Explore Speaking Options
+  label: Schedule Intro Call
   destination: /contact
-
-secondary_cta:
-  label: Download Speaker Kit
-  destination: /resources/speaker-kit
-
-travel_disclaimer: Travel expenses billed separately at cost. Virtual options available.
-payment_terms: 50% due at contract signing, 50% after event completion.
-last_updated: November 2024
