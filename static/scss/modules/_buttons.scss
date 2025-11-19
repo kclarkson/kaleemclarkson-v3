@@ -3,7 +3,17 @@
 // ============================================================================
 // Custom button styles for CTAs and interactive elements
 
-.btn-custom-primary {
+.btn-primary,
+.btn-secondary,
+.btn-outline-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  text-align: center;
+}
+
+.btn-primary {
   background-color: $primary-green;
   color: $white;
   font-weight: 800;
@@ -28,7 +38,7 @@
   }
 }
 
-.btn-custom-secondary {
+.btn-secondary {
   background-color: transparent;
   color: $white;
   font-weight: 700;
@@ -53,10 +63,36 @@
   }
 }
 
+.btn-outline-primary {
+  background-color: transparent;
+  color: $primary-green;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 1rem 2.5rem;
+  border-radius: 0;
+  border: 2px solid $primary-green;
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba($primary-green, 0.15);
+
+  &:hover {
+    background-color: rgba($primary-green, 0.1);
+    color: $primary-green;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba($primary-green, 0.25);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+}
+
 // Responsive adjustments
 @media (max-width: 768px) {
-  .btn-custom-primary,
-  .btn-custom-secondary {
+  .btn-primary,
+  .btn-secondary,
+  .btn-outline-primary {
     padding: 0.875rem 2rem;
     font-size: 0.9rem;
   }

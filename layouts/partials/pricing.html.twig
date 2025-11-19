@@ -1,0 +1,66 @@
+{% set pricing = site.data.homepage['pricing-section']|default(null) %}
+
+{% if pricing %}
+  <section class="pricing-section pv-5">
+    <div class="container">
+      {% if pricing.section_title or pricing.section_title_accent %}
+        <div class="row text-center mb-5">
+          <div class="col-lg-8 mx-auto">
+            <h2 class="section-title">
+              {{ pricing.section_title }}
+              {% if pricing.section_title_accent %}
+                <span class="accent-text">{{ pricing.section_title_accent }}</span>
+              {% endif %}
+            </h2>
+            {% if pricing.subtitle %}
+              <p class="section-subtitle">{{ pricing.subtitle }}</p>
+            {% endif %}
+          </div>
+        </div>
+      {% endif %}
+
+      {% if pricing.plans %}
+        <div class="row g-4">
+          {% for plan in pricing.plans %}
+            <div class="col-lg-4">
+              <div class="pricing-card{% if plan.highlight %} is-highlighted{% endif %}">
+                <div class="pricing-card__body">
+                  <p class="pricing-card__eyebrow text-uppercase text-muted">{{ plan.name }}</p>
+                  <p class="pricing-card__price fw-black">{{ plan.price }}</p>
+                  <p class="pricing-card__description">{{ plan.description }}</p>
+
+                  {% if plan.features %}
+                    <ul class="pricing-card__features list-unstyled">
+                      {% for feature in plan.features %}
+                        <li>
+                          <span class="pricing-card__feature-icon">
+                            <i class="fa-solid fa-check"></i>
+                          </span>
+                          <span>{{ feature }}</span>
+                        </li>
+                      {% endfor %}
+                    </ul>
+                  {% endif %}
+                </div>
+
+                {% if plan.cta_link and plan.cta_text %}
+                  <div class="pricing-card__cta">
+                    <a href="{{ plan.cta_link }}" class="btn btn-primary w-100">{{ plan.cta_text }}</a>
+                  </div>
+                {% endif %}
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      {% endif %}
+
+      {% if pricing.note %}
+        <div class="row mt-4">
+          <div class="col-lg-8 mx-auto">
+            <p class="pricing-note text-muted small">{{ pricing.note }}</p>
+          </div>
+        </div>
+      {% endif %}
+    </div>
+  </section>
+{% endif %}

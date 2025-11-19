@@ -69,6 +69,20 @@
   color: $orange;
 }
 
+
+.section-lead {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  opacity: 0.95;
+  color: $dark-gray;
+}
+
+.section-title-white {
+  color: $white;
+}
+
+
 // Credentials Section (Logo showcase)
 .credentials-section {
   padding: 80px 0;

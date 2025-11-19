@@ -33,7 +33,7 @@
 @import "./layout/footer";
 
 // ----------------------------------------------------------------------------
-// 6. Modules/Components
+// 6. Modules
 // ----------------------------------------------------------------------------
 @import "./modules/buttons";
 @import "./modules/navigation";
@@ -41,13 +41,14 @@
 
 
 // ----------------------------------------------------------------------------
-// 8. Components
+// 7. Components
 // ----------------------------------------------------------------------------
 @import "./components/hero";
 @import "./components/social";
 @import "./components/breadcrumb";
 @import "./components/cards";
 @import "./components/page-nav";
+@import "./components/pricing";
 
 // ----------------------------------------------------------------------------
 // 8. Pages

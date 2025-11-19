@@ -1,0 +1,38 @@
+section_title: Pricing
+section_title_accent: Plans
+subtitle: Choose the level of partnership that fits your event or leadership program.
+note: "Every engagement includes prep calls, audience research, and a tailored action guide."
+plans:
+  - name: Signature Keynote
+    price: Starts at $7,500
+    description: High-impact keynote tailored to your event theme with interactive prompts and takeaways.
+    highlight: false
+    cta_text: Request proposal
+    cta_link: '#booking'
+    features:
+      - 60–75 minute keynote
+      - Custom storyline and slides
+      - Attendee action worksheet
+      - Post-event debrief
+  - name: Workshop Intensive
+    price: Starts at $12,000
+    description: Deep-dive workshop for leadership teams who need a tactical plan for distributed work and AI.
+    highlight: true
+    cta_text: Schedule discovery call
+    cta_link: '#booking'
+    features:
+      - Half- or full-day facilitation
+      - Pre-work interviews with stakeholders
+      - Team connection diagnostics
+      - Strategic action roadmap
+  - name: Advisory Sprint
+    price: Starts at $18,000
+    description: Multi-week advisory support to turn insights into policy, playbooks, and team enablement.
+    highlight: false
+    cta_text: Talk with Kaleem
+    cta_link: '#booking'
+    features:
+      - 4–6 week engagement
+      - Async office hours + live sessions
+      - Policy and enablement review
+      - Executive summary + recommendations

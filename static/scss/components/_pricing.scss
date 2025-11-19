@@ -1,0 +1,93 @@
+// ============================================================================
+// Components: Pricing
+// ============================================================================
+// Styles for pricing cards and section layout
+
+.pricing-section {
+  background: $light-blue-100;
+  border-top: 4px solid rgba($orange, 0.15);
+
+  .section-subtitle {
+    font-size: 1.5rem;
+  }
+}
+
+.pricing-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: $white;
+  border: 1px solid $gray-200;
+  border-radius: 18px;
+  padding: 2rem 2rem 1.5rem;
+  box-shadow: 0 18px 40px rgba($black, 0.05);
+  transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+
+  &.is-highlighted {
+    border-color: $orange;
+    box-shadow: 0 25px 55px rgba($black, 0.1);
+    transform: translateY(-8px);
+  }
+
+  &__body {
+    flex: 1;
+  }
+
+  &__eyebrow {
+    font-size: 0.85rem;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+
+  &__price {
+    font-size: 2rem;
+    color: $dark-gray;
+    margin-bottom: 0.75rem;
+  }
+
+  &__description {
+    color: $gray-600;
+    margin-bottom: 1.5rem;
+    min-height: 65px;
+  }
+
+  &__features {
+    margin: 0;
+
+    li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      margin-bottom: 0.75rem;
+      font-weight: 500;
+      color: $dark-gray;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__feature-icon {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: rgba($green, 0.1);
+    color: $green;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    margin-top: 0.15rem;
+  }
+
+  &__cta {
+    margin-top: 1.75rem;
+  }
+}
+
+.pricing-note {
+  border-left: 3px solid $orange;
+  padding-left: 1rem;
+}

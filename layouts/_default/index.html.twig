@@ -43,8 +43,8 @@
             <p class="hero-subtitle col-lg-6">{{ site.data.homepage['hero-section'].subtitle }}</p>
             <p class="hero-description col-lg-7">{{ site.data.homepage['hero-section'].description }}</p>
             <div class="d-flex flex-wrap gap-3 mt-4">
-              <a href="{{ site.data.homepage['hero-section'].button1.link }}" class="btn btn-custom-primary">{{ site.data.homepage['hero-section'].button1.text }}</a>
-              <a href="{{ site.data.homepage['hero-section'].button2.link }}" class="btn btn-custom-secondary">{{ site.data.homepage['hero-section'].button2.text }}</a>
+              <a href="{{ site.data.homepage['hero-section'].button1.link }}" class="btn btn-primary">{{ site.data.homepage['hero-section'].button1.text }}</a>
+              <a href="{{ site.data.homepage['hero-section'].button2.link }}" class="btn btn-secondary">{{ site.data.homepage['hero-section'].button2.text }}</a>
             </div>
           </div>
           
@@ -111,24 +111,22 @@
       </div>
     </section>
 
-    <!-- Energy Management Section -->
+    <!-- People, Trust and Connection Advantage -->
     <section class="big-idea-section pv-4">
       <div class="container">
-        <div class="row align-items-center">
+        <div class="row">
           <div class="col-lg-7">
             <h2 class="section-title mb-4">
               <span class="accent-text-orange">{{ site.data.homepage['big-idea-section'].title }}</span><br>
               {{ site.data.homepage['big-idea-section'].subtitle }}
             </h2>
-            <p class="lead mb-4">
+            <p class="section-lead mb-4">
               {{ site.data.homepage['big-idea-section'].lead }}
             </p>
             {{ site.data.homepage['big-idea-section'].content | markdown_to_html }}
             <div class="d-flex flex-wrap gap-3 mt-5">
-              <a href="{{ site.data.homepage['big-idea-section'].cta_primary_link }}" class="btn btn-custom-primary">{{ site.data.homepage['big-idea-section'].cta_primary_text }}</a>
-              <div>
-                <a href="{{ site.data.homepage['big-idea-section'].cta_secondary_link }}" class="d-block mt-3 fw-semibold text-dark text-decoration-none">{{ site.data.homepage['big-idea-section'].cta_secondary_text }}</a>
-              </div>
+              <a href="{{ site.data.homepage['big-idea-section'].cta_primary_link }}" class="btn btn-primary">{{ site.data.homepage['big-idea-section'].cta_primary_text }}</a>
+              <a href="{{ site.data.homepage['big-idea-section'].cta_secondary_link }}" class="btn btn-outline-primary">{{ site.data.homepage['big-idea-section'].cta_secondary_text }}</a>
             </div>
           </div>
           <div class="col-lg-5">
@@ -163,7 +161,7 @@
       <div class="container">
         <div class="row mb-5">
           <div class="col-12 text-center">
-            <h2 class="section-title">{{ site.data.homepage['signature-themes'].section_title }} <span class="accent-text">{{ site.data.homepage['signature-themes'].section_title_accent }}</span></h2>
+            <h2 class="section-title section-title-white">{{ site.data.homepage['signature-themes'].section_title }} <span class="accent-text">{{ site.data.homepage['signature-themes'].section_title_accent }}</span></h2>
           </div>
         </div>
         <div class="row g-4">
@@ -183,6 +181,8 @@
         </div>
       </div>
     </section>
+
+    {%~ include 'partials/pricing.html.twig' ~%}
 
      <!-- Testimonials Section -->
     <section class="testimonials-section pv-4">
@@ -235,7 +235,7 @@
             <p class="lead text-white mb-4">
               {{ site.data.homepage['booking-section'].subtitle }}
             </p>
-            <a href="{{ site.data.homepage['booking-section'].cta_link }}" class="btn btn-custom-primary btn-lg">{{ site.data.homepage['booking-section'].cta_text }}</a>
+            <a href="{{ site.data.homepage['booking-section'].cta_link }}" class="btn btn-primary btn-lg">{{ site.data.homepage['booking-section'].cta_text }}</a>
           </div>
         </div>
       </div>
