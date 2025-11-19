@@ -3,61 +3,94 @@
 {% if pricing %}
   <section class="pricing-section pv-5">
     <div class="container">
-      {% if pricing.section_title or pricing.section_title_accent %}
+      {% if pricing.component_title or pricing.intro_blurb %}
         <div class="row text-center mb-5">
           <div class="col-lg-8 mx-auto">
-            <h2 class="section-title">
-              {{ pricing.section_title }}
-              {% if pricing.section_title_accent %}
-                <span class="accent-text">{{ pricing.section_title_accent }}</span>
-              {% endif %}
-            </h2>
-            {% if pricing.subtitle %}
-              <p class="section-subtitle">{{ pricing.subtitle }}</p>
+            <h2 class="section-title">{{ pricing.component_title }}</h2>
+            {% if pricing.intro_blurb %}
+              <p class="section-subtitle">{{ pricing.intro_blurb }}</p>
             {% endif %}
           </div>
         </div>
       {% endif %}
 
-      {% if pricing.plans %}
+      {% if pricing.offerings %}
         <div class="row g-4">
-          {% for plan in pricing.plans %}
-            <div class="col-lg-4">
-              <div class="pricing-card{% if plan.highlight %} is-highlighted{% endif %}">
-                <div class="pricing-card__body">
-                  <p class="pricing-card__eyebrow text-uppercase text-muted">{{ plan.name }}</p>
-                  <p class="pricing-card__price fw-black">{{ plan.price }}</p>
-                  <p class="pricing-card__description">{{ plan.description }}</p>
+          {% for offering in pricing.offerings %}
+            <div class="col-lg-6">
+              <div class="pricing-card">
+                <div class="pricing-card__header">
+                  <h3 class="pricing-card__title">{{ offering.title }}</h3>
+                  <p class="pricing-card__subtitle">{{ offering.subtitle }}</p>
+                </div>
 
-                  {% if plan.features %}
-                    <ul class="pricing-card__features list-unstyled">
-                      {% for feature in plan.features %}
-                        <li>
-                          <span class="pricing-card__feature-icon">
-                            <i class="fa-solid fa-check"></i>
-                          </span>
-                          <span>{{ feature }}</span>
-                        </li>
-                      {% endfor %}
-                    </ul>
+                <div class="pricing-card__body">
+                  <p class="pricing-card__description">{{ offering.description }}</p>
+
+                  {% if offering.included %}
+                    <div class="pricing-card__included">
+                      <p class="pricing-card__included-label">What's included:</p>
+                      <ul class="pricing-card__features list-unstyled">
+                        {% for item in offering.included %}
+                          <li>
+                            <span class="pricing-card__feature-icon">
+                              <i class="fa-solid fa-check"></i>
+                            </span>
+                            <span>{{ item }}</span>
+                          </li>
+                        {% endfor %}
+                      </ul>
+                    </div>
                   {% endif %}
                 </div>
 
-                {% if plan.cta_link and plan.cta_text %}
-                  <div class="pricing-card__cta">
-                    <a href="{{ plan.cta_link }}" class="btn btn-primary w-100">{{ plan.cta_text }}</a>
+                <div class="pricing-card__footer">
+                  <div class="pricing-card__price-range">{{ offering.price_range }}</div>
+                  <div class="pricing-card__meta">
+                    <div class="pricing-card__meta-item">
+                      <span class="pricing-card__meta-label">Duration:</span>
+                      <span class="pricing-card__meta-value">{{ offering.duration }}</span>
+                    </div>
+                    <div class="pricing-card__meta-item">
+                      <span class="pricing-card__meta-label">Ideal for:</span>
+                      <span class="pricing-card__meta-value">{{ offering.ideal_for }}</span>
+                    </div>
                   </div>
-                {% endif %}
+                </div>
               </div>
             </div>
           {% endfor %}
         </div>
       {% endif %}
 
-      {% if pricing.note %}
+      {# CTA Buttons #}
+      {% if pricing.primary_cta or pricing.secondary_cta %}
+        <div class="row mt-5">
+          <div class="col-lg-8 mx-auto text-center">
+            <div class="pricing-cta">
+              {% if pricing.primary_cta %}
+                <a href="{{ pricing.primary_cta.destination }}" class="btn btn-primary btn-lg">{{ pricing.primary_cta.label }}</a>
+              {% endif %}
+              {% if pricing.secondary_cta %}
+                <a href="{{ pricing.secondary_cta.destination }}" class="btn btn-outline-secondary btn-lg">{{ pricing.secondary_cta.label }}</a>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      {% endif %}
+
+      {# Disclaimers and Notes #}
+      {% if pricing.travel_disclaimer or pricing.payment_terms %}
         <div class="row mt-4">
           <div class="col-lg-8 mx-auto">
-            <p class="pricing-note text-muted small">{{ pricing.note }}</p>
+            <div class="pricing-notes">
+              {% if pricing.travel_disclaimer %}
+                <p class="pricing-note">{{ pricing.travel_disclaimer }}</p>
+              {% endif %}
+              {% if pricing.payment_terms %}
+                <p class="pricing-note">{{ pricing.payment_terms }}</p>
+              {% endif %}
+            </div>
           </div>
         </div>
       {% endif %}

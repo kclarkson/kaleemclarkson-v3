@@ -1,38 +1,67 @@
-section_title: Pricing
-section_title_accent: Plans
-subtitle: Choose the level of partnership that fits your event or leadership program.
-note: "Every engagement includes prep calls, audience research, and a tailored action guide."
-plans:
-  - name: Signature Keynote
-    price: Starts at $7,500
-    description: High-impact keynote tailored to your event theme with interactive prompts and takeaways.
-    highlight: false
-    cta_text: Request proposal
-    cta_link: '#booking'
-    features:
-      - 60–75 minute keynote
-      - Custom storyline and slides
-      - Attendee action worksheet
-      - Post-event debrief
-  - name: Workshop Intensive
-    price: Starts at $12,000
-    description: Deep-dive workshop for leadership teams who need a tactical plan for distributed work and AI.
-    highlight: true
-    cta_text: Schedule discovery call
-    cta_link: '#booking'
-    features:
-      - Half- or full-day facilitation
-      - Pre-work interviews with stakeholders
-      - Team connection diagnostics
-      - Strategic action roadmap
-  - name: Advisory Sprint
-    price: Starts at $18,000
-    description: Multi-week advisory support to turn insights into policy, playbooks, and team enablement.
-    highlight: false
-    cta_text: Talk with Kaleem
-    cta_link: '#booking'
-    features:
-      - 4–6 week engagement
-      - Async office hours + live sessions
-      - Policy and enablement review
-      - Executive summary + recommendations
+component_title: Speaking and Workshop Pricing
+intro_blurb: Transform your next event with remote work expertise. Every engagement includes custom content tailored to your audience.
+
+offerings:
+  - title: Keynote Presentations
+    subtitle: Energize Your Event
+    description: Set the tone with insights that stick. Our keynotes blend remote work expertise with your event theme, delivered to inspire action and spark meaningful conversations.
+    included:
+      - 45-60 minute presentation
+      - 2 planning meetings
+      - Custom content development
+      - Preliminary data collection (if needed)
+      - Post-event resources
+    price_range: $8,500 - $25,000
+    duration: 45-60 minutes
+    ideal_for: Conferences, company meetings, leadership summits
+
+  - title: Interactive Workshops
+    subtitle: Build Skills Together
+    description: Create breakthrough moments through hands-on learning. Participants leave with practical tools, clear action plans, and confidence to drive real change in their organizations.
+    included:
+      - Half-day to multi-day formats
+      - 2 strategic planning sessions
+      - Interactive exercises and tools
+      - Custom workbooks and materials
+      - Follow-up resources
+    price_range: $6,500 - $45,000
+    duration: 3 hours to 3 days
+    ideal_for: Team training, skill building, strategic planning
+
+  - title: Expert Lectures & Webinars
+    subtitle: Deep Dive Into Topics
+    description: Deliver focused expertise on specific remote work challenges. Perfect when you need authoritative insights with room for Q&A and discussion.
+    included:
+      - 45-60 minute presentation
+      - 1 planning meeting
+      - Topic-specific best practices
+      - Interactive Q&A segment
+      - Recording rights available
+    price_range: $4,500 - $8,500
+    duration: 45-60 minutes
+    ideal_for: Professional development, virtual events, lunch-and-learns
+
+  - title: Panel & Roundtable Participation
+    subtitle: Join the Conversation
+    description: Add remote work perspective to your panel discussion. We bring experience, data-driven insights, and practical examples that elevate the dialogue.
+    included:
+      - 45-60 minute participation
+      - 1 prep call with moderator
+      - Expert perspective and insights
+      - Collaborative discussion format
+      - No slide preparation needed
+    price_range: $3,500 - $8,500
+    duration: 45-60 minutes
+    ideal_for: Industry panels, executive roundtables, thought leadership forums
+
+primary_cta:
+  label: Explore Speaking Options
+  destination: /contact
+
+secondary_cta:
+  label: Download Speaker Kit
+  destination: /resources/speaker-kit
+
+travel_disclaimer: Travel expenses billed separately at cost. Virtual options available.
+payment_terms: 50% due at contract signing, 50% after event completion.
+last_updated: November 2024

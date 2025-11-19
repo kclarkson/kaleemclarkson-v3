@@ -8,7 +8,11 @@
   border-top: 4px solid rgba($orange, 0.15);
 
   .section-subtitle {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+    color: $gray-600;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -19,37 +23,56 @@
   background: $white;
   border: 1px solid $gray-200;
   border-radius: 18px;
-  padding: 2rem 2rem 1.5rem;
+  padding: 2rem;
   box-shadow: 0 18px 40px rgba($black, 0.05);
   transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
 
-  &.is-highlighted {
-    border-color: $orange;
-    box-shadow: 0 25px 55px rgba($black, 0.1);
-    transform: translateY(-8px);
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 25px 55px rgba($black, 0.08);
+  }
+
+  &__header {
+    margin-bottom: 1.25rem;
+    padding-bottom: 1.25rem;
+    border-bottom: 1px solid $gray-200;
+  }
+
+  &__title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: $dark-gray;
+    margin-bottom: 0.25rem;
+  }
+
+  &__subtitle {
+    font-size: 1rem;
+    color: $orange;
+    font-weight: 600;
+    margin-bottom: 0;
   }
 
   &__body {
     flex: 1;
   }
 
-  &__eyebrow {
-    font-size: 0.85rem;
-    letter-spacing: 0.1em;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-  }
-
-  &__price {
-    font-size: 2rem;
-    color: $dark-gray;
-    margin-bottom: 0.75rem;
-  }
-
   &__description {
     color: $gray-600;
     margin-bottom: 1.5rem;
-    min-height: 65px;
+    line-height: 1.6;
+  }
+
+  &__included {
+    margin-bottom: 1.5rem;
+  }
+
+  &__included-label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: $dark-gray;
+    margin-bottom: 0.75rem;
   }
 
   &__features {
@@ -59,8 +82,8 @@
       display: flex;
       align-items: flex-start;
       gap: 0.75rem;
-      margin-bottom: 0.75rem;
-      font-weight: 500;
+      margin-bottom: 0.6rem;
+      font-size: 0.95rem;
       color: $dark-gray;
 
       &:last-child {
@@ -70,24 +93,115 @@
   }
 
   &__feature-icon {
-    width: 28px;
-    height: 28px;
+    width: 22px;
+    height: 22px;
     border-radius: 50%;
     background: rgba($green, 0.1);
     color: $green;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    font-size: 0.8rem;
+    font-size: 0.65rem;
     margin-top: 0.15rem;
+    flex-shrink: 0;
   }
 
-  &__cta {
-    margin-top: 1.75rem;
+  &__footer {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid $gray-200;
+  }
+
+  &__price-range {
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: $green;
+    margin-bottom: 1rem;
+  }
+
+  &__meta {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  &__meta-item {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+  }
+
+  &__meta-label {
+    font-weight: 600;
+    color: $dark-gray;
+  }
+
+  &__meta-value {
+    color: $gray-600;
   }
 }
 
+// CTA Section
+.pricing-cta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+
+  .btn {
+    min-width: 200px;
+  }
+}
+
+// Notes Section
+.pricing-notes {
+  text-align: center;
+}
+
 .pricing-note {
-  border-left: 3px solid $orange;
-  padding-left: 1rem;
+  color: $gray-600;
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+// Responsive adjustments
+@media (max-width: 991px) {
+  .pricing-card {
+    &__price-range {
+      font-size: 1.5rem;
+    }
+
+    &__meta {
+      gap: 0.75rem;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .pricing-card {
+    padding: 1.5rem;
+
+    &__title {
+      font-size: 1.35rem;
+    }
+
+    &__price-range {
+      font-size: 1.35rem;
+    }
+  }
+
+  .pricing-cta {
+    flex-direction: column;
+    align-items: center;
+
+    .btn {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
 }
