@@ -21,15 +21,15 @@
   }
 
   .row > div:nth-child(2) .pricing-card {
-    border-left-color: $green;
+    border-left-color: $teal;
   }
 
   .row > div:nth-child(3) .pricing-card {
-    border-left-color: $brown;
+    border-left-color: $gray-700;
   }
 
   .row > div:nth-child(4) .pricing-card {
-    border-left-color: $blend-red;
+    border-left-color: $bright-orange;
   }
 }
 
@@ -57,14 +57,14 @@
   }
 
   &__title {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     font-weight: 700;
     color: $dark-gray;
     margin-bottom: 0.25rem;
   }
 
   &__subtitle {
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: $brown;
     font-weight: 600;
     margin-bottom: 0.75rem;
