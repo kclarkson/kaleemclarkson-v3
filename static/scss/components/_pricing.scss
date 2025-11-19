@@ -14,6 +14,23 @@
     margin-left: auto;
     margin-right: auto;
   }
+
+  // Different border colors for each card
+  .row > div:nth-child(1) .pricing-card {
+    border-left-color: $orange;
+  }
+
+  .row > div:nth-child(2) .pricing-card {
+    border-left-color: $green;
+  }
+
+  .row > div:nth-child(3) .pricing-card {
+    border-left-color: $brown;
+  }
+
+  .row > div:nth-child(4) .pricing-card {
+    border-left-color: $blend-red;
+  }
 }
 
 .pricing-card {
@@ -24,7 +41,7 @@
   border: 1px solid $gray-200;
   border-left: 5px solid $orange;
   border-radius: 8px;
-  padding: 2rem;
+  padding: 3rem 2rem;
   box-shadow: 0 2px 8px rgba($black, 0.08);
   transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
 
@@ -35,6 +52,8 @@
 
   &__header {
     margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid $gray-200;
   }
 
   &__title {
@@ -142,15 +161,8 @@
 
 // CTA Section
 .pricing-cta {
-  .btn-success {
-    background-color: $green;
-    border-color: $green;
+  .btn-primary {
     min-width: 250px;
-
-    &:hover {
-      background-color: darken($green, 8%);
-      border-color: darken($green, 8%);
-    }
   }
 }
 
@@ -169,7 +181,7 @@
 
 @media (max-width: 767px) {
   .pricing-card {
-    padding: 1.5rem;
+    padding: 2rem 1.5rem;
 
     &__title {
       font-size: 1.35rem;
