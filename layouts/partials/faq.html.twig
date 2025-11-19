@@ -1,0 +1,59 @@
+{% set faq = site.data.homepage['faq-section']|default(null) %}
+
+{% if faq %}
+  <section class="faq-section pv-5">
+    <div class="container">
+      {% if faq.component_title or faq.intro_blurb %}
+        <div class="row text-center mb-4">
+          <div class="col-lg-8 mx-auto">
+            <h2 class="section-title">
+              {{ faq.component_title }}
+            </h2>
+            {% if faq.intro_blurb %}
+              <p class="section-subtitle">{{ faq.intro_blurb }}</p>
+            {% endif %}
+          </div>
+        </div>
+      {% endif %}
+
+      {% if faq.faq_items %}
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <div class="accordion faq-accordion" id="faqAccordion">
+              {% for item in faq.faq_items %}
+                <div class="accordion-item">
+                  <h3 class="accordion-header">
+                    <button class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#faqCollapse{{ loop.index }}"
+                            aria-expanded="false"
+                            aria-controls="faqCollapse{{ loop.index }}">
+                      {{ item.question }}
+                    </button>
+                  </h3>
+                  <div id="faqCollapse{{ loop.index }}"
+                       class="accordion-collapse collapse"
+                       data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                      {{ item.answer }}
+                    </div>
+                  </div>
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      {% endif %}
+
+      {# CTA Button #}
+      <div class="row mt-5">
+        <div class="col-lg-8 mx-auto text-center">
+          <div class="faq-cta">
+            <a href="/contact" class="btn btn-primary btn-lg">Submit Speaker Request</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endif %}

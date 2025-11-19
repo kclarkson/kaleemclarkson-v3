@@ -196,6 +196,8 @@
 
     {%~ include 'partials/pricing.html.twig' ~%}
 
+    {%~ include 'partials/faq.html.twig' ~%}
+
      <!-- Testimonials Section -->
     <section class="testimonials-section pv-4">
       <div class="container">
@@ -238,25 +240,7 @@
     </section>
 
 
-    <!-- Booking CTA Section -->
-    <section id="booking" class="booking-section pv-4">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-8 text-center">
-            <h2 class="section-title text-white">{{ site.data.homepage['booking-section'].title }} <span class="accent-text">{{ site.data.homepage['booking-section'].title_accent }}</span>?</h2>
-            <p class="lead text-white mb-4">
-              {{ site.data.homepage['booking-section'].subtitle }}
-            </p>
-            {% include 'partials/calendly-button.html.twig' with {
-              text: site.data.homepage['booking-section'].cta_text,
-              btn_class: 'btn-primary',
-              btn_size: 'btn-lg',
-              show_icon: true
-            } %}
-          </div>
-        </div>
-      </div>
-    </section>
+    {%~ include 'partials/contact-form.html.twig' ~%}
 
     <!-- Footer -->
     <footer class="footer">
