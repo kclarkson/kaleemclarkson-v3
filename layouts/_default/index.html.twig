@@ -50,8 +50,7 @@
               <a href="{{ site.data.homepage['hero-section'].button1.link }}" class="btn btn-primary">{{ site.data.homepage['hero-section'].button1.text }}</a>
               {% include 'partials/calendly-button.html.twig' with {
                 text: site.data.homepage['hero-section'].button2.text,
-                btn_class: 'btn-secondary',
-                show_icon: true
+                btn_class: 'btn-secondary'
               } %}
             </div>
           </div>
@@ -135,8 +134,7 @@
             <div class="d-flex flex-wrap gap-3 mt-5">
               {% include 'partials/calendly-button.html.twig' with {
                 text: site.data.homepage['big-idea-section'].cta_primary_text,
-                btn_class: 'btn-primary',
-                show_icon: true
+                btn_class: 'btn-primary'
               } %}
               <a href="{{ site.data.homepage['big-idea-section'].cta_secondary_link }}" class="btn btn-outline-primary">{{ site.data.homepage['big-idea-section'].cta_secondary_text }}</a>
             </div>
@@ -250,8 +248,7 @@
             {% include 'partials/calendly-button.html.twig' with {
               text: site.data.homepage['booking-section'].cta_text,
               btn_class: 'btn-primary',
-              btn_size: 'btn-lg',
-              show_icon: true
+              btn_size: 'btn-lg'
             } %}
           </div>
         </div>
