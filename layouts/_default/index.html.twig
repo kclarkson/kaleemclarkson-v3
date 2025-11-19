@@ -50,8 +50,7 @@
               <a href="{{ site.data.homepage['hero-section'].button1.link }}" class="btn btn-primary">{{ site.data.homepage['hero-section'].button1.text }}</a>
               {% include 'partials/calendly-button.html.twig' with {
                 text: site.data.homepage['hero-section'].button2.text,
-                btn_class: 'btn-secondary',
-                show_icon: true
+                btn_class: 'btn-secondary'
               } %}
             </div>
           </div>
@@ -135,8 +134,7 @@
             <div class="d-flex flex-wrap gap-3 mt-5">
               {% include 'partials/calendly-button.html.twig' with {
                 text: site.data.homepage['big-idea-section'].cta_primary_text,
-                btn_class: 'btn-primary',
-                show_icon: true
+                btn_class: 'btn-primary'
               } %}
               <a href="{{ site.data.homepage['big-idea-section'].cta_secondary_link }}" class="btn btn-outline-primary">{{ site.data.homepage['big-idea-section'].cta_secondary_text }}</a>
             </div>
@@ -241,6 +239,24 @@
 
 
     {%~ include 'partials/contact-form.html.twig' ~%}
+    <!-- Booking CTA Section -->
+    <section id="booking" class="booking-section pv-4">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <h2 class="section-title text-white">{{ site.data.homepage['booking-section'].title }} <span class="accent-text">{{ site.data.homepage['booking-section'].title_accent }}</span>?</h2>
+            <p class="lead text-white mb-4">
+              {{ site.data.homepage['booking-section'].subtitle }}
+            </p>
+            {% include 'partials/calendly-button.html.twig' with {
+              text: site.data.homepage['booking-section'].cta_text,
+              btn_class: 'btn-primary',
+              btn_size: 'btn-lg'
+            } %}
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Footer -->
     <footer class="footer">
