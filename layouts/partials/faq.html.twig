@@ -23,17 +23,17 @@
               {% for item in faq.faq_items %}
                 <div class="accordion-item">
                   <h3 class="accordion-header">
-                    <button class="accordion-button{% if not loop.first %} collapsed{% endif %}"
+                    <button class="accordion-button collapsed"
                             type="button"
                             data-bs-toggle="collapse"
                             data-bs-target="#faqCollapse{{ loop.index }}"
-                            aria-expanded="{% if loop.first %}true{% else %}false{% endif %}"
+                            aria-expanded="false"
                             aria-controls="faqCollapse{{ loop.index }}">
                       {{ item.question }}
                     </button>
                   </h3>
                   <div id="faqCollapse{{ loop.index }}"
-                       class="accordion-collapse collapse{% if loop.first %} show{% endif %}"
+                       class="accordion-collapse collapse"
                        data-bs-parent="#faqAccordion">
                     <div class="accordion-body">
                       {{ item.answer }}
@@ -46,13 +46,14 @@
         </div>
       {% endif %}
 
-      {% if faq.last_updated %}
-        <div class="row mt-4">
-          <div class="col-lg-10 mx-auto text-center">
-            <p class="faq-updated-date">Last updated: {{ faq.last_updated }}</p>
+      {# CTA Button #}
+      <div class="row mt-5">
+        <div class="col-lg-8 mx-auto text-center">
+          <div class="faq-cta">
+            <a href="/contact" class="btn btn-primary btn-lg">Submit Speaker Request</a>
           </div>
         </div>
-      {% endif %}
+      </div>
     </div>
   </section>
 {% endif %}

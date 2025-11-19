@@ -5,7 +5,6 @@
 
 .faq-section {
   background: $light-blue-100;
-  border-top: 4px solid rgba($orange, 0.15);
 
   .section-subtitle {
     font-size: 1.25rem;
@@ -93,11 +92,11 @@
   }
 }
 
-// Last updated text
-.faq-updated-date {
-  font-size: 0.875rem;
-  color: $gray-500;
-  margin-bottom: 0;
+// CTA Section
+.faq-cta {
+  .btn-primary {
+    min-width: 250px;
+  }
 }
 
 // Responsive adjustments
