@@ -5,7 +5,7 @@ description: Kaleem Clarkson is a remote work and employee experience expert who
 video_src: /videos/homepage-hero.mp4
 button1:
   text: WATCH KALEEM IN ACTION
-  link: '#video'
+  link: '#testimonials-section'
 button2:
   text: BOOK KALEEM
   link: '#booking'
