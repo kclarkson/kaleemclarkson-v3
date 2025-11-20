@@ -22,7 +22,17 @@
   transition: all 0.3s ease;
 }
 .footer a:hover {
-  color: #43b449;
+  color: $primary-green;
+}
+
+// Ensure buttons in footer use standard button hover styles
+.footer .btn-primary {
+  &:hover {
+    background-color: darken($primary-green, 8%);
+    color: $white;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba($primary-green, 0.4);
+  }
 }
 
 .footer-bottom {
@@ -52,9 +62,9 @@
   text-decoration: none;
 }
 .footer-social-icons .footer-social-icon:hover {
-  background-color: #43b449;
-  border-color: #43b449;
-  color: #343a40;
+  background-color: $white;
+  border-color: $white;
+  color: $dark-gray;
   transform: translateY(-3px);
 }
 
