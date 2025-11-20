@@ -1,13 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ site.language }}">
   <head>
-    {%~ embed 'partials/head.html.twig' ~%}
-      {%~ block extra_head ~%}
-    <!-- Calendly Widget -->
-    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-      {%~ endblock ~%}
-    {%~ endembed ~%}
+    {%~ include 'partials/head.html.twig' ~%}
   </head>
   <body>
 
