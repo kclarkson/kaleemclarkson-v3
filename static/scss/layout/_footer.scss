@@ -21,7 +21,7 @@
   text-decoration: none;
   transition: all 0.3s ease;
 }
-.footer a:hover {
+.footer a:not(.footer-social-icon):hover {
   color: $primary-green;
 }
 
