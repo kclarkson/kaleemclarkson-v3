@@ -1,24 +1,13 @@
 component_title: Frequently Asked Questions
 intro_blurb: Everything you need to know about booking, pricing, and logistics.
-
 faq_items:
-  - question: What are the travel arrangements?
-    answer: Travel costs are billed at actual expense. Virtual delivery is available for all formats. For in-person engagements, we typically book economy-class airfare and standard accommodations close to your venue.
-
+  - question: 'Do your pricing estimates include travel costs? '
+    answer: No. Our estimates do not include the cost of travel. Travel costs are billed at the actual expense. For in-person engagements, we typically book business-class airfare, travel to and from airport, and standard accommodations close to your venue.
   - question: What happens if I need to book on short notice?
     answer: Events scheduled within 30 days are subject to a 25% rush fee based on availability. We recommend booking at least 6-8 weeks in advance to ensure your preferred date and allow adequate time for custom content development.
-
-  - question: What are the recording rights?
-    answer: Standard recording rights are included for internal use. This means you can share recordings within your organization for training or reference purposes. Commercial distribution, public posting, or resale requires additional licensing arrangements.
-
-  - question: Are prices shown inclusive of tax?
-    answer: Prices shown exclude applicable sales tax. Tax-exempt organizations should provide their certificate at booking. We can provide W-9 forms and other documentation as needed for your procurement process.
-
   - question: How is pricing determined?
     answer: Final investment depends on format, audience size, customization level, and preparation requirements. Pricing starts from $3,500 for panel participation. We offer volume discounts—save 15% when booking three or more sessions.
-
   - question: What are the payment terms?
-    answer: 50% is due at contract signing to secure your date, with the remaining 50% due after event completion. We accept checks, wire transfers, and major credit cards. Corporate purchase orders are welcome.
-
-pricing_note: "Pricing from $3,500 for panel participation"
+    answer: 50% is due at contract signing to secure your date, with the remaining 50% due after event completion. We prefer electronic payment such as wire transfers, and major credit cards. Corporate checks and purchase orders are welcome.
+pricing_note: Pricing from $3,500 for panel participation
 last_updated: November 2024
