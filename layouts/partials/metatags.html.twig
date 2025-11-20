@@ -1,0 +1,66 @@
+{# SEO Meta Tags #}
+<title>{{ page.title | default(site.title) }} - Remote Work & Employee Experience Keynote Speaker</title>
+<meta name="description" content="{% if page.description %}{{ page.description }}{% else %}Kaleem Clarkson is a remote work and employee experience expert who helps leaders turn human connection and AI-driven change into a business advantage. Book Kaleem for keynotes on remote work, hybrid teams, and AI workplace transformation.{% endif %}" />
+<meta name="keywords" content="keynote speaker, remote work expert, employee experience, hybrid workplace, AI transformation, leadership speaker, work-life integration, location independence, future of work" />
+<meta name="author" content="Kaleem Clarkson" />
+<meta name="robots" content="index, follow" />
+
+{# Canonical URL #}
+<link rel="canonical" href="{{ site.url }}{{ page.url | default('/') }}" />
+
+{# Open Graph Meta Tags for Social Media #}
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="{{ site.title }}" />
+<meta property="og:title" content="{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }} - Remote Work & Employee Experience Keynote Speaker{% endif %}" />
+<meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}Kaleem Clarkson is a remote work and employee experience expert who helps leaders turn human connection and AI-driven change into a business advantage. Book Kaleem for keynotes on remote work, hybrid teams, and AI workplace transformation.{% endif %}" />
+<meta property="og:url" content="{{ site.url }}{{ page.url | default('/') }}" />
+<meta property="og:image" content="{{ site.url }}/images/kaleem-on-stage.jpg" />
+<meta property="og:image:secure_url" content="{{ site.url }}/images/kaleem-on-stage.jpg" />
+<meta property="og:image:alt" content="Kaleem Clarkson speaking on stage about remote work and employee experience" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:locale" content="en_US" />
+
+{# Twitter Card Meta Tags #}
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }} - Remote Work & Employee Experience Keynote Speaker{% endif %}" />
+<meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}Kaleem Clarkson is a remote work and employee experience expert who helps leaders turn human connection and AI-driven change into a business advantage. Book Kaleem for keynotes on remote work, hybrid teams, and AI workplace transformation.{% endif %}" />
+<meta name="twitter:image" content="{{ site.url }}/images/kaleem-on-stage.jpg" />
+<meta name="twitter:image:alt" content="Kaleem Clarkson speaking on stage about remote work and employee experience" />
+<meta name="twitter:creator" content="@kaleemclarkson" />
+<meta name="twitter:site" content="@kaleemclarkson" />
+
+{# Additional SEO Meta Tags #}
+<meta property="article:author" content="Kaleem Clarkson" />
+<meta property="profile:first_name" content="Kaleem" />
+<meta property="profile:last_name" content="Clarkson" />
+<meta name="theme-color" content="#FF6B35" />
+
+{# Structured Data (JSON-LD) #}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Kaleem Clarkson",
+  "url": "{{ site.url }}",
+  "image": "{{ site.url }}/images/kaleem-on-stage.jpg",
+  "jobTitle": "Keynote Speaker & Remote Work Expert",
+  "description": "Remote work and employee experience expert who helps leaders turn human connection and AI-driven change into a business advantage",
+  "sameAs": [
+    "https://www.linkedin.com/in/kaleemclarkson",
+    "https://twitter.com/kaleemclarkson"
+  ],
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Blend Me, Inc"
+  },
+  "knowsAbout": [
+    "Remote Work",
+    "Employee Experience",
+    "Hybrid Workplace",
+    "AI Transformation",
+    "Leadership",
+    "Work-Life Integration"
+  ]
+}
+</script>
