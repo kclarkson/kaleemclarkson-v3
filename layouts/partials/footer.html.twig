@@ -1,10 +1,19 @@
 <!-- Footer -->
 <footer class="footer">
   <div class="container">
-    <div class="row footer-content">
+    <div class="row footer-content mb-4">
       <div class="col-md-6 mb-4 mb-md-0">
         <h5>{{ site.title }}</h5>
         <p>{{ site.description|default('') }}</p>
+      </div>
+      <div class="col-md-6 mb-4 mb-md-0">
+        <h5>Get In Touch</h5>
+        <p>Ready to bring impactful leadership insights to your next event? Let's connect and discuss how we can work together.</p>
+        <a href="{{ url() }}#contact-form-section" class="btn btn-primary">Contact Kaleem</a>
+      </div>
+    </div>
+    <div class="row align-items-center">
+      <div class="col-md-6">
         <div class="footer-social-icons">
           <a href="https://www.linkedin.com/in/kaleemclarkson/" class="footer-social-icon" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
             <i class="fab fa-linkedin-in"></i>
@@ -23,24 +32,9 @@
           </a>
         </div>
       </div>
-      <div class="col-md-3 mb-4 mb-md-0">
-        <h5>Quick Links</h5>
-        <ul class="list-unstyled">
-          <li><a href="{{ url() }}">Home</a></li>
-          {%- for item in site.menus.main|default([])|sort_by_weight ~%}
-          <li><a href="{{ url(item.url) }}">{{ item.name }}</a></li>
-          {%- endfor ~%}
-        </ul>
+      <div class="col-md-6 text-md-end">
+        <p class="mb-0">&copy; {{ "now"|date("Y") }} {{ site.title }}. All rights reserved.</p>
       </div>
-      <div class="col-md-3">
-        <h5>Contact</h5>
-        {%- if site.email is defined -%}
-        <p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
-        {%- endif -%}
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p class="mb-0">&copy; {{ "now"|date("Y") }} {{ site.title }}. All rights reserved.</p>
     </div>
   </div>
 </footer>
