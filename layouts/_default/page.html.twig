@@ -22,29 +22,7 @@
   </head>
   <body>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
-      <div class="container">
-        <a class="navbar-brand" href="{{ url() }}">
-          {{ site.title }}<span class="accent-text">.</span>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="{{ url() }}">Home</a>
-            </li>
-            {%- for item in site.menus.main|default([])|sort_by_weight ~%}
-            <li class="nav-item">
-              <a class="nav-link" href="{{ url(item.url) }}">{{ item.name }}</a>
-            </li>
-            {%- endfor ~%}
-          </ul>
-        </div>
-      </div>
-    </nav>
+    {%~ include 'partials/navbar.html.twig' ~%}
 
     <!-- Page Header -->
     <header class="page-header">
