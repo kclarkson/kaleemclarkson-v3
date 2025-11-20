@@ -1,19 +1,12 @@
 <!-- Footer -->
 <footer class="footer">
   <div class="container">
-    <div class="row footer-content mb-4">
+    <div class="row footer-content">
       <div class="col-md-6 mb-4 mb-md-0">
-        <h5>{{ site.title }}</h5>
-        <p>{{ site.description|default('') }}</p>
-      </div>
-      <div class="col-md-6 mb-4 mb-md-0">
-        <h5>Get In Touch</h5>
-        <p>Ready to bring impactful leadership insights to your next event? Let's connect and discuss how we can work together.</p>
-        <a href="{{ url() }}#contact-form-section" class="btn btn-primary">Contact Kaleem</a>
-      </div>
-    </div>
-    <div class="row align-items-center">
-      <div class="col-md-6">
+        <div class="site-info">
+          <h5>{{ site.title }}</h5>
+          <p>{{ site.description|default('') }}</p>
+        </div>
         <div class="footer-social-icons">
           <a href="https://www.linkedin.com/in/kaleemclarkson/" class="footer-social-icon" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
             <i class="fab fa-linkedin-in"></i>
@@ -32,8 +25,15 @@
           </a>
         </div>
       </div>
-      <div class="col-md-6 text-md-end">
-        <p class="mb-0">&copy; {{ "now"|date("Y") }} {{ site.title }}. All rights reserved.</p>
+      <div class="col-md-6 mb-4 mb-md-0">
+        <div class="footer-contact">
+          <h5>Get In Touch</h5>
+          <p>Ready to bring impactful leadership insights to your next event? Let's connect and discuss how we can work together.</p>
+          <a href="{{ url() }}#contact-form-section" class="btn btn-primary">Contact Kaleem</a>
+         </div>
+        <div class="text-md-end">
+          <p class="mb-0">&copy; {{ "now"|date("Y") }} {{ site.title }}. All rights reserved.</p>
+        </div>
       </div>
     </div>
   </div>
