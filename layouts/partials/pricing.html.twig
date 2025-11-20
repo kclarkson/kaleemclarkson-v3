@@ -1,7 +1,7 @@
 {% set pricing = site.data.homepage['pricing-section']|default(null) %}
 
 {% if pricing %}
-  <section class="pricing-section pv-5">
+  <section id="pricing-section" class="pricing-section pv-5">
     <div class="container">
       {% if pricing.component_title or pricing.intro_blurb %}
         <div class="row text-center mb-2">
