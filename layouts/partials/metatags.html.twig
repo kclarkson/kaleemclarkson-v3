@@ -6,14 +6,14 @@
 <meta name="robots" content="index, follow" />
 
 {# Canonical URL #}
-<link rel="canonical" href="{{ site.url }}{{ page.url | default('/') }}" />
+<link rel="canonical" href="{{ url(page, {canonical: true}) }}" />
 
 {# Open Graph Meta Tags for Social Media #}
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="{{ site.title }}" />
 <meta property="og:title" content="{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }} - Remote Work & Employee Experience Keynote Speaker{% endif %}" />
 <meta property="og:description" content="{% if page.description is defined %}{{ page.description }}{% else %}Kaleem Clarkson is a remote work and employee experience expert who helps leaders turn human connection and AI-driven change into a business advantage. Book Kaleem for keynotes on remote work, hybrid teams, and AI workplace transformation.{% endif %}" />
-<meta property="og:url" content="{{ site.url }}{{ page.url | default('/') }}" />
+<meta property="og:url" content="{{ url(page, {canonical: true}) }}" />
 <meta property="og:image" content="{{ site.url }}/images/kaleem-in-action.png" />
 <meta property="og:image:secure_url" content="{{ site.url }}/images/kaleem-in-action.png" />
 <meta property="og:image:alt" content="Kaleem Clarkson speaking on stage about remote work and employee experience" />
@@ -74,3 +74,27 @@
   "url": "{{ site.url }}"
 }
 </script>
+
+{# Structured Data (JSON-LD) — FAQPage (rich-result eligible) #}
+{# Only on the homepage, where the FAQ section is actually visible (Google requires schema to match visible content). #}
+{% set faqData = site.data.homepage['faq-section']|default(null) %}
+{% if page.type | default('') == 'homepage' and faqData and faqData.faq_items %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {%- for item in faqData.faq_items %}
+    {
+      "@type": "Question",
+      "name": {{ item.question|trim|json_encode|raw }},
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": {{ item.answer|trim|json_encode|raw }}
+      }
+    }{{ not loop.last ? ',' : '' }}
+    {%- endfor %}
+  ]
+}
+</script>
+{% endif %}

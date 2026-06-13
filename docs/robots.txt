@@ -3,6 +3,7 @@ User-agent: *
 # allow all pages
 Allow: /
 # disallow redirects pages
+Disallow: /about/
 # disallow 404 page
 Disallow: /404.html
 
