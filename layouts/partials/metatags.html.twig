@@ -64,3 +64,13 @@
   ]
 }
 </script>
+
+{# Structured Data (JSON-LD) — WebSite (signals site name to Google) #}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "{{ site.title }}",
+  "url": "{{ site.url }}"
+}
+</script>
